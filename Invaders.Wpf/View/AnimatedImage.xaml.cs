@@ -67,7 +67,7 @@ namespace Invaders.Wpf.View
             }
             else
             {
-                throw new NullReferenceException("Storyboard is null.");
+                throw new NullReferenceException(nameof(storyboard)s);
             }
         }
         
@@ -81,7 +81,7 @@ namespace Invaders.Wpf.View
             }
             else
             {
-                throw new NullReferenceException("Storyboard is null.");
+                throw new NullReferenceException(nameof(storyboard));
             }
         }
         
