@@ -95,7 +95,7 @@ namespace Invaders.Wpf.Model
 
         public void Twinkle()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(Twinkle));
         }
 
         public void Update(bool paused)
@@ -131,7 +131,7 @@ namespace Invaders.Wpf.Model
 
         private void NextWave()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(NextWave));
         }
 
         private void CheckForPlayerCollisions()
@@ -177,7 +177,7 @@ namespace Invaders.Wpf.Model
 
         private void CheckForInvaderCollisions()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(CheckForInvaderCollisions));
         }
 
         private void MoveInvaders()
@@ -206,7 +206,7 @@ namespace Invaders.Wpf.Model
         
         private void ReturnFire()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(ReturnFire));
         }
         
         public event EventHandler<StarChangedEventArgs> StarChanged;

@@ -137,12 +137,12 @@ namespace Invaders.Wpf.ViewModel
 
         private void ModelStarChangedEventHandler(object sender, StarChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(ModelStarChangedEventHandler));
         }
 
         private void ModelShotMovedEventHandler(object sender, ShotMovedEventArgs e)
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(ModelShotMovedEventHandler));
         }
 
         private void ModelShipChangedEventHandler(object sender, ShipChangedEventArgs e)
@@ -236,7 +236,7 @@ namespace Invaders.Wpf.ViewModel
 
         private void EndGame()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException(nameof(EndGame));
         }
 
         public void StartGame()
