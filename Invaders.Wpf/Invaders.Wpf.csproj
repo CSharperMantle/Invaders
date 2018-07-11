@@ -110,6 +110,7 @@
     <Content Include="Assets\Bee_animation_3.png" />
     <Content Include="Assets\Bee_animation_4.png" />
     <Content Include="Assets\block.png" />
+    <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

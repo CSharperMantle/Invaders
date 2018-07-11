@@ -36,6 +36,7 @@
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />
         </e>
+        <e p="README.md" t="Include" />
         <e p="View" t="Include">
           <e p="AnimatedImage.xaml" t="Include" />
           <e p="AnimatedImage.xaml.cs" t="Include" />
