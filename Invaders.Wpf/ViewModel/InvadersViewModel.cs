@@ -29,6 +29,8 @@ namespace Invaders.Wpf.ViewModel
             new ObservableCollection<object>();
 
         public INotifyCollectionChanged Lives => _lives;
+
+        public int LivesValue => _lives.Count;
         
         public bool Paused { get; set; }
         
@@ -236,7 +238,7 @@ namespace Invaders.Wpf.ViewModel
 
         private void EndGame()
         {
-            throw new NotImplementedException(nameof(EndGame));
+            _model.EndGame();
         }
 
         public void StartGame()

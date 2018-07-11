@@ -22,9 +22,9 @@
         </Grid.RowDefinitions>
         
         <StackPanel HorizontalAlignment="Right" Margin="0, 60, 120, 0">
-            <TextBlock Text="{Binding Score}" HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
-            
-            
+            <TextBlock Text="{Binding Path=Score}" HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
+            <TextBlock Text="Lives" HorizontalAlignment="Right"/>
+            <TextBlock Text="{Binding Path=LivesValue}" HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
         </StackPanel>
         <Border x:Name="PlayArea" BorderBrush="Blue" BorderThickness="2" CornerRadius="10"
                 Background="Black" Margin="5" Grid.Row="1" Loaded="PlayArea_OnLoaded">
@@ -45,7 +45,7 @@
                        FontFamily="Arial Narrow" FontSize="150"
                        Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
                        Margin="0, 0, 0, 60"/>
-            <Button Name="BeginButton" Content="Start a new game!" Background="Black" HorizontalAlignment="Center"
+            <Button x:Name="BeginButton" Content="Start a new game!" Background="Black" HorizontalAlignment="Center"
                     FontSize="30" Click="BeginButton_OnClick" />
         </StackPanel>
         
