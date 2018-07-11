@@ -139,12 +139,12 @@ namespace Invaders.Wpf.ViewModel
 
         private void ModelStarChangedEventHandler(object sender, StarChangedEventArgs e)
         {
-            throw new NotImplementedException(nameof(ModelStarChangedEventHandler));
+            //TODO: Complete ModelStarChangedEventHandler()
         }
 
         private void ModelShotMovedEventHandler(object sender, ShotMovedEventArgs e)
         {
-            throw new NotImplementedException(nameof(ModelShotMovedEventHandler));
+            //TODO: Complete ModelShotMovedEventHandler()
         }
 
         private void ModelShipChangedEventHandler(object sender, ShipChangedEventArgs e)

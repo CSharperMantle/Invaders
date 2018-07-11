@@ -26,7 +26,7 @@ namespace Invaders.Wpf.View
                         filename = "satellite";
                         break;
                     case InvaderType.Saucer:
-                        filename = "saucer";
+                        filename = "flyingsaucer";
                         break;
                     case InvaderType.Spaceship:
                         filename = "spaceship";

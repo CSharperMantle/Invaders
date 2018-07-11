@@ -178,6 +178,9 @@ namespace Invaders.Wpf.Model
                             case 4:
                                 invader = new Invader(location, InvaderType.Star);
                                 break;
+                            case 5:
+                                invader = new Invader(location, InvaderType.Star);
+                                break;
                             default:
                                 throw new ArgumentOutOfRangeException(nameof(row));
                     }

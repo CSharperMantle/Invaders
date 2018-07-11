@@ -5,7 +5,7 @@ namespace Invaders.Wpf.Model
 {
     public class Invader : Ship
     {
-        public static Size InvaderSize;
+        public static Size InvaderSize = new Size(15, 15);
         
         public InvaderType InvaderType { get; private set; }
         
