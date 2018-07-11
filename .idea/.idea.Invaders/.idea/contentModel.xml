@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\rong\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Invaders.-1151021874.00" t="ExcludeRecursive" />
+    <e p="W:\Workspace\RiderProjects\Invaders" t="IncludeFlat">
+      <e p="Invaders.sln" t="IncludeFlat" />
+      <e p="Invaders.Wpf" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="Assets" t="Include">
+          <e p="Bee_animation_1.png" t="Include" />
+          <e p="Bee_animation_2.png" t="Include" />
+          <e p="Bee_animation_3.png" t="Include" />
+          <e p="Bee_animation_4.png" t="Include" />
+          <e p="block.png" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Invaders.Wpf.csproj" t="IncludeRecursive" />
+        <e p="Model" t="Include">
+          <e p="Direction.cs" t="Include" />
+          <e p="Invader.cs" t="Include" />
+          <e p="InvadersModel.cs" t="Include" />
+          <e p="InvaderType.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="Ship.cs" t="Include" />
+          <e p="ShipChangedEventArgs.cs" t="Include" />
+          <e p="Shot.cs" t="Include" />
+          <e p="ShotMovedEventArgs.cs" t="Include" />
+          <e p="StarChangedEventArgs.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="Annotations.cs" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="View" t="Include">
+          <e p="AnimatedImage.xaml" t="Include" />
+          <e p="AnimatedImage.xaml.cs" t="Include" />
+          <e p="InvadersHelper.cs" t="Include" />
+          <e p="MainWindow.xaml" t="Include" />
+          <e p="MainWindow.xaml.cs" t="Include" />
+          <e p="StarControl.xaml" t="Include" />
+          <e p="StarControl.xaml.cs" t="Include" />
+        </e>
+        <e p="ViewModel" t="Include">
+          <e p="BooleanVisibiltyConverter.cs" t="Include" />
+          <e p="InvadersViewModel.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
