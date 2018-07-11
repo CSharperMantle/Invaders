@@ -99,7 +99,6 @@ namespace Invaders.Wpf.View
                 Console.Error.WriteLine("Message: " + e.Message);
                 return new BitmapImage();
             }
-            
         }
     }
 }
