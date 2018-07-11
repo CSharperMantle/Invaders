@@ -15,7 +15,7 @@ namespace Invaders.Wpf.Model
         public int Waves { get; private set; }
         public int Lives { get; private set; }
         public bool GameOver { get; private set; }
-        private DateTime? _playerDied = null;
+        private DateTime? _playerDied;
 
         public bool PlayerDying => _playerDied.HasValue;
 
