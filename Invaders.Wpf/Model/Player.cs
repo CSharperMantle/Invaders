@@ -8,7 +8,7 @@ namespace Invaders.Wpf.Model
         public static readonly Size PlayerSize = new Size(25, 15);
 
         public const double Speed = 10;
-        
+
         public Player()
             : base(new Point(PlayerSize.Width, 
                 InvadersModel.PlayAreaSize.Height - InvadersModel.PlayAreaSize.Height * 3), 
