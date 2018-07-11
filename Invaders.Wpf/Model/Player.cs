@@ -19,7 +19,19 @@ namespace Invaders.Wpf.Model
 
         public override void Move(Direction direction)
         {
-            throw new NotImplementedException();
+            switch (direction)
+            {
+                    case Direction.Left:
+                        if (Location.X > PlayerSize.Width)
+                            Location = new Point(Location.X - Speed, Location.Y);
+                        break;
+                    case Direction.Right:
+                        if (Location.X < InvadersModel.PlayAreaSize.Width - PlayerSize.Width * 2)
+                            Location = new Point(Location.X + Speed, Location.Y);
+                        break;
+                    default:
+                        throw new ArgumentException(nameof(direction));
+            }
         }
     }
 }
