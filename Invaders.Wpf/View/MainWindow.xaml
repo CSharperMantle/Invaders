@@ -9,10 +9,27 @@
         SizeChanged="MainWindow_OnSizeChanged"
         KeyDown="MainWindow_OnKeyDown"
         KeyUp="MainWindow_OnKeyUp"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525" Background="DarkSlateGray">
     <Window.Resources>
         <viewModel:InvadersViewModel x:Key="ViewModel" />
         <viewModel:BooleanVisibiltyConverter x:Key="VisibiltyConverter"/>
+        <Style x:Key="GroupHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="TextTrimming" Value="WordEllipsis"/>
+            <Setter Property="TextWrapping" Value="NoWrap"/>
+            <Setter Property="Typography.StylisticSet20" Value="True"/>
+            <Setter Property="Typography.DiscretionaryLigatures" Value="True"/>
+            <Setter Property="Typography.CaseSensitiveForms" Value="True"/>
+            <Setter Property="FontSize" Value="26.667"/>
+            <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="LineHeight" Value="30"/>
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TranslateTransform X="-1" Y="6"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     
     <Grid DataContext="{StaticResource ViewModel}">
@@ -22,9 +39,12 @@
         </Grid.RowDefinitions>
         
         <StackPanel HorizontalAlignment="Right" Margin="0, 60, 120, 0">
-            <TextBlock Text="{Binding Path=Score}" HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
-            <TextBlock Text="Lives" HorizontalAlignment="Right"/>
-            <TextBlock Text="{Binding Path=LivesValue}" HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
+            <TextBlock Style="{StaticResource GroupHeaderTextStyle}" 
+                       Text="{Binding Path=Score}" 
+                       HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
+            <TextBlock Style="{StaticResource GroupHeaderTextStyle}" 
+                       Text="{Binding Path=LivesValue}" 
+                       HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
         </StackPanel>
         <Border x:Name="PlayArea" BorderBrush="Blue" BorderThickness="2" CornerRadius="10"
                 Background="Black" Margin="5" Grid.Row="1" Loaded="PlayArea_OnLoaded">
@@ -45,7 +65,8 @@
                        FontFamily="Arial Narrow" FontSize="150"
                        Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
                        Margin="0, 0, 0, 60"/>
-            <Button x:Name="BeginButton" Content="Start a new game!" Background="Black" HorizontalAlignment="Center"
+            <Button x:Name="BeginButton" Content="Start a new game!" Background="DarkSlateGray" 
+                    HorizontalAlignment="Center" 
                     FontSize="30" Click="BeginButton_OnClick" />
         </StackPanel>
         

@@ -14,6 +14,31 @@
           <e p="Bee_animation_3.png" t="Include" />
           <e p="Bee_animation_4.png" t="Include" />
           <e p="block.png" t="Include" />
+          <e p="bug1.png" t="Include" />
+          <e p="bug2.png" t="Include" />
+          <e p="bug3.png" t="Include" />
+          <e p="bug4.png" t="Include" />
+          <e p="flyingsaucer1.png" t="Include" />
+          <e p="flyingsaucer2.png" t="Include" />
+          <e p="flyingsaucer3.png" t="Include" />
+          <e p="flyingsaucer4.png" t="Include" />
+          <e p="player.png" t="Include" />
+          <e p="satellite1.png" t="Include" />
+          <e p="satellite2.png" t="Include" />
+          <e p="satellite3.png" t="Include" />
+          <e p="satellite4.png" t="Include" />
+          <e p="spaceship1.png" t="Include" />
+          <e p="spaceship2.png" t="Include" />
+          <e p="spaceship3.png" t="Include" />
+          <e p="spaceship4.png" t="Include" />
+          <e p="star1.png" t="Include" />
+          <e p="star2.png" t="Include" />
+          <e p="star3.png" t="Include" />
+          <e p="star4.png" t="Include" />
+          <e p="watchit1.png" t="Include" />
+          <e p="watchit2.png" t="Include" />
+          <e p="watchit3.png" t="Include" />
+          <e p="watchit4.png" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Invaders.Wpf.csproj" t="IncludeRecursive" />
