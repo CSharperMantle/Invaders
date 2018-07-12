@@ -42,6 +42,7 @@ namespace Invaders.Wpf.View
             {
                 nameList.Add(filename + index + ".png");
             }
+            nameList.Add(filename + "1.png");
 
             return nameList;
         }

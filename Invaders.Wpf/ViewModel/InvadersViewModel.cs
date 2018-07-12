@@ -118,6 +118,7 @@ namespace Invaders.Wpf.ViewModel
                     _lives.RemoveAt(0);
                 while (_lives.Count < _model.Lives)
                     _lives.Add(new object());
+                OnPropertyChanged(nameof(LivesValue));
             }
 
             foreach (var control in _shotInvaders.Keys.ToList())
@@ -139,12 +140,55 @@ namespace Invaders.Wpf.ViewModel
 
         private void ModelStarChangedEventHandler(object sender, StarChangedEventArgs e)
         {
-            //TODO: Complete ModelStarChangedEventHandler()
+            if (e.Disappeared && _stars.ContainsKey(e.Point))
+            {
+                _sprites.Remove(_stars[e.Point]);
+                _stars.Remove(e.Point);
+            }
+            else
+            {
+                if (!_stars.ContainsKey(e.Point))
+                {
+                    var starControl = InvadersHelper.StarControlFactory(e.Point, Scale);
+                    _stars.Add(e.Point, starControl);
+                    _sprites.Add(starControl);
+                }
+                else
+                {
+                    var starControl = _stars[e.Point];
+                    InvadersHelper.MoveElementOnCanvas(starControl, 
+                        e.Point.X * Scale,
+                        e.Point.Y * Scale);
+                }
+            }
         }
 
         private void ModelShotMovedEventHandler(object sender, ShotMovedEventArgs e)
         {
-            //TODO: Complete ModelShotMovedEventHandler()
+            if (!e.Disappeared)
+            {
+                if (!_shots.Keys.Contains(e.Shot))
+                {
+                    var shotControl = InvadersHelper.ShotControlFactory(e.Shot, Scale);
+                    _shots.Add(e.Shot, shotControl);
+                    _sprites.Add(shotControl);
+                }
+                else
+                {
+                    var shotControl = _shots[e.Shot];
+                    InvadersHelper.MoveElementOnCanvas(shotControl, 
+                        e.Shot.Location.X * Scale,
+                        e.Shot.Location.Y * Scale);
+                }
+            }
+            else
+            {
+                if (_shots.ContainsKey(e.Shot))
+                {
+                    _sprites.Remove(_shots[e.Shot]);
+                    _shots.Remove(e.Shot);
+                }
+            }
         }
 
         private void ModelShipChangedEventHandler(object sender, ShipChangedEventArgs e)

@@ -10,17 +10,27 @@
         <Storyboard x:Key="InvaderShotStoryboard">
             <DoubleAnimation From="1" To="0" Storyboard.TargetName="Image"
                              Storyboard.TargetProperty="Opacity"
-                             Duration="0:0:1.5"/>
+                             Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="FlashStoryboard">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Image"
-                                           Storyboard.TargetProperty="Visibility">
-                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Visible"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="Collapsed"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="Visible"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="Collapsed"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="Visible"/>
-                <DiscreteObjectKeyFrame KeyTime="0:0:1" Value="Collapsed"/>
+                                           Storyboard.TargetProperty="Visibility"
+                                           RepeatBehavior="Forever">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Hidden</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
             </ObjectAnimationUsingKeyFrames>
         </Storyboard>
     </UserControl.Resources>

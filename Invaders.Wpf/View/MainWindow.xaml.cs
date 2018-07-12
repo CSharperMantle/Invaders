@@ -55,6 +55,7 @@ namespace Invaders.Wpf.View
 
             PlayArea.Width = targetWidth;
             PlayArea.Height = targetHeight;
+            _viewModel.PlayAreaSize = new Size(targetWidth, targetHeight);
         }
 
         private void MainWindow_OnKeyDown(object sender, KeyEventArgs e)

@@ -27,7 +27,7 @@ namespace Invaders.Wpf.Model
         private readonly List<Shot> _invaderShots = new List<Shot>();
         private readonly List<Point> _stars = new List<Point>();
         private Direction _invaderDirection = Direction.Left;
-        private bool _justMovedDown = false;
+        private bool _justMovedDown;
         private DateTime _lastUpdated = DateTime.MinValue;
 
         public InvadersModel()
@@ -49,26 +49,27 @@ namespace Invaders.Wpf.Model
                 _invaders.Remove(invader);
             }
 
-            foreach (var shot in _invaderShots)
+            foreach (var shot in _invaderShots.ToList())
             {
                 OnShotMoved(shot, true);
                 _invaderShots.Remove(shot);
             }
 
-            foreach (var shot in _playerShots)
+            foreach (var shot in _playerShots.ToList())
             {
                 OnShotMoved(shot, true);
                 _invaderShots.Remove(shot);
             }
 
-            foreach (var star in _stars)
+            foreach (var star in _stars.ToList())
             {
                 OnStarChanged(star, true);
                 _stars.Remove(star);
             }
             _player = new Player();
             OnShipChanged(_player, false);
-            
+
+            Score = 0;
             Lives = 2;
             Waves = 0;
             
@@ -77,9 +78,9 @@ namespace Invaders.Wpf.Model
 
         public void FireShot()
         {
-            if (_playerShots.Count < 3)
+            if (_playerShots.Count < MaximumPlayerShots)
             {
-                Point location = new Point((_player.Area.Right - _player.Area.Left) / 2, _player.Area.Top);
+                Point location = new Point(_player.Location.X + _player.Area.Width / 2, _player.Location.Y);
                 Shot shot = new Shot(location, Direction.Up);
                 _playerShots.Add(shot);
                 OnShotMoved(shot, false);
@@ -124,7 +125,8 @@ namespace Invaders.Wpf.Model
         {
             if (!paused)
             {
-                if (!_invaders.Any()) NextWave();
+                if (!_invaders.Any()) 
+                    NextWave();
                 if (!PlayerDying)
                 {
                     MoveInvaders();
@@ -240,9 +242,9 @@ namespace Invaders.Wpf.Model
                     from invader in _invaders
                     where invader.Area.Contains(shot.Location)
                     select new {KilledInvader = invader, HitShot = shot};
-                if (result.Any())
+                if (result.ToList().Any())
                 {
-                    foreach (var each in result)
+                    foreach (var each in result.ToList())
                     {
                         hitShots.Add(each.HitShot);
                         shotInvaders.Add(each.KilledInvader);
@@ -260,13 +262,12 @@ namespace Invaders.Wpf.Model
             foreach (var usedShot in hitShots)
             {
                 _playerShots.Remove(usedShot);
-                OnShotMoved(usedShot, false);
+                OnShotMoved(usedShot, true);
             }
         }
 
         private void MoveInvaders()
         {
-            _invaders.Clear();
             var timeGap = Math.Min(10 - Waves, 1) * (2 * _invaders.Count);
             if (DateTime.Now - _lastUpdated > TimeSpan.FromMilliseconds(timeGap))
             {
@@ -300,7 +301,7 @@ namespace Invaders.Wpf.Model
                             OnShipChanged(invader, false);
                         }
 
-                        _invaderDirection = Direction.Right;
+                        _invaderDirection = Direction.Left;
                     }
 
                     _justMovedDown = true;
@@ -314,7 +315,6 @@ namespace Invaders.Wpf.Model
                         OnShipChanged(invader, false);
                     }
                 }
-                
             }
         }
 
@@ -325,15 +325,24 @@ namespace Invaders.Wpf.Model
 
             var outOfBoundPlayerShots =
                 from playerShot in _playerShots
-                where playerShot.Location.Y > PlayAreaSize.Height - 10
+                where playerShot.Location.Y < 10
                 select playerShot;
             var outOfBoundInvaderShots =
                 from invaderShot in _invaderShots
-                where invaderShot.Location.Y < 10
+                where invaderShot.Location.Y > PlayAreaSize.Height - 10
                 select invaderShot;
-            
-            foreach (var shot in outOfBoundInvaderShots) { _invaderShots.Remove(shot); OnShotMoved(shot, true); }
-            foreach (var shot in outOfBoundPlayerShots) {_playerShots.Remove(shot); OnShotMoved(shot, true); }
+
+            foreach (var shot in outOfBoundInvaderShots.ToList())
+            {
+                _invaderShots.Remove(shot); 
+                OnShotMoved(shot, true);
+            }
+
+            foreach (var shot in outOfBoundPlayerShots.ToList())
+            {
+                _playerShots.Remove(shot); 
+                OnShotMoved(shot, true);
+            }
         }
         
         private void ReturnFire()
