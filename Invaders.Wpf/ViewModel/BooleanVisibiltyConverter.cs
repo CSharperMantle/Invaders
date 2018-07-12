@@ -9,7 +9,7 @@ namespace Invaders.Wpf.ViewModel
     {
         object IValueConverter.Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value is bool && (bool)value)
+            if (value is bool && (bool) value)
                 return Visibility.Visible;
             return Visibility.Hidden;
         }

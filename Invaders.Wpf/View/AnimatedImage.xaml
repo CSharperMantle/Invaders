@@ -10,7 +10,7 @@
         <Storyboard x:Key="InvaderShotStoryboard">
             <DoubleAnimation From="1" To="0" Storyboard.TargetName="Image"
                              Storyboard.TargetProperty="Opacity"
-                             Duration="0:0:0.5"/>
+                             Duration="0:0:0.5" />
         </Storyboard>
         <Storyboard x:Key="FlashStoryboard">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Image"
@@ -35,6 +35,6 @@
         </Storyboard>
     </UserControl.Resources>
     <Grid>
-        <Image x:Name="Image" Stretch="Fill"/>
+        <Image x:Name="Image" Stretch="Fill" />
     </Grid>
 </UserControl>

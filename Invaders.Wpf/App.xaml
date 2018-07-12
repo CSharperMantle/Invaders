@@ -5,6 +5,6 @@
              xmlns:viewModel="clr-namespace:Invaders.Wpf.ViewModel"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-        
+
     </Application.Resources>
 </Application>

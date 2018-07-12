@@ -5,16 +5,11 @@ namespace Invaders.Wpf.Model
 {
     public class Invader : Ship
     {
-        public static Size InvaderSize = new Size(15, 15);
-        
-        public InvaderType InvaderType { get; private set; }
-        
-        public int Score { get; private set; }
-        
         public const int HorizontalInterval = 5;
 
         public const int VerticalInterval = 15;
-        
+        public static Size InvaderSize = new Size(15, 15);
+
         public Invader(Point location, InvaderType invaderType) : base(location, InvaderSize)
         {
             InvaderType = invaderType;
@@ -39,6 +34,10 @@ namespace Invaders.Wpf.Model
                     throw new ArgumentException("Invalid InvaderType! ");
             }
         }
+
+        public InvaderType InvaderType { get; }
+
+        public int Score { get; }
 
         public override void Move(Direction direction)
         {

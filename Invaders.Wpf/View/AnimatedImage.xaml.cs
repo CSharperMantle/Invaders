@@ -21,12 +21,12 @@ namespace Invaders.Wpf.View
 
         public void StartAnimation(IEnumerable<string> imageNames, TimeSpan interval)
         {
-            Storyboard storyboard = new Storyboard();
-            ObjectAnimationUsingKeyFrames animation = new ObjectAnimationUsingKeyFrames();
+            var storyboard = new Storyboard();
+            var animation = new ObjectAnimationUsingKeyFrames();
             Storyboard.SetTarget(animation, Image);
             Storyboard.SetTargetProperty(animation, new PropertyPath("Source"));
 
-            TimeSpan currentInterval = TimeSpan.FromMilliseconds(0);
+            var currentInterval = TimeSpan.FromMilliseconds(0);
             foreach (var imageName in imageNames)
             {
                 ObjectKeyFrame keyFrame = new DiscreteObjectKeyFrame();
@@ -35,7 +35,7 @@ namespace Invaders.Wpf.View
                 animation.KeyFrames.Add(keyFrame);
                 currentInterval = currentInterval.Add(interval);
             }
-            
+
             storyboard.RepeatBehavior = RepeatBehavior.Forever;
             storyboard.AutoReverse = true;
             storyboard.Children.Add(animation);
@@ -44,52 +44,39 @@ namespace Invaders.Wpf.View
 
         public void InvaderShot()
         {
-            object obj = Resources["InvaderShotStoryboard"];
+            var obj = Resources["InvaderShotStoryboard"];
             var storyboard = obj as Storyboard;
             if (storyboard != null)
-            {
                 storyboard.Begin();
-            }
             else
-            {
                 throw new NullReferenceException(nameof(storyboard));
-            }
-            
         }
 
         public void StartFlashing()
         {
-            object obj = Resources["FlashStoryboard"];
+            var obj = Resources["FlashStoryboard"];
             var storyboard = obj as Storyboard;
             if (storyboard != null)
-            {
                 storyboard.Begin();
-            }
             else
-            {
                 throw new NullReferenceException(nameof(storyboard));
-            }
         }
-        
+
         public void StopFlashing()
         {
-            object obj = Resources["FlashStoryboard"];
+            var obj = Resources["FlashStoryboard"];
             var storyboard = obj as Storyboard;
             if (storyboard != null)
-            {
                 storyboard.Stop();
-            }
             else
-            {
                 throw new NullReferenceException(nameof(storyboard));
-            }
         }
-        
+
         private static BitmapImage CreateImageFromAssets(string imageFileName)
         {
             try
             {
-                Uri uri = new Uri("Assets/" + imageFileName, UriKind.Relative);
+                var uri = new Uri("Assets/" + imageFileName, UriKind.Relative);
                 return new BitmapImage(uri);
             }
             catch (Exception e)

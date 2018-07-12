@@ -6,11 +6,7 @@ namespace Invaders.Wpf.Model
     public class Shot
     {
         public const double ShotPixelsPerSecond = 95;
-        
-        public Point Location { get; private set; }
         public static Size ShotSize = new Size(2, 10);
-
-        public Direction Direction { get; private set; }
 
         private DateTime _lastMoved;
 
@@ -20,6 +16,10 @@ namespace Invaders.Wpf.Model
             Direction = direction;
             _lastMoved = DateTime.Now;
         }
+
+        public Point Location { get; private set; }
+
+        public Direction Direction { get; }
 
         public void Move()
         {

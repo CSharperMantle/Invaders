@@ -7,8 +7,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Effects;
 using System.Windows.Threading;
 using Invaders.Wpf.Annotations;
 using Invaders.Wpf.Model;
@@ -18,26 +16,64 @@ namespace Invaders.Wpf.ViewModel
 {
     public class InvadersViewModel : INotifyPropertyChanged
     {
-        private readonly  ObservableCollection<FrameworkElement> _sprites = 
+        private readonly Dictionary<Invader, FrameworkElement> _invaders =
+            new Dictionary<Invader, FrameworkElement>();
+
+        private readonly ObservableCollection<object> _lives =
+            new ObservableCollection<object>();
+
+        private readonly InvadersModel _model = new InvadersModel();
+
+        private readonly List<FrameworkElement> _scanLines =
+            new List<FrameworkElement>();
+
+        private readonly Dictionary<FrameworkElement, DateTime> _shotInvaders =
+            new Dictionary<FrameworkElement, DateTime>();
+
+        private readonly Dictionary<Shot, FrameworkElement> _shots =
+            new Dictionary<Shot, FrameworkElement>();
+
+        private readonly ObservableCollection<FrameworkElement> _sprites =
             new ObservableCollection<FrameworkElement>();
+
+        private readonly Dictionary<Point, FrameworkElement> _stars =
+            new Dictionary<Point, FrameworkElement>();
+
+        private readonly DispatcherTimer _timer = new DispatcherTimer();
+
+        private bool _lastPaused = true;
+
+        private DateTime? _leftAction;
+        private FrameworkElement _playerControl;
+        private bool _playerFlashing;
+        private DateTime? _rightAction;
+
+        public InvadersViewModel()
+        {
+            Scale = 1;
+
+            _model.ShipChanged += ModelShipChangedEventHandler;
+            _model.ShotMoved += ModelShotMovedEventHandler;
+            _model.StarChanged += ModelStarChangedEventHandler;
+
+            _timer.Interval = TimeSpan.FromMilliseconds(100);
+            _timer.Tick += TimerTickEventHandler;
+
+            EndGame();
+        }
 
         public INotifyCollectionChanged Sprites => _sprites;
 
         public bool GameOver => _model.GameOver;
-        
-        private readonly ObservableCollection<object> _lives = 
-            new ObservableCollection<object>();
 
         public INotifyCollectionChanged Lives => _lives;
 
         public int LivesValue => _lives.Count;
-        
+
         public bool Paused { get; set; }
-        
-        private bool _lastPaused = true;
-        
+
         public static double Scale { get; private set; }
-        
+
         public int Score { get; private set; }
 
         public Size PlayAreaSize
@@ -50,37 +86,7 @@ namespace Invaders.Wpf.ViewModel
             }
         }
 
-        private readonly InvadersModel _model = new InvadersModel();
-        private readonly DispatcherTimer _timer = new DispatcherTimer();
-        private FrameworkElement _playerControl = null;
-        private bool _playerFlashing = false;
-        private readonly Dictionary<Invader, FrameworkElement> _invaders = 
-            new Dictionary<Invader, FrameworkElement>();
-        private readonly Dictionary<FrameworkElement, DateTime> _shotInvaders =
-            new Dictionary<FrameworkElement, DateTime>();
-        private readonly Dictionary<Shot, FrameworkElement> _shots =
-            new Dictionary<Shot, FrameworkElement>();
-        private readonly Dictionary<Point, FrameworkElement> _stars =
-            new Dictionary<Point, FrameworkElement>();
-        private readonly List<FrameworkElement> _scanLines =
-            new List<FrameworkElement>();
-
-        private DateTime? _leftAction = null;
-        private DateTime? _rightAction = null;
-
-        public InvadersViewModel()
-        {
-            Scale = 1;
-            
-            _model.ShipChanged += ModelShipChangedEventHandler;
-            _model.ShotMoved += ModelShotMovedEventHandler;
-            _model.StarChanged += ModelStarChangedEventHandler;
-
-            _timer.Interval = TimeSpan.FromMilliseconds(100);
-            _timer.Tick += TimerTickEventHandler;
-
-            EndGame();
-        }
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void TimerTickEventHandler(object sender, EventArgs e)
         {
@@ -93,19 +99,15 @@ namespace Invaders.Wpf.ViewModel
             if (!Paused)
             {
                 if (_leftAction.HasValue && !_rightAction.HasValue)
-                {
                     _model.MovePlayer(Direction.Left);
-                } else if (!_leftAction.HasValue && _rightAction.HasValue)
-                {
+                else if (!_leftAction.HasValue && _rightAction.HasValue)
                     _model.MovePlayer(Direction.Right);
-                } else if (_leftAction.HasValue && _rightAction.HasValue)
-                {
+                else if (_leftAction.HasValue && _rightAction.HasValue)
                     _model.MovePlayer(_leftAction > _rightAction ? Direction.Left : Direction.Right);
-                }
             }
-            
+
             _model.Update(Paused);
-            
+
             if (Score != _model.Score)
             {
                 Score = _model.Score;
@@ -114,7 +116,7 @@ namespace Invaders.Wpf.ViewModel
 
             if (_model.Lives > 0)
             {
-                while (_lives.Count > _model.Lives) 
+                while (_lives.Count > _model.Lives)
                     _lives.RemoveAt(0);
                 while (_lives.Count < _model.Lives)
                     _lives.Add(new object());
@@ -123,7 +125,7 @@ namespace Invaders.Wpf.ViewModel
 
             foreach (var control in _shotInvaders.Keys.ToList())
             {
-                DateTime elapsed = _shotInvaders[control];
+                var elapsed = _shotInvaders[control];
                 if (DateTime.Now - elapsed > TimeSpan.FromSeconds(0.5))
                 {
                     _sprites.Remove(control);
@@ -156,7 +158,7 @@ namespace Invaders.Wpf.ViewModel
                 else
                 {
                     var starControl = _stars[e.Point];
-                    InvadersHelper.MoveElementOnCanvas(starControl, 
+                    InvadersHelper.MoveElementOnCanvas(starControl,
                         e.Point.X * Scale,
                         e.Point.Y * Scale);
                 }
@@ -176,7 +178,7 @@ namespace Invaders.Wpf.ViewModel
                 else
                 {
                     var shotControl = _shots[e.Shot];
-                    InvadersHelper.MoveElementOnCanvas(shotControl, 
+                    InvadersHelper.MoveElementOnCanvas(shotControl,
                         e.Shot.Location.X * Scale,
                         e.Shot.Location.Y * Scale);
                 }
@@ -197,33 +199,34 @@ namespace Invaders.Wpf.ViewModel
             {
                 if (e.ShipUpdated is Invader)
                 {
-                    Invader invader = e.ShipUpdated as Invader;
+                    var invader = e.ShipUpdated as Invader;
                     if (!_invaders.ContainsKey(invader))
                     {
-                        FrameworkElement fe = InvadersHelper.InvaderControlFactory(invader, Scale);
+                        var fe = InvadersHelper.InvaderControlFactory(invader, Scale);
                         _invaders.Add(invader, fe);
                         _sprites.Add(fe);
                     }
                     else
                     {
-                        FrameworkElement fe = _invaders[invader];
-                        InvadersHelper.MoveElementOnCanvas(fe, 
-                            invader.Location.X * Scale, 
+                        var fe = _invaders[invader];
+                        InvadersHelper.MoveElementOnCanvas(fe,
+                            invader.Location.X * Scale,
                             invader.Location.Y * Scale);
-                        InvadersHelper.ResizeElement(fe, 
-                            invader.Size.Width * Scale, 
+                        InvadersHelper.ResizeElement(fe,
+                            invader.Size.Width * Scale,
                             invader.Size.Height * Scale);
                     }
-                } else if (e.ShipUpdated is Player)
+                }
+                else if (e.ShipUpdated is Player)
                 {
                     if (_playerFlashing)
                     {
-                        AnimatedImage playerControl = _playerControl as AnimatedImage;
+                        var playerControl = _playerControl as AnimatedImage;
                         playerControl?.StopFlashing();
                         _playerFlashing = false;
                     }
-                    
-                    Player player = e.ShipUpdated as Player;
+
+                    var player = e.ShipUpdated as Player;
                     if (_playerControl == null)
                     {
                         _playerControl = InvadersHelper.PlayerControlFactory(player, Scale);
@@ -231,10 +234,10 @@ namespace Invaders.Wpf.ViewModel
                     }
                     else
                     {
-                        InvadersHelper.MoveElementOnCanvas(_playerControl, 
+                        InvadersHelper.MoveElementOnCanvas(_playerControl,
                             player.Location.X * Scale,
                             player.Location.Y * Scale);
-                        InvadersHelper.ResizeElement(_playerControl, 
+                        InvadersHelper.ResizeElement(_playerControl,
                             player.Size.Width * Scale,
                             player.Size.Height * Scale);
                     }
@@ -244,37 +247,34 @@ namespace Invaders.Wpf.ViewModel
             {
                 if (e.ShipUpdated is Invader)
                 {
-                    Invader invader = e.ShipUpdated as Invader;
+                    var invader = e.ShipUpdated as Invader;
                     if (!_invaders.ContainsKey(invader)) return;
-                    AnimatedImage invaderControl = _invaders[invader] as AnimatedImage;
+                    var invaderControl = _invaders[invader] as AnimatedImage;
                     if (invaderControl != null)
                     {
                         invaderControl.InvaderShot();
                         _shotInvaders[invaderControl] = DateTime.Now;
                         _invaders.Remove(invader);
                     }
-                } else if (e.ShipUpdated is Player)
+                }
+                else if (e.ShipUpdated is Player)
                 {
-                    AnimatedImage playerControl = (AnimatedImage) _playerControl;
+                    var playerControl = (AnimatedImage) _playerControl;
                     playerControl.StartFlashing();
                     _playerFlashing = true;
                 }
             }
         }
-        
+
         private void RecreateScanLines()
         {
             foreach (var scanLine in _scanLines)
-            {
                 if (_sprites.Contains(scanLine))
-                {
                     _sprites.Remove(scanLine);
-                }
-            }
             _scanLines.Clear();
-            for (int y = 0; y < 300; y+=2)
+            for (var y = 0; y < 300; y += 2)
             {
-                FrameworkElement scanLine = InvadersHelper.ScanLineFactory(y, 400, Scale);
+                var scanLine = InvadersHelper.ScanLineFactory(y, 400, Scale);
                 _scanLines.Add(scanLine);
                 _sprites.Add(scanLine);
             }
@@ -294,39 +294,22 @@ namespace Invaders.Wpf.ViewModel
             OnPropertyChanged(nameof(GameOver));
             _timer.Start();
         }
-        
+
         internal void KeyDown(Key key)
         {
-            if (key == Key.Space)
-            {
-                _model.FireShot();
-            }
+            if (key == Key.Space) _model.FireShot();
 
-            if (key == Key.Left)
-            {
-                _leftAction = DateTime.Now;
-            }
+            if (key == Key.Left) _leftAction = DateTime.Now;
 
-            if (key == Key.Right)
-            {
-                _rightAction = DateTime.Now;
-            }
+            if (key == Key.Right) _rightAction = DateTime.Now;
         }
 
         internal void KeyUp(Key key)
         {
-            if (key == Key.Left)
-            {
-                _leftAction = null;
-            }
+            if (key == Key.Left) _leftAction = null;
 
-            if (key == Key.Right)
-            {
-                _rightAction = null;
-            }
+            if (key == Key.Right) _rightAction = null;
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

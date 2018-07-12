@@ -11,7 +11,6 @@ namespace Invaders.Wpf.View
 {
     public static class InvadersHelper
     {
-        
         private static readonly Random _random = new Random();
 
         public static IEnumerable<string> CreateImageList(InvaderType invaderType)
@@ -19,29 +18,27 @@ namespace Invaders.Wpf.View
             var filename = "";
             switch (invaderType)
             {
-                    case InvaderType.Bug:
-                        filename = "bug";
-                        break;
-                    case InvaderType.Satellite:
-                        filename = "satellite";
-                        break;
-                    case InvaderType.Saucer:
-                        filename = "flyingsaucer";
-                        break;
-                    case InvaderType.Spaceship:
-                        filename = "spaceship";
-                        break;
-                    case InvaderType.Star:
-                        filename = "star";
-                        break;
-                    default:
-                        throw new ArgumentException(nameof(invaderType));
+                case InvaderType.Bug:
+                    filename = "bug";
+                    break;
+                case InvaderType.Satellite:
+                    filename = "satellite";
+                    break;
+                case InvaderType.Saucer:
+                    filename = "flyingsaucer";
+                    break;
+                case InvaderType.Spaceship:
+                    filename = "spaceship";
+                    break;
+                case InvaderType.Star:
+                    filename = "star";
+                    break;
+                default:
+                    throw new ArgumentException(nameof(invaderType));
             }
-            List<string> nameList = new List<string>();
-            for (int index = 1; index <= 4; index++)
-            {
-                nameList.Add(filename + index + ".png");
-            }
+
+            var nameList = new List<string>();
+            for (var index = 1; index <= 4; index++) nameList.Add(filename + index + ".png");
             nameList.Add(filename + "1.png");
 
             return nameList;
@@ -49,8 +46,8 @@ namespace Invaders.Wpf.View
 
         internal static FrameworkElement InvaderControlFactory(Invader invader, double scale)
         {
-            IEnumerable<string> imageNames = CreateImageList(invader.InvaderType);
-            AnimatedImage invaderControl = new AnimatedImage(imageNames, TimeSpan.FromSeconds(.75));
+            var imageNames = CreateImageList(invader.InvaderType);
+            var invaderControl = new AnimatedImage(imageNames, TimeSpan.FromSeconds(.75));
             invaderControl.Width = invader.Size.Width * scale;
             invaderControl.Height = invader.Size.Height * scale;
             SetCanvasLocation(invaderControl, invader.Location.X * scale, invader.Location.Y * scale);
@@ -59,7 +56,7 @@ namespace Invaders.Wpf.View
 
         internal static FrameworkElement ShotControlFactory(Shot shot, double scale)
         {
-            Rectangle rectangle = new Rectangle();
+            var rectangle = new Rectangle();
             rectangle.Fill = new SolidColorBrush(Colors.Yellow);
             rectangle.Width = Shot.ShotSize.Width * scale;
             rectangle.Height = Shot.ShotSize.Height * scale;
@@ -91,13 +88,13 @@ namespace Invaders.Wpf.View
             }
 
             SetCanvasLocation(star, point.X * scale, point.Y * scale);
-            Canvas.SetZIndex(star, -1000);
+            Panel.SetZIndex(star, -1000);
             return star;
         }
 
         public static FrameworkElement ScanLineFactory(int y, int width, double scale)
         {
-            Rectangle rectangle = new Rectangle();
+            var rectangle = new Rectangle();
             rectangle.Width = width * scale;
             rectangle.Height = 2;
             rectangle.Opacity = .1;
@@ -127,7 +124,7 @@ namespace Invaders.Wpf.View
 
         internal static FrameworkElement PlayerControlFactory(Player player, double scale)
         {
-            AnimatedImage playerControl =
+            var playerControl =
                 new AnimatedImage(new List<string> {"player.png", "player.png"}, TimeSpan.FromSeconds(1));
             playerControl.Width = player.Size.Width * scale;
             playerControl.Height = player.Size.Height * scale;
@@ -143,11 +140,11 @@ namespace Invaders.Wpf.View
 
         public static void MoveElementOnCanvas(FrameworkElement frameworkElement, double toX, double toY)
         {
-            double fromX = Canvas.GetLeft(frameworkElement);
-            double fromY = Canvas.GetTop(frameworkElement);
-            Storyboard storyboard = new Storyboard();
-            DoubleAnimation animationX = CreateDoubleAnimation(frameworkElement, fromX, toX, "(Canvas.Left)");
-            DoubleAnimation animationY = CreateDoubleAnimation(frameworkElement, fromY, toY, "(Canvas.Top)");
+            var fromX = Canvas.GetLeft(frameworkElement);
+            var fromY = Canvas.GetTop(frameworkElement);
+            var storyboard = new Storyboard();
+            var animationX = CreateDoubleAnimation(frameworkElement, fromX, toX, "(Canvas.Left)");
+            var animationY = CreateDoubleAnimation(frameworkElement, fromY, toY, "(Canvas.Top)");
             storyboard.Children.Add(animationX);
             storyboard.Children.Add(animationY);
             storyboard.Begin();
@@ -162,7 +159,7 @@ namespace Invaders.Wpf.View
         public static DoubleAnimation CreateDoubleAnimation(FrameworkElement frameworkElement, double from, double to,
             string propertyToAnimate, TimeSpan timeSpan)
         {
-            DoubleAnimation animation = new DoubleAnimation();
+            var animation = new DoubleAnimation();
             Storyboard.SetTarget(animation, frameworkElement);
             Storyboard.SetTargetProperty(animation, new PropertyPath(propertyToAnimate));
             animation.From = from;
@@ -177,5 +174,4 @@ namespace Invaders.Wpf.View
             if (control.Height != height) control.Height = height;
         }
     }
-    
 }
