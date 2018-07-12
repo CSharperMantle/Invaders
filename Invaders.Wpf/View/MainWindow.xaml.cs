@@ -26,7 +26,7 @@ namespace Invaders.Wpf.View
 
         private void MainWindow_OnSizeChanged(object sender, SizeChangedEventArgs e)
         {
-            UpdatePlayAreaSize(new Size(e.NewSize.Width, e.NewSize.Height));
+            UpdatePlayAreaSize(new Size(e.NewSize.Width, e.NewSize.Height - 160));
         }
 
         private void PlayArea_OnLoaded(object sender, RoutedEventArgs e)
