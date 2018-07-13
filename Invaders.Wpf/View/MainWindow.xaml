@@ -76,7 +76,7 @@
                        FontFamily="Arial Narrow" FontSize="150"
                        Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
                        Margin="0, 0, 0, 60" />
-            <Button x:Name="BeginButton" Content="Start a new game!" Background="DarkSlateGray"
+            <Button x:Name="BeginButton" Content="START NEW" Background="DarkSlateGray"
                     HorizontalAlignment="Center"
                     FontSize="30" Click="BeginButton_OnClick" />
         </StackPanel>
