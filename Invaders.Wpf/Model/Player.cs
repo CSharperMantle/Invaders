@@ -5,7 +5,7 @@ namespace Invaders.Wpf.Model
 {
     public class Player : Ship
     {
-        public const double Speed = 10;
+        public const double PlayerPixelsPerSecond = 8;
         public static readonly Size PlayerSize = new Size(25, 15);
 
         public Player()
@@ -22,11 +22,11 @@ namespace Invaders.Wpf.Model
             {
                 case Direction.Left:
                     if (Location.X > PlayerSize.Width)
-                        Location = new Point(Location.X - Speed, Location.Y);
+                        Location = new Point(Location.X - PlayerPixelsPerSecond, Location.Y);
                     break;
                 case Direction.Right:
                     if (Location.X < InvadersModel.PlayAreaSize.Width - PlayerSize.Width * 2)
-                        Location = new Point(Location.X + Speed, Location.Y);
+                        Location = new Point(Location.X + PlayerPixelsPerSecond, Location.Y);
                     break;
                 default:
                     throw new ArgumentException(nameof(direction));

@@ -58,7 +58,7 @@ namespace Invaders.Wpf.ViewModel
             _model.NextWaveGenerated += ModelNextWaveGeneratedEventHandler;
             _model.GameLost += ModelGameLostHandler;
 
-            _timer.Interval = TimeSpan.FromMilliseconds(100);
+            _timer.Interval = TimeSpan.FromMilliseconds(85);
             _timer.Tick += TimerTickEventHandler;
 
             EndGame();

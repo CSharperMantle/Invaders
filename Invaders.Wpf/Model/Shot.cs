@@ -5,7 +5,7 @@ namespace Invaders.Wpf.Model
 {
     public class Shot
     {
-        public const double ShotPixelsPerSecond = 95;
+        public const double ShotPixelsPerSecond = 80;
         public static Size ShotSize = new Size(2, 10);
 
         private DateTime _lastMoved;
