@@ -9,7 +9,7 @@
         SizeChanged="MainWindow_OnSizeChanged"
         KeyDown="MainWindow_OnKeyDown"
         KeyUp="MainWindow_OnKeyUp"
-        Title="MainWindow" Height="300" Width="540" Background="DarkSlateGray">
+        Title="Invaders" Height="300" Width="540" Background="DarkSlateGray">
     <Window.Resources>
         <viewModel:InvadersViewModel x:Key="ViewModel" />
         <viewModel:BooleanVisibiltyConverter x:Key="VisibiltyConverter" />
@@ -44,7 +44,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="1" Text="Invaders"
-                       HorizontalAlignment="Left" Margin="80, 10, 0, 0"
+                       HorizontalAlignment="Left" Margin="80, 15, 0, 0"
                        FontFamily="Microsoft YaHei UI" FontSize="60" FontWeight="Light"
                        Foreground="White" />
         </Grid>
