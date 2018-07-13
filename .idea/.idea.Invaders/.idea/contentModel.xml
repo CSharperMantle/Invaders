@@ -9,6 +9,7 @@
         <e p="App.xaml" t="Include" />
         <e p="App.xaml.cs" t="Include" />
         <e p="Assets" t="Include">
+          <e p="3-2-1.wav" t="Include" />
           <e p="Bee_animation_1.png" t="Include" />
           <e p="Bee_animation_2.png" t="Include" />
           <e p="Bee_animation_3.png" t="Include" />
@@ -18,10 +19,18 @@
           <e p="bug2.png" t="Include" />
           <e p="bug3.png" t="Include" />
           <e p="bug4.png" t="Include" />
+          <e p="charge.wav" t="Include" />
+          <e p="endauto.wav" t="Include" />
+          <e p="endauto_with_warning.wav" t="Include" />
+          <e p="endmatch.wav" t="Include" />
+          <e p="factwhistle.wav" t="Include" />
+          <e p="firebell.wav" t="Include" />
           <e p="flyingsaucer1.png" t="Include" />
           <e p="flyingsaucer2.png" t="Include" />
           <e p="flyingsaucer3.png" t="Include" />
           <e p="flyingsaucer4.png" t="Include" />
+          <e p="fogblast.wav" t="Include" />
+          <e p="Pick_Up_Controllers.wav" t="Include" />
           <e p="player.png" t="Include" />
           <e p="satellite1.png" t="Include" />
           <e p="satellite2.png" t="Include" />

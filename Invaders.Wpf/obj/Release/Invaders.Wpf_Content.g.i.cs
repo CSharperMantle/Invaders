@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/3-2-1.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bee_animation_1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bee_animation_2.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bee_animation_3.png")]
@@ -17,10 +18,18 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bug2.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bug3.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/bug4.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/charge.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/endauto.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/endauto_with_warning.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/endmatch.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/factwhistle.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/firebell.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/flyingsaucer1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/flyingsaucer2.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/flyingsaucer3.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/flyingsaucer4.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/fogblast.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/pick_up_controllers.wav")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/player.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/satellite1.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/satellite2.png")]

@@ -1,6 +1,11 @@
 using System;
+using System.IO;
+using System.Media;
+using System.Threading;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using Invaders.Wpf.ViewModel;
 
 namespace Invaders.Wpf.View
@@ -16,12 +21,26 @@ namespace Invaders.Wpf.View
         {
             InitializeComponent();
 
-            object vm = Resources["ViewModel"];
-            var model = vm as InvadersViewModel;
-            if (model != null)
+            var viewModel = Resources["ViewModel"] as InvadersViewModel;
+            if (viewModel != null)
             {
-                _viewModel = model;
+                _viewModel = viewModel;
             }
+
+            _viewModel.NextWaveGenerated += ViewModelNextWaveGeneratedEventHandler;
+        }
+
+        private void ViewModelNextWaveGeneratedEventHandler(object sender, EventArgs e)
+        {
+            var t = new Thread(() =>
+            {
+                using (Stream music = File.OpenRead("./Assets/charge.wav"))
+                using (SoundPlayer player = new SoundPlayer(music))
+                {
+                    player.PlaySync();
+                }
+            });
+            t.Start();
         }
 
         private void MainWindow_OnSizeChanged(object sender, SizeChangedEventArgs e)
@@ -72,5 +91,6 @@ namespace Invaders.Wpf.View
         {
             _viewModel.StartGame();
         }
+
     }
 }

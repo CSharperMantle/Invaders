@@ -155,6 +155,7 @@ namespace Invaders.Wpf.Model
 
         private void NextWave()
         {
+            OnNextWave();
             Waves++;
             _invaders.Clear();
             for (var row = 0; row <= 5; row++)
@@ -390,6 +391,14 @@ namespace Invaders.Wpf.Model
         {
             EventHandler<ShotMovedEventArgs> shotMoved = ShotMoved;
             shotMoved?.Invoke(this, new ShotMovedEventArgs(shot, disappeared));
+        }
+
+        public event EventHandler NextWaveGenerated;
+
+        private void OnNextWave()
+        {
+            EventHandler nextWave = NextWaveGenerated;
+            nextWave?.Invoke(this, new EventArgs());
         }
     }
 }

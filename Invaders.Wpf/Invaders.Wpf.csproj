@@ -105,6 +105,7 @@
     <Page Include="View\StarControl.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\3-2-1.wav" />
     <Content Include="Assets\Bee_animation_1.png" />
     <Content Include="Assets\Bee_animation_2.png" />
     <Content Include="Assets\Bee_animation_3.png" />
@@ -114,10 +115,18 @@
     <Content Include="Assets\bug2.png" />
     <Content Include="Assets\bug3.png" />
     <Content Include="Assets\bug4.png" />
+    <Content Include="Assets\charge.wav" />
+    <Content Include="Assets\endauto.wav" />
+    <Content Include="Assets\endauto_with_warning.wav" />
+    <Content Include="Assets\endmatch.wav" />
+    <Content Include="Assets\factwhistle.wav" />
+    <Content Include="Assets\firebell.wav" />
     <Content Include="Assets\flyingsaucer1.png" />
     <Content Include="Assets\flyingsaucer2.png" />
     <Content Include="Assets\flyingsaucer3.png" />
     <Content Include="Assets\flyingsaucer4.png" />
+    <Content Include="Assets\fogblast.wav" />
+    <Content Include="Assets\Pick_Up_Controllers.wav" />
     <Content Include="Assets\player.png" />
     <Content Include="Assets\satellite1.png" />
     <Content Include="Assets\satellite2.png" />

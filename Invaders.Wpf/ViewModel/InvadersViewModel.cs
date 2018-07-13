@@ -55,6 +55,7 @@ namespace Invaders.Wpf.ViewModel
             _model.ShipChanged += ModelShipChangedEventHandler;
             _model.ShotMoved += ModelShotMovedEventHandler;
             _model.StarChanged += ModelStarChangedEventHandler;
+            _model.NextWaveGenerated += ModelNextWaveGeneratedEventHandler;
 
             _timer.Interval = TimeSpan.FromMilliseconds(100);
             _timer.Tick += TimerTickEventHandler;
@@ -265,6 +266,11 @@ namespace Invaders.Wpf.ViewModel
                 }
             }
         }
+        
+        private void ModelNextWaveGeneratedEventHandler(object sender, EventArgs e)
+        {
+            OnNextWaveGenerated();
+        }
 
         private void RecreateScanLines()
         {
@@ -315,6 +321,14 @@ namespace Invaders.Wpf.ViewModel
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public event EventHandler NextWaveGenerated;
+
+        private void OnNextWaveGenerated()
+        {
+            EventHandler nextWave = NextWaveGenerated;
+            nextWave?.Invoke(this, new EventArgs());
         }
     }
 }

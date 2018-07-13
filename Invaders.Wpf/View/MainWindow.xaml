@@ -48,7 +48,6 @@
                        FontFamily="Microsoft YaHei UI" FontSize="60" FontWeight="Light"
                        Foreground="White"/>
         </Grid>
-
         <StackPanel Grid.Row="0" HorizontalAlignment="Right" Margin="0, 20, 60, 0">
             <TextBlock Style="{StaticResource GroupHeaderTextStyle}" 
                        Text="{Binding Path=Score}" 
