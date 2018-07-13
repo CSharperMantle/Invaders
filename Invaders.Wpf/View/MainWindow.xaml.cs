@@ -28,6 +28,20 @@ namespace Invaders.Wpf.View
             }
 
             _viewModel.NextWaveGenerated += ViewModelNextWaveGeneratedEventHandler;
+            _viewModel.GameLost += ViewModelGameLostHandler;
+        }
+
+        private void ViewModelGameLostHandler(object sender, EventArgs e)
+        {
+            var t = new Thread(() =>
+            {
+                using (Stream music = File.OpenRead("./Assets/fogblast.wav"))
+                using (SoundPlayer player = new SoundPlayer(music))
+                {
+                    player.PlaySync();
+                }
+            });
+            t.Start();
         }
 
         private void ViewModelNextWaveGeneratedEventHandler(object sender, EventArgs e)

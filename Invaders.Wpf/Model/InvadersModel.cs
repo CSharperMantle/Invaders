@@ -38,6 +38,7 @@ namespace Invaders.Wpf.Model
         public void EndGame()
         {
             GameOver = true;
+            OnGameLost();
         }
 
         public void StartGame()
@@ -399,6 +400,14 @@ namespace Invaders.Wpf.Model
         {
             EventHandler nextWave = NextWaveGenerated;
             nextWave?.Invoke(this, new EventArgs());
+        }
+        
+        public event EventHandler GameLost;
+
+        private void OnGameLost()
+        {
+            EventHandler gameLost = GameLost;
+            gameLost?.Invoke(this, new EventArgs());
         }
     }
 }

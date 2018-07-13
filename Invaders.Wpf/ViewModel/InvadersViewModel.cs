@@ -56,6 +56,7 @@ namespace Invaders.Wpf.ViewModel
             _model.ShotMoved += ModelShotMovedEventHandler;
             _model.StarChanged += ModelStarChangedEventHandler;
             _model.NextWaveGenerated += ModelNextWaveGeneratedEventHandler;
+            _model.GameLost += ModelGameLostHandler;
 
             _timer.Interval = TimeSpan.FromMilliseconds(100);
             _timer.Tick += TimerTickEventHandler;
@@ -271,6 +272,11 @@ namespace Invaders.Wpf.ViewModel
         {
             OnNextWaveGenerated();
         }
+        
+        private void ModelGameLostHandler(object sender, EventArgs e)
+        {
+            OnGameLost();
+        }
 
         private void RecreateScanLines()
         {
@@ -329,6 +335,14 @@ namespace Invaders.Wpf.ViewModel
         {
             EventHandler nextWave = NextWaveGenerated;
             nextWave?.Invoke(this, new EventArgs());
+        }
+        
+        public event EventHandler GameLost;
+
+        private void OnGameLost()
+        {
+            EventHandler gameLost = GameLost;
+            gameLost?.Invoke(this, new EventArgs());
         }
     }
 }
