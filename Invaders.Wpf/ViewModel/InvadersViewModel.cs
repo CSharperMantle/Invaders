@@ -257,6 +257,7 @@ namespace Invaders.Wpf.ViewModel
                         invaderControl.InvaderShot();
                         _shotInvaders[invaderControl] = DateTime.Now;
                         _invaders.Remove(invader);
+                        OnInvaderKilled();
                     }
                 }
                 else if (e.ShipUpdated is Player)
@@ -343,6 +344,14 @@ namespace Invaders.Wpf.ViewModel
         {
             EventHandler gameLost = GameLost;
             gameLost?.Invoke(this, new EventArgs());
+        }
+        
+        public event EventHandler InvaderKilled;
+
+        private void OnInvaderKilled()
+        {
+            EventHandler invaderKilled = InvaderKilled;
+            invaderKilled?.Invoke(this, new EventArgs());
         }
     }
 }
