@@ -257,7 +257,6 @@ namespace Invaders.Wpf.ViewModel
                         invaderControl.InvaderShot();
                         _shotInvaders[invaderControl] = DateTime.Now;
                         _invaders.Remove(invader);
-                        OnInvaderKilled();
                     }
                 }
                 else if (e.ShipUpdated is Player)
@@ -265,15 +264,16 @@ namespace Invaders.Wpf.ViewModel
                     var playerControl = (AnimatedImage) _playerControl;
                     playerControl.StartFlashing();
                     _playerFlashing = true;
+                    OnPlayerShot();
                 }
             }
         }
-        
+
         private void ModelNextWaveGeneratedEventHandler(object sender, EventArgs e)
         {
             OnNextWaveGenerated();
         }
-        
+
         private void ModelGameLostHandler(object sender, EventArgs e)
         {
             OnGameLost();
@@ -334,24 +334,24 @@ namespace Invaders.Wpf.ViewModel
 
         private void OnNextWaveGenerated()
         {
-            EventHandler nextWave = NextWaveGenerated;
+            var nextWave = NextWaveGenerated;
             nextWave?.Invoke(this, new EventArgs());
         }
-        
+
         public event EventHandler GameLost;
 
         private void OnGameLost()
         {
-            EventHandler gameLost = GameLost;
+            var gameLost = GameLost;
             gameLost?.Invoke(this, new EventArgs());
         }
-        
-        public event EventHandler InvaderKilled;
 
-        private void OnInvaderKilled()
+        public event EventHandler PlayerShot;
+
+        private void OnPlayerShot()
         {
-            EventHandler invaderKilled = InvaderKilled;
-            invaderKilled?.Invoke(this, new EventArgs());
+            var playerShot = PlayerShot;
+            playerShot?.Invoke(this, new EventArgs());
         }
     }
 }

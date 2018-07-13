@@ -1,39 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Windows;
-using System.Xaml.Schema;
 
 namespace Invaders.Wpf.Model
 {
     public class InvadersModel
     {
-        public static readonly Size PlayAreaSize = new Size(400, 300);
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 50;
-        private readonly Random _random = new Random();
-        public int Score { get; private set; }
-        public int Waves { get; private set; }
-        public int Lives { get; private set; }
-        public bool GameOver { get; private set; }
-        private DateTime? _playerDied;
-
-        public bool PlayerDying => _playerDied.HasValue;
-
-        private Player _player;
+        public static readonly Size PlayAreaSize = new Size(400, 300);
         private readonly List<Invader> _invaders = new List<Invader>();
-        private readonly List<Shot> _playerShots = new List<Shot>();
         private readonly List<Shot> _invaderShots = new List<Shot>();
+        private readonly List<Shot> _playerShots = new List<Shot>();
+        private readonly Random _random = new Random();
         private readonly List<Point> _stars = new List<Point>();
         private Direction _invaderDirection = Direction.Left;
         private bool _justMovedDown;
         private DateTime _lastUpdated = DateTime.MinValue;
 
+        private Player _player;
+        private DateTime? _playerDied;
+
         public InvadersModel()
         {
             EndGame();
         }
+
+        public int Score { get; private set; }
+        public int Waves { get; private set; }
+        public int Lives { get; private set; }
+        public bool GameOver { get; private set; }
+
+        public bool PlayerDying => _playerDied.HasValue;
 
         public void EndGame()
         {
@@ -67,13 +66,14 @@ namespace Invaders.Wpf.Model
                 OnStarChanged(star, true);
                 _stars.Remove(star);
             }
+
             _player = new Player();
             OnShipChanged(_player, false);
 
             Score = 0;
             Lives = 2;
             Waves = 0;
-            
+
             NextWave();
         }
 
@@ -81,8 +81,8 @@ namespace Invaders.Wpf.Model
         {
             if (_playerShots.Count < MaximumPlayerShots)
             {
-                Point location = new Point(_player.Location.X + _player.Area.Width / 2, _player.Location.Y);
-                Shot shot = new Shot(location, Direction.Up);
+                var location = new Point(_player.Location.X + _player.Area.Width / 2, _player.Location.Y);
+                var shot = new Shot(location, Direction.Up);
                 _playerShots.Add(shot);
                 OnShotMoved(shot, false);
             }
@@ -107,8 +107,8 @@ namespace Invaders.Wpf.Model
 
         private void AddAStar()
         {
-            var point = new Point(_random.Next((int)PlayAreaSize.Width), 
-                _random.Next(20, (int)PlayAreaSize.Height) - 20);
+            var point = new Point(_random.Next((int) PlayAreaSize.Width),
+                _random.Next(20, (int) PlayAreaSize.Height) - 20);
             if (_stars.Contains(point)) return;
             _stars.Add(point);
             OnStarChanged(point, false);
@@ -126,7 +126,7 @@ namespace Invaders.Wpf.Model
         {
             if (!paused)
             {
-                if (!_invaders.Any()) 
+                if (!_invaders.Any())
                     NextWave();
                 if (!PlayerDying)
                 {
@@ -142,9 +142,10 @@ namespace Invaders.Wpf.Model
                     OnShipChanged(_player, false);
                 }
             }
+
             Twinkle();
         }
-        
+
         public void UpdateAllShipsAndStars()
         {
             foreach (var invader in _invaders) OnShipChanged(invader, false);
@@ -160,50 +161,48 @@ namespace Invaders.Wpf.Model
             Waves++;
             _invaders.Clear();
             for (var row = 0; row <= 5; row++)
-                for (var column = 0; column < 11; column++)
+            for (var column = 0; column < 11; column++)
+            {
+                var location = new Point(column * Invader.InvaderSize.Width * 1.4,
+                    row * Invader.InvaderSize.Height * 1.4);
+                Invader invader;
+                switch (row)
                 {
-                    var location = new Point(column * Invader.InvaderSize.Width * 1.4, 
-                       row * Invader.InvaderSize.Height * 1.4);
-                    Invader invader;
-                    switch (row)
-                    {
-                            case 0:
-                                invader = new Invader(location, InvaderType.Spaceship);
-                                break;
-                            case 1:
-                                invader = new Invader(location, InvaderType.Bug);
-                                break;
-                            case 2:
-                                invader = new Invader(location, InvaderType.Saucer);
-                                break;
-                            case 3:
-                                invader = new Invader(location, InvaderType.Satellite);
-                                break;
-                            case 4:
-                                invader = new Invader(location, InvaderType.Star);
-                                break;
-                            case 5:
-                                invader = new Invader(location, InvaderType.Star);
-                                break;
-                            default:
-                                throw new ArgumentOutOfRangeException(nameof(row));
-                    }
-                    _invaders.Add(invader);
-                    OnShipChanged(invader, false);
+                    case 0:
+                        invader = new Invader(location, InvaderType.Spaceship);
+                        break;
+                    case 1:
+                        invader = new Invader(location, InvaderType.Bug);
+                        break;
+                    case 2:
+                        invader = new Invader(location, InvaderType.Saucer);
+                        break;
+                    case 3:
+                        invader = new Invader(location, InvaderType.Satellite);
+                        break;
+                    case 4:
+                        invader = new Invader(location, InvaderType.Star);
+                        break;
+                    case 5:
+                        invader = new Invader(location, InvaderType.Star);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(row));
                 }
+
+                _invaders.Add(invader);
+                OnShipChanged(invader, false);
+            }
         }
 
         private void CheckForPlayerCollisions()
         {
-            bool removeAllShots = false;
-            var result = 
-                from invader in _invaders 
-                where invader.Area.Bottom > _player.Area.Top + _player.Size.Height 
+            var removeAllShots = false;
+            var result =
+                from invader in _invaders
+                where invader.Area.Bottom > _player.Area.Top + _player.Size.Height
                 select invader;
-            if (result.Any())
-            {
-                EndGame();
-            }
+            if (result.Any()) EndGame();
 
             var shotsHit =
                 from shot in _invaderShots
@@ -225,19 +224,17 @@ namespace Invaders.Wpf.Model
             }
 
             if (removeAllShots)
-            {
                 foreach (var shot in _invaderShots.ToList())
                 {
                     _invaderShots.Remove(shot);
                     OnShotMoved(shot, true);
                 }
-            }
         }
 
         private void CheckForInvaderCollisions()
         {
-            List<Shot> hitShots = new List<Shot>();
-            List<Invader> shotInvaders = new List<Invader>();
+            var hitShots = new List<Shot>();
+            var shotInvaders = new List<Invader>();
             foreach (var shot in _playerShots)
             {
                 var result =
@@ -245,13 +242,11 @@ namespace Invaders.Wpf.Model
                     where invader.Area.Contains(shot.Location)
                     select new {KilledInvader = invader, HitShot = shot};
                 if (result.ToList().Any())
-                {
                     foreach (var each in result.ToList())
                     {
                         hitShots.Add(each.HitShot);
                         shotInvaders.Add(each.KilledInvader);
                     }
-                }
             }
 
             foreach (var deadInvader in shotInvaders)
@@ -270,7 +265,7 @@ namespace Invaders.Wpf.Model
 
         private void MoveInvaders()
         {
-            var timeGap = Math.Min(10 - Waves, 1) * (2 * _invaders.Count);
+            var timeGap = Math.Min(10 - Waves, 1) * 2 * _invaders.Count;
             if (DateTime.Now - _lastUpdated > TimeSpan.FromMilliseconds(timeGap))
             {
                 _lastUpdated = DateTime.Now;
@@ -281,7 +276,7 @@ namespace Invaders.Wpf.Model
                     select invader;
                 var invadersTouchingRight =
                     from invader in _invaders
-                    where invader.Area.Right > PlayAreaSize.Width - (Invader.HorizontalInterval * 2)
+                    where invader.Area.Right > PlayAreaSize.Width - Invader.HorizontalInterval * 2
                     select invader;
 
                 if (!_justMovedDown)
@@ -295,7 +290,8 @@ namespace Invaders.Wpf.Model
                         }
 
                         _invaderDirection = Direction.Right;
-                    } else if (invadersTouchingRight.Any())
+                    }
+                    else if (invadersTouchingRight.Any())
                     {
                         foreach (var invader in _invaders)
                         {
@@ -322,8 +318,17 @@ namespace Invaders.Wpf.Model
 
         private void MoveShots()
         {
-            foreach (var shot in _playerShots) { shot.Move(); OnShotMoved(shot, false); }  
-            foreach (var shot in _invaderShots) { shot.Move(); OnShotMoved(shot, false); }
+            foreach (var shot in _playerShots)
+            {
+                shot.Move();
+                OnShotMoved(shot, false);
+            }
+
+            foreach (var shot in _invaderShots)
+            {
+                shot.Move();
+                OnShotMoved(shot, false);
+            }
 
             var outOfBoundPlayerShots =
                 from playerShot in _playerShots
@@ -336,17 +341,17 @@ namespace Invaders.Wpf.Model
 
             foreach (var shot in outOfBoundInvaderShots.ToList())
             {
-                _invaderShots.Remove(shot); 
+                _invaderShots.Remove(shot);
                 OnShotMoved(shot, true);
             }
 
             foreach (var shot in outOfBoundPlayerShots.ToList())
             {
-                _playerShots.Remove(shot); 
+                _playerShots.Remove(shot);
                 OnShotMoved(shot, true);
             }
         }
-        
+
         private void ReturnFire()
         {
             if (!_invaders.Any()) return;
@@ -363,18 +368,19 @@ namespace Invaders.Wpf.Model
 
             var randomGroup = avaliableInvaderGroups.ElementAt(_random.Next(avaliableInvaderGroups.ToList().Count));
             var bottomInvader = randomGroup.Last();
-            
-            Point shotLocation = new Point(bottomInvader.Area.X + bottomInvader.Area.Width / 2, bottomInvader.Area.Bottom + 2);
+
+            var shotLocation = new Point(bottomInvader.Area.X + bottomInvader.Area.Width / 2,
+                bottomInvader.Area.Bottom + 2);
             var newShot = new Shot(shotLocation, Direction.Down);
             _invaderShots.Add(newShot);
             OnShotMoved(newShot, false);
         }
-        
+
         public event EventHandler<StarChangedEventArgs> StarChanged;
 
         private void OnStarChanged(Point point, bool disappeared)
         {
-            EventHandler<StarChangedEventArgs> starChanged = StarChanged;
+            var starChanged = StarChanged;
             starChanged?.Invoke(this, new StarChangedEventArgs(point, disappeared));
         }
 
@@ -382,7 +388,7 @@ namespace Invaders.Wpf.Model
 
         private void OnShipChanged(Ship ship, bool killed)
         {
-            EventHandler<ShipChangedEventArgs> shipChanged = ShipChanged;
+            var shipChanged = ShipChanged;
             shipChanged?.Invoke(this, new ShipChangedEventArgs(ship, killed));
         }
 
@@ -390,7 +396,7 @@ namespace Invaders.Wpf.Model
 
         private void OnShotMoved(Shot shot, bool disappeared)
         {
-            EventHandler<ShotMovedEventArgs> shotMoved = ShotMoved;
+            var shotMoved = ShotMoved;
             shotMoved?.Invoke(this, new ShotMovedEventArgs(shot, disappeared));
         }
 
@@ -398,15 +404,15 @@ namespace Invaders.Wpf.Model
 
         private void OnNextWave()
         {
-            EventHandler nextWave = NextWaveGenerated;
+            var nextWave = NextWaveGenerated;
             nextWave?.Invoke(this, new EventArgs());
         }
-        
+
         public event EventHandler GameLost;
 
         private void OnGameLost()
         {
-            EventHandler gameLost = GameLost;
+            var gameLost = GameLost;
             gameLost?.Invoke(this, new EventArgs());
         }
     }

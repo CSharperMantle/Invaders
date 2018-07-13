@@ -3,41 +3,36 @@ using System.IO;
 using System.Media;
 using System.Threading;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using Invaders.Wpf.ViewModel;
 
 namespace Invaders.Wpf.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    ///     Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow
     {
         private readonly InvadersViewModel _viewModel;
-        
+
         public MainWindow()
         {
             InitializeComponent();
 
             var viewModel = Resources["ViewModel"] as InvadersViewModel;
-            if (viewModel != null)
-            {
-                _viewModel = viewModel;
-            }
+            if (viewModel != null) _viewModel = viewModel;
 
             _viewModel.NextWaveGenerated += ViewModelNextWaveGeneratedEventHandler;
-            _viewModel.GameLost += ViewModelGameLostHandler;
-            _viewModel.InvaderKilled += ViewModelInvaderKilledEventArgs;
+            _viewModel.GameLost += ViewModelGameLostEventHandler;
+            _viewModel.PlayerShot += ViewModelPlayerShotEventHandler;
         }
 
-        private void ViewModelInvaderKilledEventArgs(object sender, EventArgs e)
+        private void ViewModelPlayerShotEventHandler(object sender, EventArgs e)
         {
             var t = new Thread(() =>
             {
                 using (Stream music = File.OpenRead("./Assets/factwhistle.wav"))
-                using (SoundPlayer player = new SoundPlayer(music))
+                using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
                 }
@@ -45,12 +40,12 @@ namespace Invaders.Wpf.View
             t.Start();
         }
 
-        private void ViewModelGameLostHandler(object sender, EventArgs e)
+        private void ViewModelGameLostEventHandler(object sender, EventArgs e)
         {
             var t = new Thread(() =>
             {
                 using (Stream music = File.OpenRead("./Assets/fogblast.wav"))
-                using (SoundPlayer player = new SoundPlayer(music))
+                using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
                 }
@@ -63,7 +58,7 @@ namespace Invaders.Wpf.View
             var t = new Thread(() =>
             {
                 using (Stream music = File.OpenRead("./Assets/charge.wav"))
-                using (SoundPlayer player = new SoundPlayer(music))
+                using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
                 }
@@ -89,14 +84,14 @@ namespace Invaders.Wpf.View
             {
                 targetWidth = newSize.Height * 4 / 3;
                 targetHeight = newSize.Height;
-                double leftRightMargin = (newSize.Width - targetWidth) / 2;
+                var leftRightMargin = (newSize.Width - targetWidth) / 2;
                 PlayArea.Margin = new Thickness(leftRightMargin, 0, leftRightMargin, 0);
             }
             else
             {
                 targetHeight = newSize.Width * 4 / 3;
                 targetWidth = newSize.Width;
-                double topBottoMarginMargin = (newSize.Height - targetHeight) / 2;
+                var topBottoMarginMargin = (newSize.Height - targetHeight) / 2;
                 PlayArea.Margin = new Thickness(0, topBottoMarginMargin, 0, topBottoMarginMargin);
             }
 
@@ -119,6 +114,5 @@ namespace Invaders.Wpf.View
         {
             _viewModel.StartGame();
         }
-
     }
 }

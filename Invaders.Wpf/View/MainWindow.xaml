@@ -12,80 +12,80 @@
         Title="MainWindow" Height="300" Width="540" Background="DarkSlateGray">
     <Window.Resources>
         <viewModel:InvadersViewModel x:Key="ViewModel" />
-        <viewModel:BooleanVisibiltyConverter x:Key="VisibiltyConverter"/>
+        <viewModel:BooleanVisibiltyConverter x:Key="VisibiltyConverter" />
         <Style x:Key="GroupHeaderTextStyle" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
-            <Setter Property="TextTrimming" Value="WordEllipsis"/>
-            <Setter Property="TextWrapping" Value="NoWrap"/>
-            <Setter Property="Foreground" Value="Bisque"/>
-            <Setter Property="Typography.StylisticSet20" Value="True"/>
-            <Setter Property="Typography.DiscretionaryLigatures" Value="True"/>
-            <Setter Property="Typography.CaseSensitiveForms" Value="True"/>
-            <Setter Property="FontSize" Value="26.667"/>
-            <Setter Property="LineStackingStrategy" Value="BlockLineHeight"/>
-            <Setter Property="FontWeight" Value="Light"/>
-            <Setter Property="LineHeight" Value="30"/>
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI" />
+            <Setter Property="TextTrimming" Value="WordEllipsis" />
+            <Setter Property="TextWrapping" Value="NoWrap" />
+            <Setter Property="Foreground" Value="Bisque" />
+            <Setter Property="Typography.StylisticSet20" Value="True" />
+            <Setter Property="Typography.DiscretionaryLigatures" Value="True" />
+            <Setter Property="Typography.CaseSensitiveForms" Value="True" />
+            <Setter Property="FontSize" Value="26.667" />
+            <Setter Property="LineStackingStrategy" Value="BlockLineHeight" />
+            <Setter Property="FontWeight" Value="Light" />
+            <Setter Property="LineHeight" Value="30" />
             <Setter Property="RenderTransform">
                 <Setter.Value>
-                    <TranslateTransform X="-1" Y="6"/>
+                    <TranslateTransform X="-1" Y="6" />
                 </Setter.Value>
             </Setter>
         </Style>
     </Window.Resources>
-    
+
     <Grid DataContext="{StaticResource ViewModel}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="1" Text="Invaders"
                        HorizontalAlignment="Left" Margin="80, 10, 0, 0"
                        FontFamily="Microsoft YaHei UI" FontSize="60" FontWeight="Light"
-                       Foreground="White"/>
+                       Foreground="White" />
         </Grid>
         <StackPanel Grid.Row="0" HorizontalAlignment="Right" Margin="0, 20, 60, 0">
-            <TextBlock Style="{StaticResource GroupHeaderTextStyle}" 
-                       Text="{Binding Path=Score}" 
-                       HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
-            <TextBlock Style="{StaticResource GroupHeaderTextStyle}" 
-                       Text="{Binding Path=LivesValue}" 
-                       HorizontalAlignment="Right" Margin="0, 0, 15, 0"/>
+            <TextBlock Style="{StaticResource GroupHeaderTextStyle}"
+                       Text="{Binding Path=Score}"
+                       HorizontalAlignment="Right" Margin="0, 0, 15, 0" />
+            <TextBlock Style="{StaticResource GroupHeaderTextStyle}"
+                       Text="{Binding Path=LivesValue}"
+                       HorizontalAlignment="Right" Margin="0, 0, 15, 0" />
         </StackPanel>
-        
-        <Border x:Name="PlayArea" Grid.Row="1" BorderBrush="Blue" BorderThickness="2" 
-                CornerRadius="10" Background="Black" Margin="10"  Loaded="PlayArea_OnLoaded">
-            <ItemsControl 
+
+        <Border x:Name="PlayArea" Grid.Row="1" BorderBrush="Blue" BorderThickness="2"
+                CornerRadius="10" Background="Black" Margin="10" Loaded="PlayArea_OnLoaded">
+            <ItemsControl
                 ItemsSource="{Binding Path=Sprites}"
                 Margin="5">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <Canvas Background="Black"/>
+                        <Canvas Background="Black" />
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
         </Border>
-        
+
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Visibility="{Binding GameOver, Converter={StaticResource VisibiltyConverter}}">
             <TextBlock Text="Game Over" VerticalAlignment="Center"
                        FontFamily="Arial Narrow" FontSize="150"
                        Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
-                       Margin="0, 0, 0, 60"/>
-            <Button x:Name="BeginButton" Content="Start a new game!" Background="DarkSlateGray" 
-                    HorizontalAlignment="Center" 
+                       Margin="0, 0, 0, 60" />
+            <Button x:Name="BeginButton" Content="Start a new game!" Background="DarkSlateGray"
+                    HorizontalAlignment="Center"
                     FontSize="30" Click="BeginButton_OnClick" />
         </StackPanel>
-        
+
         <TextBlock Grid.Row="1" Text="Paused" VerticalAlignment="Center"
                    FontFamily="Arial Narrow" FontSize="60"
                    Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
                    Margin="120, 0, 0, 60"
-                   Visibility="{Binding Paused, Converter={StaticResource VisibiltyConverter}}"/>
-        
+                   Visibility="{Binding Paused, Converter={StaticResource VisibiltyConverter}}" />
+
     </Grid>
 </Window>

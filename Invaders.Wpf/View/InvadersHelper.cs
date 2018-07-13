@@ -11,6 +11,12 @@ namespace Invaders.Wpf.View
 {
     public static class InvadersHelper
     {
+        public enum MediaType
+        {
+            NextWave,
+            EndGame
+        }
+
         private static readonly Random _random = new Random();
 
         public static IEnumerable<string> CreateImageList(InvaderType invaderType)
@@ -44,29 +50,24 @@ namespace Invaders.Wpf.View
             return nameList;
         }
 
-        public enum MediaType
-        {
-            NextWave,
-            EndGame,
-        }
-        
         public static Uri GetMediaFileName(MediaType mediaType)
         {
             var filename = "";
             switch (mediaType)
             {
-                    case MediaType.NextWave:
-                        filename = "charge.wav";
-                        break;
-                    case MediaType.EndGame:
-                        filename = "fogblast.wav";
-                        break;
-                    default:
-                        throw new ArgumentException(nameof(mediaType));
+                case MediaType.NextWave:
+                    filename = "charge.wav";
+                    break;
+                case MediaType.EndGame:
+                    filename = "fogblast.wav";
+                    break;
+                default:
+                    throw new ArgumentException(nameof(mediaType));
             }
+
             return new Uri("/Assets/" + filename, UriKind.Relative);
         }
-        
+
         internal static FrameworkElement InvaderControlFactory(Invader invader, double scale)
         {
             var imageNames = CreateImageList(invader.InvaderType);
