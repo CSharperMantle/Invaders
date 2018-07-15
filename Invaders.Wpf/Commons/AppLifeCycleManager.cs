@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Invaders.Wpf.Commons
 {
-    class AppLifeCycleManager
+    public class AppLifeCycleManager
     {
         private HistoryData _historyData;
 

@@ -53,10 +53,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <!--No namespace-->
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <!--Namespace Invaders.Wpf.Model-->
     <Compile Include="Model\Direction.cs" />
     <Compile Include="Model\Invader.cs" />
     <Compile Include="Model\InvadersModel.cs" />
@@ -67,9 +69,12 @@
     <Compile Include="Model\Shot.cs" />
     <Compile Include="Model\ShotMovedEventArgs.cs" />
     <Compile Include="Model\StarChangedEventArgs.cs" />
+    <!--Namespace Invaders.Wpf.Properties-->
     <Compile Include="Properties\Annotations.cs" />
+    <!--Namespace Invaders.Wpf.ViewModel-->
     <Compile Include="ViewModel\BooleanVisibiltyConverter.cs" />
     <Compile Include="ViewModel\InvadersViewModel.cs" />
+    <!--Namespace Invaders.Wpf.View-->
     <Compile Include="View\AnimatedImage.xaml.cs">
       <DependentUpon>AnimatedImage.xaml</DependentUpon>
     </Compile>
@@ -81,6 +86,9 @@
     <Compile Include="View\StarControl.xaml.cs">
       <DependentUpon>StarControl.xaml</DependentUpon>
     </Compile>
+    <!--Namespace Invaders.Wpf.Commons-->
+    <Compile Include="Commons\AppLifeCycleManager.cs"/>
+    <Compile Include="Commons\HistoryData.cs"/>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
