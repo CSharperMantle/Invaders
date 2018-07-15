@@ -5,6 +5,6 @@
              xmlns:commons="clr-namespace:Invaders.Wpf.Commons"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-        <commons:AppLifeCycleManager x:Key="AppLifeCycleManager"/>
+    
     </Application.Resources>
 </Application>

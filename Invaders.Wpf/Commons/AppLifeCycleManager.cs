@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Invaders.Wpf.Commons
 {
@@ -11,10 +10,20 @@ namespace Invaders.Wpf.Commons
 
         public void OnAppActivated(object sender, EventArgs e)
         {
-            using (Stream readerStream = File.OpenRead("./Config/HistoryData.dat"))
+            if (!File.Exists("./Config/HistoryData.xml"))
             {
-                BinaryFormatter binaryFormatter = new BinaryFormatter();
-                var obj = binaryFormatter.Deserialize(readerStream);
+                _historyData = new HistoryData() { 
+                    HighestScore = 0,
+                    PlayedTime = 0,
+                    KilledInvaders = 0,
+                    WinTime = 0,
+                };
+                return;
+            }
+            using (Stream readerStream = File.OpenRead("./Config/HistoryData.xml"))
+            {
+                DataContractSerializer dcSerializer = new DataContractSerializer(typeof(HistoryData));
+                var obj = dcSerializer.ReadObject(readerStream);
                 if (obj is HistoryData)
                 {
                     _historyData = obj as HistoryData;
@@ -27,7 +36,12 @@ namespace Invaders.Wpf.Commons
 
         public void OnAppDeactivated(object sender, EventArgs e)
         {
-            
+            if (_historyData == null){ return; }
+            using (Stream writerStream = File.OpenWrite("./Config/HistoryData.xml"))
+            {
+                DataContractSerializer dcSerializer = new DataContractSerializer(typeof(HistoryData));
+                dcSerializer.WriteObject(writerStream, _historyData);
+            }
         }
     }
 }
