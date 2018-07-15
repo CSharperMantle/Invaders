@@ -42,8 +42,8 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Runtime.Serialization"/>
-    <Reference Include="System.Runtime.Serialization.Formatters.Soap"/>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -87,8 +87,9 @@
       <DependentUpon>StarControl.xaml</DependentUpon>
     </Compile>
     <!--Namespace Invaders.Wpf.Commons-->
-    <Compile Include="Commons\AppLifeCycleManager.cs"/>
-    <Compile Include="Commons\HistoryData.cs"/>
+    <Complle Include="Commons\Log.cs" />
+    <Compile Include="Commons\AppLifeCycleManager.cs" />
+    <Compile Include="Commons\HistoryData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -10,8 +10,10 @@ namespace Invaders.Wpf.Commons
 
         public void OnAppActivated(object sender, EventArgs e)
         {
+            Log.Info("Loading HistoryData.xml");
             if (!File.Exists("./Config/HistoryData.xml"))
             {
+                Log.Warning("HistoryData.xml not exists!");
                 _historyData = new HistoryData() { 
                     HighestScore = 0,
                     PlayedTime = 0,
@@ -36,6 +38,7 @@ namespace Invaders.Wpf.Commons
 
         public void OnAppDeactivated(object sender, EventArgs e)
         {
+            Log.Info("Writing HistoryData.xml");
             if (_historyData == null){ return; }
             using (Stream writerStream = File.OpenWrite("./Config/HistoryData.xml"))
             {
