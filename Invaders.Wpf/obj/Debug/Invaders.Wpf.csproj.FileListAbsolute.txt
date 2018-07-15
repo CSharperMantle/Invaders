@@ -32,7 +32,6 @@ K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\obj\Debug\Invaders.Wpf.pdb
 K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\bin\Debug\Invaders.Wpf.exe.config
 K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\bin\Debug\Invaders.Wpf.exe
 K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\bin\Debug\Invaders.Wpf.pdb
-K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\obj\Debug\App.baml
 K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\obj\Debug\View\AnimatedImage.baml
 K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\obj\Debug\View\MainWindow.baml
 K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\obj\Debug\View\StarControl.baml
