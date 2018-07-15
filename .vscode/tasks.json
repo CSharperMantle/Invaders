@@ -10,7 +10,8 @@
             "args": [
                 // Ask msbuild to generate full paths for file names.
                 "/property:GenerateFullPaths=true",
-                "/t:build"
+                "/t:build",
+                "/m"
             ],
             "group": "build",
             "presentation": {
