@@ -2,7 +2,7 @@ using System;
 
 namespace Invaders.Wpf.Commons
 {
-    public class Log
+    public static class Log
     {
         public static void Info(string message)
         {
