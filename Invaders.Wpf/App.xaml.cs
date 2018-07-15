@@ -10,18 +10,7 @@ namespace Invaders.Wpf
     {
         public App() : base()
         {
-            this.Activated += this.ApplicationActivedEventHandler;
-            this.Deactivated += this.ApplicationDeactivedEventHandler;
-        }
-
-        private void ApplicationActivedEventHandler(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ApplicationDeactivedEventHandler(object sender, EventArgs e)
-        {
-
+            
         }
     }
 }

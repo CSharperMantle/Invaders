@@ -42,6 +42,8 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Runtime.Serialization"/>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap"/>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
