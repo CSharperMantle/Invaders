@@ -59,6 +59,7 @@
       <SubType>Code</SubType>
     </Compile>
     <!--Namespace Invaders.Wpf.Model-->
+    <Compile Include="Commons\Log.cs" />
     <Compile Include="Model\Direction.cs" />
     <Compile Include="Model\Invader.cs" />
     <Compile Include="Model\InvadersModel.cs" />
@@ -87,7 +88,6 @@
       <DependentUpon>StarControl.xaml</DependentUpon>
     </Compile>
     <!--Namespace Invaders.Wpf.Commons-->
-    <Complle Include="Commons\Log.cs" />
     <Compile Include="Commons\AppLifeCycleManager.cs" />
     <Compile Include="Commons\HistoryData.cs" />
   </ItemGroup>

@@ -50,6 +50,11 @@
           <e p="watchit4.png" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Commons" t="Include">
+          <e p="AppLifeCycleManager.cs" t="Include" />
+          <e p="HistoryData.cs" t="Include" />
+          <e p="Log.cs" t="Include" />
+        </e>
         <e p="Invaders.Wpf.csproj" t="IncludeRecursive" />
         <e p="Model" t="Include">
           <e p="Direction.cs" t="Include" />

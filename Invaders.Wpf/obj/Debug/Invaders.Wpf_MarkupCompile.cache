@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\obj\Debug\
+W:\Workspace\RiderProjects\Invaders\Invaders.Wpf\obj\Debug\
 Invaders.Wpf
 none
 false
 DEBUG;TRACE
-K:\Workspace\Projects\Invaders\Invaders\Invaders.Wpf\App.xaml
+W:\Workspace\RiderProjects\Invaders\Invaders.Wpf\App.xaml
 31462839589
 40-1002383136
-22416058442
+23-1949332062
 12-1370549821
 View\AnimatedImage.xaml;View\MainWindow.xaml;View\StarControl.xaml;
 
-True
+False
 
