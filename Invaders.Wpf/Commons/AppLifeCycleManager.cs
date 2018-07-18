@@ -14,11 +14,11 @@ namespace Invaders.Wpf.Commons
             if (!File.Exists("./Config/HistoryData.xml"))
             {
                 Log.Warning("HistoryData.xml not exists!");
-                _historyData = new HistoryData() { 
+                _historyData = new HistoryData { 
                     HighestScore = 0,
                     PlayedTime = 0,
                     KilledInvaders = 0,
-                    WinTime = 0,
+                    WinTime = 0
                 };
                 return;
             }
@@ -40,6 +40,17 @@ namespace Invaders.Wpf.Commons
         {
             Log.Info("Writing HistoryData.xml");
             if (_historyData == null){ return; }
+
+            if (!File.Exists("./config/HistoryData.xml"))
+            {
+                using (Stream writerStream = File.Create("./Config/HistoryData.xml"))
+                {
+                    DataContractSerializer dcSerializer = new DataContractSerializer(typeof(HistoryData));
+                    dcSerializer.WriteObject(writerStream, _historyData);
+                }
+
+                return;
+            }
             using (Stream writerStream = File.OpenWrite("./Config/HistoryData.xml"))
             {
                 DataContractSerializer dcSerializer = new DataContractSerializer(typeof(HistoryData));
