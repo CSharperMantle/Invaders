@@ -51,13 +51,13 @@
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Commons" t="Include">
-          <e p="AppLifeCycleManager.cs" t="Include" />
-          <e p="HistoryData.cs" t="Include" />
           <e p="Log.cs" t="Include" />
         </e>
         <e p="Invaders.Wpf.csproj" t="IncludeRecursive" />
         <e p="Model" t="Include">
           <e p="Direction.cs" t="Include" />
+          <e p="HistoryData.cs" t="Include" />
+          <e p="ICloneable.cs" t="Include" />
           <e p="Invader.cs" t="Include" />
           <e p="InvadersModel.cs" t="Include" />
           <e p="InvaderType.cs" t="Include" />
@@ -86,7 +86,7 @@
           <e p="StarControl.xaml.cs" t="Include" />
         </e>
         <e p="ViewModel" t="Include">
-          <e p="BooleanVisibiltyConverter.cs" t="Include" />
+          <e p="BooleanVisibilityConverter.cs" t="Include" />
           <e p="InvadersViewModel.cs" t="Include" />
         </e>
       </e>

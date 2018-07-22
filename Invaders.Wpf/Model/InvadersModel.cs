@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using Invaders.Wpf.Commons;
 
@@ -21,6 +21,8 @@ namespace Invaders.Wpf.Model
         private readonly List<Shot> _playerShots = new List<Shot>();
         private readonly Random _random = new Random();
         private readonly List<Point> _stars = new List<Point>();
+
+        private HistoryData _historyData;
         private Direction _invaderDirection = Direction.Left;
         private bool _justMovedDown;
         private DateTime _lastUpdated = DateTime.MinValue;
@@ -28,14 +30,13 @@ namespace Invaders.Wpf.Model
         private Player _player;
         private DateTime? _playerDied;
 
-        private HistoryData _historyData;
-        public HistoryData HistoryData => _historyData.Clone();
-
         public InvadersModel()
         {
             ReadHistoryDataFromFile();
             EndGame();
         }
+
+        public HistoryData HistoryData => _historyData.Clone();
 
         public int Score { get; private set; }
         public int Waves { get; private set; }
@@ -83,7 +84,7 @@ namespace Invaders.Wpf.Model
             _player = new Player();
             OnShipChanged(_player, false);
 
-            _historyData.IncreasePlayedGames(); 
+            _historyData.IncreasePlayedGames();
 
             Score = 0;
             Lives = 2;
@@ -232,7 +233,7 @@ namespace Invaders.Wpf.Model
                     EndGame();
                 }
                 else
-                {   
+                {
                     // Player died but game is not over!
                     _historyData.IncreaseDiedTime();
                     _playerDied = DateTime.Now;
@@ -397,45 +398,39 @@ namespace Invaders.Wpf.Model
 
         private void ReadHistoryDataFromFile()
         {
-            if (!Directory.Exists(HistoryDataDirectory))
-            {
-                Directory.CreateDirectory(HistoryDataDirectory);
-            }
+            if (!Directory.Exists(HistoryDataDirectory)) Directory.CreateDirectory(HistoryDataDirectory);
             if (!File.Exists(HistoryDataFilePath))
             {
                 _historyData = new HistoryData();
                 return;
             }
+
             using (Stream reader = File.OpenRead(HistoryDataFilePath))
             {
                 var serializer = new DataContractJsonSerializer(typeof(HistoryData));
                 var obj = serializer.ReadObject(reader);
                 if (obj is HistoryData)
-                {
                     _historyData = obj as HistoryData;
-                } else {
+                else
                     throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
-                }
             }
         }
 
         private void WriteHistoryDataFromFile()
         {
-            if (_historyData == null) { throw new SerializationException(nameof(_historyData) + " is null."); }
+            if (_historyData == null) throw new SerializationException(nameof(_historyData) + " is null.");
             if (!File.Exists(HistoryDataFilePath))
-            {
                 using (Stream creater = File.Create(HistoryDataFilePath))
                 {
                     var serializer = new DataContractJsonSerializer(typeof(HistoryData));
                     serializer.WriteObject(creater, _historyData);
                 }
-            } else {
+            else
                 using (Stream writer = File.OpenWrite(HistoryDataFilePath))
                 {
                     var serializer = new DataContractJsonSerializer(typeof(HistoryData));
                     serializer.WriteObject(writer, _historyData);
                 }
-            }
         }
 
         public event EventHandler<StarChangedEventArgs> StarChanged;

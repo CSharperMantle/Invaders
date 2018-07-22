@@ -16,7 +16,7 @@ namespace Invaders.Wpf.Model
             Direction = direction;
             _lastMoved = DateTime.Now;
         }
-        
+
         public Point Location { get; private set; }
 
         public Direction Direction { get; }

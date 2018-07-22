@@ -76,10 +76,10 @@
                        FontFamily="Arial Narrow" FontSize="150"
                        Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
                        Margin="0, 0, 0, 60" />
-            <TextBlock Text="New Record!" VerticalAlignment="Center" 
-                        FontFamily="Arial" FontSize="60" 
-                        Foreground="Red" FontWeight="Bold" 
-                        Visibility="{Binding Path=IsHighestScore, Converter={StaticResource VisibilityConverter}}"/>
+            <TextBlock Text="New Record!" VerticalAlignment="Center"
+                       FontFamily="Arial" FontSize="60"
+                       Foreground="Red" FontWeight="Bold"
+                       Visibility="{Binding Path=IsHighestScore, Converter={StaticResource VisibilityConverter}}" />
             <Button x:Name="BeginButton" Content="START" Background="DarkSlateGray"
                     Foreground="Snow"
                     HorizontalAlignment="Center"

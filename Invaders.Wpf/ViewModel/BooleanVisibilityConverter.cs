@@ -18,7 +18,8 @@ namespace Invaders.Wpf.ViewModel
         object IValueConverter.ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             Log.Error("Two-way binding is not supported on " + nameof(BooleanVisibilityConverter));
-            throw new NotSupportedException("Two-way binding is not supported on " + nameof(BooleanVisibilityConverter));
+            throw new NotSupportedException("Two-way binding is not supported on " +
+                                            nameof(BooleanVisibilityConverter));
         }
     }
 }
