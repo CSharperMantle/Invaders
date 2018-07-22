@@ -9,7 +9,7 @@
             "command": "msbuild",
             "args": [
                 // Ask msbuild to generate full paths for file names.
-                "/property:GenerateFullPaths=true",
+                "/property:GenerateFullPaths=true,Configuration=Release,DebugType=none",
                 "/t:build",
                 "/m"
             ],
