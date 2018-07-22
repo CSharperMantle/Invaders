@@ -12,6 +12,7 @@ namespace Invaders.Wpf.Model
     public class InvadersModel
     {
         public const string HistoryDataFilePath = "./config/historydata.json";
+        public const string HistoryDataDirectory = "./config";
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 50;
         public static readonly Size PlayAreaSize = new Size(400, 300);
@@ -396,6 +397,10 @@ namespace Invaders.Wpf.Model
 
         private void ReadHistoryDataFromFile()
         {
+            if (!Directory.Exists(HistoryDataDirectory))
+            {
+                Directory.CreateDirectory(HistoryDataDirectory);
+            }
             if (!File.Exists(HistoryDataFilePath))
             {
                 _historyData = new HistoryData();
