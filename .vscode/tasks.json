@@ -4,12 +4,66 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Build Debug x86",
             "type": "shell",
             "command": "msbuild",
             "args": [
                 // Ask msbuild to generate full paths for file names.
-                "/property:GenerateFullPaths=true,Configuration=Release,DebugType=none",
+                "/property:GenerateFullPaths=true,Configuration=Debug,DebugType=full,Platform=x86",
+                "/t:build",
+                "/m"
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build Release x86",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                // Ask msbuild to generate full paths for file names.
+                "/property:GenerateFullPaths=true,Configuration=Release,DebugType=none,Platform=x86",
+                "/t:build",
+                "/m"
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build Debug x64",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                // Ask msbuild to generate full paths for file names.
+                "/property:GenerateFullPaths=true,Configuration=Debug,DebugType=full,Platform=x64",
+                "/t:build",
+                "/m"
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build Release x64",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                // Ask msbuild to generate full paths for file names.
+                "/property:GenerateFullPaths=true,Configuration=Release,DebugType=none,Platform=x64",
                 "/t:build",
                 "/m"
             ],

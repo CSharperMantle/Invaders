@@ -2,10 +2,11 @@
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
+using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.ViewModel
 {
-    public class BooleanVisibiltyConverter : IValueConverter
+    public class BooleanVisibilityConverter : IValueConverter
     {
         object IValueConverter.Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -16,8 +17,8 @@ namespace Invaders.Wpf.ViewModel
 
         object IValueConverter.ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotSupportedException("Two-way binding is not supported on " + nameof(BooleanVisibiltyConverter),
-                new InvalidOperationException());
+            Log.Error("Two-way binding is not supported on " + nameof(BooleanVisibilityConverter));
+            throw new NotSupportedException("Two-way binding is not supported on " + nameof(BooleanVisibilityConverter));
         }
     }
 }

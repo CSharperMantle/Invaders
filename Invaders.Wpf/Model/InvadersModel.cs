@@ -5,6 +5,7 @@ using System.Runtime.Serialization.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.Model
 {
@@ -27,6 +28,7 @@ namespace Invaders.Wpf.Model
         private DateTime? _playerDied;
 
         private HistoryData _historyData;
+        public HistoryData HistoryData => _historyData.Clone();
 
         public InvadersModel()
         {
@@ -43,6 +45,7 @@ namespace Invaders.Wpf.Model
 
         public void EndGame()
         {
+            Log.Debug(nameof(EndGame) + "() called");
             GameOver = true;
             OnGameLost();
             _historyData.UpdateHighestScore(Score);

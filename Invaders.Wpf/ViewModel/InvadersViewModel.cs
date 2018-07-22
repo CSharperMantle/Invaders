@@ -74,6 +74,12 @@ namespace Invaders.Wpf.ViewModel
 
         public bool Paused { get; set; }
 
+        public bool IsHighestScore { 
+            get {
+                return Score > _model.HistoryData.HighestScore; 
+            }
+        }
+
         public static double Scale { get; private set; }
 
         public int Score { get; private set; }
@@ -138,6 +144,7 @@ namespace Invaders.Wpf.ViewModel
             if (_model.GameOver)
             {
                 OnPropertyChanged(nameof(GameOver));
+                OnPropertyChanged(nameof(IsHighestScore));
                 _timer.Stop();
             }
         }

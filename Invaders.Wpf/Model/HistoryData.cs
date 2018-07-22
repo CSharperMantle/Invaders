@@ -10,7 +10,7 @@ namespace Invaders.Wpf.Model
     ///</summary>
     [Serializable]
     [DataContract]
-    internal class HistoryData
+    public class HistoryData : ICloneable<HistoryData>
     {
         [DataMember]
         public int HighestScore { get; private set; }
@@ -40,6 +40,17 @@ namespace Invaders.Wpf.Model
         public void IncreaseKilledInvaders() => KilledInvaders++;
 
         public void IncreaseDiedTime() => DiedTime++;
+
+        public HistoryData Clone()
+        {
+            return new HistoryData() {
+                HighestScore = this.HighestScore,
+                PlayedGames = this.PlayedGames,
+                PlayedTime = this.PlayedTime,
+                KilledInvaders = this.KilledInvaders,
+                DiedTime = this.DiedTime
+            };
+        }
 
         public HistoryData()
         {
