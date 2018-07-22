@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
@@ -7,6 +10,7 @@ namespace Invaders.Wpf.Model
 {
     public class InvadersModel
     {
+        public const string HistoryDataFilePath = "./config/historydata.json";
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 50;
         public static readonly Size PlayAreaSize = new Size(400, 300);
@@ -22,8 +26,11 @@ namespace Invaders.Wpf.Model
         private Player _player;
         private DateTime? _playerDied;
 
+        private HistoryData _historyData;
+
         public InvadersModel()
         {
+            ReadHistoryDataFromFile();
             EndGame();
         }
 
@@ -38,6 +45,8 @@ namespace Invaders.Wpf.Model
         {
             GameOver = true;
             OnGameLost();
+            _historyData.UpdateHighestScore(Score);
+            WriteHistoryDataFromFile();
         }
 
         public void StartGame()
@@ -69,6 +78,8 @@ namespace Invaders.Wpf.Model
 
             _player = new Player();
             OnShipChanged(_player, false);
+
+            _historyData.IncreasePlayedGames(); 
 
             Score = 0;
             Lives = 2;
@@ -213,10 +224,13 @@ namespace Invaders.Wpf.Model
                 Lives--;
                 if (Lives == 0)
                 {
+                    // Game over!
                     EndGame();
                 }
                 else
-                {
+                {   
+                    // Player died but game is not over!
+                    _historyData.IncreaseDiedTime();
                     _playerDied = DateTime.Now;
                     OnShipChanged(_player, true);
                     removeAllShots = true;
@@ -253,6 +267,7 @@ namespace Invaders.Wpf.Model
             {
                 Score += deadInvader.Score;
                 _invaders.Remove(deadInvader);
+                _historyData.IncreaseKilledInvaders();
                 OnShipChanged(deadInvader, true);
             }
 
@@ -374,6 +389,45 @@ namespace Invaders.Wpf.Model
             var newShot = new Shot(shotLocation, Direction.Down);
             _invaderShots.Add(newShot);
             OnShotMoved(newShot, false);
+        }
+
+        private void ReadHistoryDataFromFile()
+        {
+            if (!File.Exists(HistoryDataFilePath))
+            {
+                _historyData = new HistoryData();
+                return;
+            }
+            using (Stream reader = File.OpenRead(HistoryDataFilePath))
+            {
+                var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                var obj = serializer.ReadObject(reader);
+                if (obj is HistoryData)
+                {
+                    _historyData = obj as HistoryData;
+                } else {
+                    throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                }
+            }
+        }
+
+        private void WriteHistoryDataFromFile()
+        {
+            if (_historyData == null) { throw new SerializationException(nameof(_historyData) + " is null."); }
+            if (!File.Exists(HistoryDataFilePath))
+            {
+                using (Stream creater = File.Create(HistoryDataFilePath))
+                {
+                    var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                    serializer.WriteObject(creater, _historyData);
+                }
+            } else {
+                using (Stream writer = File.OpenWrite(HistoryDataFilePath))
+                {
+                    var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                    serializer.WriteObject(writer, _historyData);
+                }
+            }
         }
 
         public event EventHandler<StarChangedEventArgs> StarChanged;

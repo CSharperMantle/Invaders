@@ -69,6 +69,7 @@
     <Compile Include="Model\Shot.cs" />
     <Compile Include="Model\ShotMovedEventArgs.cs" />
     <Compile Include="Model\StarChangedEventArgs.cs" />
+    <Compile Include="Model\HistoryData.cs" />
     <!--Namespace Invaders.Wpf.Properties-->
     <Compile Include="Properties\Annotations.cs" />
     <!--Namespace Invaders.Wpf.ViewModel-->
@@ -87,8 +88,6 @@
       <DependentUpon>StarControl.xaml</DependentUpon>
     </Compile>
     <!--Namespace Invaders.Wpf.Commons-->
-    <Compile Include="Commons\AppLifeCycleManager.cs" />
-    <Compile Include="Commons\HistoryData.cs" />
     <Compile Include="Commons\Log.cs" />
   </ItemGroup>
   <ItemGroup>
