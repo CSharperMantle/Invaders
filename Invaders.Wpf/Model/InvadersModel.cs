@@ -407,30 +407,49 @@ namespace Invaders.Wpf.Model
 
             using (Stream reader = File.OpenRead(HistoryDataFilePath))
             {
-                var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                var obj = serializer.ReadObject(reader);
-                if (obj is HistoryData)
-                    _historyData = obj as HistoryData;
-                else
-                    throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                try
+                {
+                    var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                    var obj = serializer.ReadObject(reader);
+                    if (obj is HistoryData)
+                        _historyData = obj as HistoryData;
+                    else
+                       throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                }
+                catch (Exception e)
+                {
+                    Log.Critical(e.ToString());
+                    Log.Info(e.StackTrace);
+                    _historyData = new HistoryData();
+                }
+                
             }
         }
 
         private void WriteHistoryDataFromFile()
         {
             if (_historyData == null) throw new SerializationException(nameof(_historyData) + " is null.");
-            if (!File.Exists(HistoryDataFilePath))
-                using (Stream creater = File.Create(HistoryDataFilePath))
-                {
-                    var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                    serializer.WriteObject(creater, _historyData);
-                }
-            else
-                using (Stream writer = File.OpenWrite(HistoryDataFilePath))
-                {
-                    var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                    serializer.WriteObject(writer, _historyData);
-                }
+            try
+            {
+                if (!File.Exists(HistoryDataFilePath))
+                    using (Stream creater = File.Create(HistoryDataFilePath))
+                    {
+                       var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                        serializer.WriteObject(creater, _historyData);
+                    }
+                    else
+                    using (Stream writer = File.OpenWrite(HistoryDataFilePath))
+                    {
+                        var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                       serializer.WriteObject(writer, _historyData);
+                    }
+            }
+            catch (Exception e)
+            {
+                Log.Critical(e.ToString());
+                Log.Info(e.StackTrace);
+            }
+            
         }
 
         public event EventHandler<StarChangedEventArgs> StarChanged;

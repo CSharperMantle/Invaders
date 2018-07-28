@@ -140,7 +140,6 @@ namespace Invaders.Wpf.ViewModel
             if (_model.GameOver)
             {
                 OnPropertyChanged(nameof(GameOver));
-                OnPropertyChanged(nameof(IsHighestScore));
                 _timer.Stop();
             }
         }
@@ -347,6 +346,7 @@ namespace Invaders.Wpf.ViewModel
         {
             var gameLost = GameLost;
             gameLost?.Invoke(this, new EventArgs());
+            OnPropertyChanged(nameof(IsHighestScore));
         }
 
         public event EventHandler PlayerShot;
