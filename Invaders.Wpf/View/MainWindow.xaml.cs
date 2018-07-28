@@ -5,6 +5,7 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Input;
 using Invaders.Wpf.ViewModel;
+using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.View
 {
@@ -31,39 +32,45 @@ namespace Invaders.Wpf.View
         {
             var t = new Thread(() =>
             {
-                using (Stream music = File.OpenRead("./Assets/factwhistle.wav"))
+                using (var music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.PlayerShot)))
                 using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
                 }
             });
+            Log.Debug(t.ToString());
             t.Start();
+            Log.Debug("Thread started!");
         }
 
         private void ViewModelGameLostEventHandler(object sender, EventArgs e)
         {
             var t = new Thread(() =>
             {
-                using (Stream music = File.OpenRead("./Assets/fogblast.wav"))
+                using (Stream music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.EndGame)))
                 using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
                 }
             });
+            Log.Debug(t.ToString());
             t.Start();
+            Log.Debug("Thread started!");
         }
 
         private void ViewModelNextWaveGeneratedEventHandler(object sender, EventArgs e)
         {
             var t = new Thread(() =>
             {
-                using (Stream music = File.OpenRead("./Assets/charge.wav"))
+                using (Stream music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.NextWave)))
                 using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
                 }
             });
+            Log.Debug(t.ToString());
             t.Start();
+            Log.Debug("Thread started!");
         }
 
         private void MainWindow_OnSizeChanged(object sender, SizeChangedEventArgs e)

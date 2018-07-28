@@ -139,6 +139,7 @@ namespace Invaders.Wpf.ViewModel
 
             if (_model.GameOver)
             {
+                //Game over!
                 OnPropertyChanged(nameof(GameOver));
                 _timer.Stop();
             }

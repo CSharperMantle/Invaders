@@ -27,7 +27,7 @@
             "command": "msbuild",
             "args": [
                 // Ask msbuild to generate full paths for file names.
-                "/property:GenerateFullPaths=true,Configuration=Release,DebugType=none,Platform=x86",
+                "/property:GenerateFullPaths=true,Configuration=Release,Platform=x86",
                 "/t:build",
                 "/m"
             ],
@@ -45,7 +45,7 @@
             "command": "msbuild",
             "args": [
                 // Ask msbuild to generate full paths for file names.
-                "/property:GenerateFullPaths=true,Configuration=Debug,DebugType=full,Platform=x64",
+                "/property:GenerateFullPaths=true,Configuration=Debug,Platform=x64",
                 "/t:build",
                 "/m"
             ],
@@ -74,6 +74,28 @@
             },
             // Use the standard MS compiler pattern to detect errors, warnings and infos
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Git Push",
+            "type": "shell",
+            "command": "git",
+            "args": [
+                "push ",
+                //Verbose
+                "-v ",
+                "origin master"
+            ]
+        },
+        {
+            "label": "Git Pull",
+            "type": "shell",
+            "command": "git",
+            "args": [
+                "pull ",
+                //Verbose
+                "-v ",
+                "origin master"
+            ]
         }
     ]
 }
