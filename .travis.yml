@@ -1,6 +1,7 @@
 language: csharp
 solution: Invaders.sln
 mono: none
-dotnet: 1.1.5
+dotnet: 2.1.2
 script:
  - dotnet restore
+ - dotnet msbuild
