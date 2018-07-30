@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -21,6 +22,7 @@ namespace Invaders.Wpf.Model
         private readonly List<Shot> _playerShots = new List<Shot>();
         private readonly Random _random = new Random();
         private readonly List<Point> _stars = new List<Point>();
+        private readonly Stopwatch _stopwatch = new Stopwatch();
 
         private HistoryData _historyData;
         private Direction _invaderDirection = Direction.Left;
@@ -50,7 +52,10 @@ namespace Invaders.Wpf.Model
             Log.Debug(nameof(EndGame) + "() called");
             GameOver = true;
             OnGameLost();
+            _stopwatch.Stop();
             _historyData.UpdateHighestScore(Score);
+            _historyData.IncreasePlayedTime(_stopwatch.Elapsed);
+            _stopwatch.Reset();
             WriteHistoryDataFromFile();
         }
 
@@ -89,6 +94,8 @@ namespace Invaders.Wpf.Model
             Score = 0;
             Lives = 2;
             Waves = 0;
+            
+            _stopwatch.Start();
 
             NextWave();
         }
@@ -113,7 +120,7 @@ namespace Invaders.Wpf.Model
             }
         }
 
-        public void Twinkle()
+        private void Twinkle()
         {
             if (_random.Next(2) == 0 && _stars.Count > InitialStarCount * 0.75)
                 RemoveAStar();

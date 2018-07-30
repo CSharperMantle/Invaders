@@ -62,5 +62,17 @@ namespace Invaders.Wpf.Model
         {
             DiedTime++;
         }
+
+        public void IncreasePlayedTime(TimeSpan timePlayed)
+        {
+            if (PlayedTime.HasValue)
+            {
+                PlayedTime += timePlayed;
+            }
+            else
+            {
+                PlayedTime = timePlayed;
+            }
+        }
     }
 }
