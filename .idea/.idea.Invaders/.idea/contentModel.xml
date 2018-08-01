@@ -82,6 +82,7 @@
           <e p="InvadersHelper.cs" t="Include" />
           <e p="MainWindow.xaml" t="Include" />
           <e p="MainWindow.xaml.cs" t="Include" />
+          <e p="MediaType.cs" t="Include" />
           <e p="StarControl.xaml" t="Include" />
           <e p="StarControl.xaml.cs" t="Include" />
         </e>

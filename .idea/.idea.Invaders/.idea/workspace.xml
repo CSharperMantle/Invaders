@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d668a11-3e10-4e55-888f-48bda8298bfc" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Invaders/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Invaders/.idea/contentModel.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Invaders" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Log.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+              <folding>
+                <marker date="1532303322433" expanded="true" signature="45:2209" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="75:2207" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="129:368" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="418:657" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="709:952" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="1003:1424" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="1474:1899" ph="{...}" />
+                <marker date="1532303322433" expanded="true" signature="1952:2201" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvadersModel.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1809">
+              <caret line="269" column="42" lean-forward="true" selection-start-line="269" selection-start-column="42" selection-end-line="269" selection-end-column="42" />
+              <folding>
+                <marker date="1532910405567" expanded="true" signature="6:236" ph="..." />
+                <marker date="1532910405567" expanded="true" signature="266:16912" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="299:16910" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="1317:1399" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="1746:2095" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="2128:3120" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="2224:2341" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="2399:2512" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="2569:2682" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="2733:2841" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="3152:3507" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="3219:3497" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="3560:3726" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="3600:3716" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="3758:3977" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="4010:4291" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="4327:4538" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="4579:5230" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="4614:5196" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="4732:4968" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="5055:5182" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="5276:5633" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="5666:7145" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="5857:7135" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="6077:7033" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="7194:8385" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="7658:8152" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="7729:7830" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="7851:8138" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="8246:8375" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="8435:9545" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="8589:9088" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="8916:9074" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="9143:9367" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="9415:9535" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="9582:11461" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="9747:11451" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="10268:11125" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="10338:10672" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="10419:10588" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="10730:11063" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="10811:10980" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="11146:11437" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="11263:11419" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="11495:12539" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="11552:11651" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="11700:11799" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="12238:12351" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="12417:12529" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="12574:13548" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="13596:14650" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="13763:13865" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="13937:14640" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="13971:14391" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="14427:14609" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="14699:15681" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="14833:15514" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="14980:15188" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="15293:15500" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="15546:15658" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="15818:15966" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="16096:16238" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="16367:16506" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="16595:16714" ph="{...}" />
+                <marker date="1532910405567" expanded="true" signature="16794:16904" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoryData.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+              <folding>
+                <marker date="1532910175724" expanded="false" signature="6:49" ph="..." />
+                <marker date="1532910175724" expanded="true" signature="79:2056" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="86:383" ph="///     Represents an object that records history game data. ... " />
+                <marker date="1532910175724" expanded="true" signature="476:2054" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="511:689" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1066:1364" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1124:1353" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1418:1504" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1547:1594" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1640:1690" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1730:1774" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1835:2048" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1882:1952" ph="{...}" />
+                <marker date="1532910175724" expanded="true" signature="1969:2038" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvadersHelper.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+              <folding>
+                <marker date="1532910534295" expanded="false" signature="6:221" ph="..." />
+                <marker date="1532910534295" expanded="true" signature="291:7495" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="2070:2081" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="2176:2620" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="2706:3078" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="3166:4117" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="3248:3968" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="4205:4535" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="4583:5088" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="4630:5078" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="5180:5597" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="5689:5788" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="5895:6404" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="6562:6702" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="6879:7242" ph="{...}" />
+                <marker date="1532910534295" expanded="true" signature="7339:7489" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimatedImage.xaml.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+              <folding>
+                <marker date="1531402118532" expanded="false" signature="6:174" ph="..." />
+                <marker date="1531402118532" expanded="true" signature="258:3018" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="295:350" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="440:510" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="597:1500" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="967:1302" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="1535:1820" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="1857:2136" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="2172:2450" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="2530:3012" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="2556:2709" ph="{...}" />
+                <marker date="1531402118532" expanded="true" signature="2741:3002" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_playerDied.HasValue</find>
+      <find>StartAnimation</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>PlayerDying</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="CSharperMantle &lt;2649266980@qq.com&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/73/aabd3513/ThreadPool.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/d1/dd734977/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/a1/914ce017/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/77/d1d7eca9/PropertyPath.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/70/1a5f1066/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/sys/system/Media/SoundPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/e2/5015bab0/Application.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/f8/a68a227e/SafeReflectionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/1b/168c4e3e/XamlTypeInvoker.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E173764-4FD0-45C6-8CD2-3D1F4426D867/57/e36baac0/Activator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/ea/4742cde5/XamlWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/4c/e300decf/WpfXamlLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/fd1f8fb7/DispatcherTimer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/8b/8df45ec3/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/6f/0bcace42/SystemResources.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/11/8ce0c269/StyleHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/25/71e5567b/FrameworkElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/84/7564ab64/ClrObjectRuntime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/ac/9f64c2d6/PartialTrustTolerantRuntime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E173764-4FD0-45C6-8CD2-3D1F4426D867/e1/602f9e29/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E173764-4FD0-45C6-8CD2-3D1F4426D867/e5/e9ced0fc/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/b6/734f0750/XamlObjectWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5340B466-F428-4C35-8CDF-18E53C72A152/5e/ca84ce46/DataContractJsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/29/e70fab11/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/6d/238341ce/ThreadStart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/6a/e350cae4/Type.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/0e/ff35238a/Thread.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/60/902cb53b/GridView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/App.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/22/1deda302/Freezable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/App.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/a2/80928400/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/9f/b029e601/MediaPlayerState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/0d/d9b524e3/UserControl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/a7/e8707bbe/MediaPlayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7f/3090935a/MediaElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3A41FAFF-28B3-4489-BBB5-A38CA1D8B2A1/ed/ebe526c9/IOrderedEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/7a/b5a8ceb9/NotSupportedException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/dd/3d7b1020/RoutedEventHandlerInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/47/aefda5bc/Colors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/a5/65b422a9/Rectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/ca/b6d623b7/Shape.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Invader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvaderType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Ship.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Direction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ShipChangedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/c5/01f2fae8/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/StarChangedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ShotMovedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/1d/e93e74e6/Brush.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Annotations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/StarControl.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/StarControl.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/6d/79ca59ea/Grid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/a56e94d8/Point.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/8f/cc31b7e1/TextWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/26/b3aea964/CacheMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7d/18238a29/Thickness.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/da/eccb87ea/EventHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/04/ff9eb000/Visibility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/e3/a981f491/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/54da5727/HwndSubclass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/services/monitoring/system/diagnosticts/Stopwatch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/6e5cc21f/HwndWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/4d/b849ee3b/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/fc/fcf4906a/CulturePreservingExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/00/a2708310/DispatcherOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/ac/ed51c44d/Dispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/60/6ab3be49/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/f4/244db39f/ExceptionWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/71/bb680af0/NotImplementedException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/1f/4c648f1c/DependencyObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/f1/989346d6/SystemException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/2f/89c6cefa/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/2d/f5f128e8/__DynamicallyInvokableAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/a6/fecc6efa/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/3f/42654b27/Predicate`1.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Direction.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/InvaderType.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/StarChangedEventArgs.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/ShotMovedEventArgs.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/StarControl.xaml" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/StarControl.xaml.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Ship.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/App.xaml" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/ShipChangedEventArgs.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Common/StandardStyles.xaml" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Common/Styles.xaml" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/ViewModel/BooleanVisibiltyConverter.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Invader.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/.gitignore" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/App.config" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Commons/AppLifeCycleManager.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml" />
+        <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/e2/5015bab0/Application.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Invaders (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Invaders (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Invaders.Wpf" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Invaders (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Invaders.Wpf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Model" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Invaders (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Invaders.Wpf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="App.xaml" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CoffeeScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Invaders.Wpf/Assets/fogblast.wav" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Invaders.Wpf/bin/Debug/Invaders.Wpf.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Invaders.Wpf/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Invaders.Wpf/Invaders.Wpf.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+    </configuration>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\rong\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d668a11-3e10-4e55-888f-48bda8298bfc" name="Default" comment="" />
+      <created>1531113042889</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531113042889</updated>
+      <workItem from="1531113065270" duration="8280000" />
+      <workItem from="1531128600361" duration="6379000" />
+      <workItem from="1531198262818" duration="5394000" />
+      <workItem from="1531227887301" duration="5941000" />
+      <workItem from="1531285610322" duration="14639000" />
+      <workItem from="1531350133419" duration="9182000" />
+      <workItem from="1531400948640" duration="1569000" />
+      <workItem from="1531438023134" duration="6776000" />
+      <workItem from="1531461923246" duration="127000" />
+      <workItem from="1531462446591" duration="313000" />
+      <workItem from="1531488660054" duration="2310000" />
+      <workItem from="1531527572464" duration="214000" />
+      <workItem from="1531955924925" duration="2168000" />
+      <workItem from="1532303139643" duration="775000" />
+      <workItem from="1532602095811" duration="703000" />
+      <workItem from="1532647711024" duration="380000" />
+      <workItem from="1532684404893" duration="1212000" />
+      <workItem from="1532741453258" duration="255000" />
+      <workItem from="1532907038067" duration="3877000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1531298281863</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531298281863</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Delete useless null.">
+      <created>1531299241670</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531299241670</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Optimized code">
+      <created>1531299528056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531299528056</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Optimized code">
+      <created>1531299763075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531299763075</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Optimized code.">
+      <created>1531299953839</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531299953839</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Optimized NotImplementedException.">
+      <created>1531300784141</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531300784141</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added README.md">
+      <created>1531301022047</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531301022047</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Completed UI for Score and Live">
+      <created>1531310084963</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531310084963</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Completed full UI.">
+      <created>1531312499451</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1531312499451</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Completed full model.">
+      <created>1531314949492</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1531314949492</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Completed full model.">
+      <created>1531314989775</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531314989775</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated value converter and logic of Player object.">
+      <created>1531315349011</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1531315349011</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed some strange bugs. Two last TODO items.">
+      <created>1531316183505</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1531316183505</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Complete first version. Enjoy!">
+      <created>1531375990753</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1531375990753</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed several bugs.">
+      <created>1531380813229</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1531380813229</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Code clean-up using JetBrains Rider.">
+      <created>1531402287980</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1531402287980</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added simple sound effect.&#10;Added multi-thread.">
+      <created>1531459129506</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1531459129506</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added simple sound effect.">
+      <created>1531459571221</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1531459571221</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added simple sound effect.">
+      <created>1531460074328</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1531460074328</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Removed useless sound effect. Optimized code.">
+      <created>1531460336114</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1531460336114</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated app.config.">
+      <created>1531460801804</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1531460801804</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Version 1.0 final commit.">
+      <created>1531461053539</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1531461053539</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Edited caption of BeginButton">
+      <created>1531462025616</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1531462025616</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fixed tiny bugs.">
+      <created>1531462582955</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1531462582955</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Modified several consts to fluent gameplay.">
+      <created>1531489512627</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1531489512627</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Version 1.0.1 final commit.">
+      <created>1531527758780</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1531527758780</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Updated Log.cs">
+      <created>1531956383263</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1531956383263</updated>
+    </task>
+    <task id="LOCAL-00028" summary="UPDATED Serialization logics">
+      <created>1531958104244</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1531958104244</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Code clean-up using JetBrains Rider">
+      <created>1532303804560</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1532303804560</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Code clean-up using JetBrains Rider">
+      <created>1532741624661</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1532741624661</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Updated stopwatch">
+      <created>1532910509906</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1532910509906</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70494000" />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.33333334" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.32792208" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.32954547" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3284553" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3284553" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3284553" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32954547" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.2700454" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3284553" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.50406504" side_tool="true" weight="0.22239032" />
+      <window_info id="Favorites" order="2" sideWeight="0.5032467" side_tool="true" weight="0.2647504" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398374" />
+      <window_info anchor="bottom" id="Stacktrace" order="8" weight="0.3284553" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32954547" />
+      <window_info anchor="bottom" x="29" y="171" width="869" height="388" id="XAML Preview" order="7" sideWeight="0.49924356" type="WINDOWED" weight="0.3284553" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3284553" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="NuGet" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.32954547" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49878934" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="2" sideWeight="0.50121063" side_tool="true" weight="0.24962178" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="15" weight="0.32954547" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="XAML Preview" order="3" weight="0.32954547" />
+      <window_info anchor="bottom" id="Unit Tests" order="4" />
+      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="right" id="Errors In Solution" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Debug" order="12" visible="true" weight="0.39935064" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32954547" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Optimized code" />
+    <MESSAGE value="Optimized code." />
+    <MESSAGE value="Optimized NotImplementedException." />
+    <MESSAGE value="Added README.md" />
+    <MESSAGE value="Completed UI for Score and Live" />
+    <MESSAGE value="Completed full UI." />
+    <MESSAGE value="Completed full model." />
+    <MESSAGE value="Updated value converter and logic of Player object." />
+    <MESSAGE value="Fixed some strange bugs. Two last TODO items." />
+    <MESSAGE value="Complete first version. Enjoy!" />
+    <MESSAGE value="Fixed several bugs." />
+    <MESSAGE value="Code clean-up using JetBrains Rider." />
+    <MESSAGE value="Added simple sound effect.&#10;Added multi-thread." />
+    <MESSAGE value="Added simple sound effect." />
+    <MESSAGE value="Removed useless sound effect. Optimized code." />
+    <MESSAGE value="Updated app.config." />
+    <MESSAGE value="Version 1.0 final commit." />
+    <MESSAGE value="Edited caption of BeginButton" />
+    <MESSAGE value="Fixed tiny bugs." />
+    <MESSAGE value="Modified several consts to fluent gameplay." />
+    <MESSAGE value="Version 1.0.1 final commit." />
+    <MESSAGE value="Updated Log.cs" />
+    <MESSAGE value="UPDATED Serialization logics" />
+    <MESSAGE value="Code clean-up using JetBrains Rider" />
+    <MESSAGE value="Updated stopwatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated stopwatch" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="21" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>_playerShots.Count &gt; 0</expression-string>
+        <language-id>C#</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>_invaders.Any()</expression-string>
+        <language-id>C#</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>location</expression-string>
+        <language-id>C#</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_player.Area</expression-string>
+        <language-id>C#</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Invader.InvaderSize.Width</expression-string>
+        <language-id>C#</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/4d/b849ee3b/ExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="273" column="6" selection-start-line="273" selection-start-column="6" selection-end-line="273" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/6e5cc21f/HwndWrapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="210" column="6" selection-start-line="210" selection-start-column="6" selection-end-line="210" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/54da5727/HwndSubclass.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="176" column="6" selection-start-line="176" selection-start-column="6" selection-end-line="176" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/ac/ed51c44d/Dispatcher.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1184" column="31" lean-forward="true" selection-start-line="1184" selection-start-column="31" selection-end-line="1184" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/f4/244db39f/ExceptionWrapper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/fd1f8fb7/DispatcherTimer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="236" column="6" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/00/a2708310/DispatcherOperation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="270" column="6" selection-start-line="270" selection-start-column="6" selection-end-line="270" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/fc/fcf4906a/CulturePreservingExecutionContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/dd/3d7b1020/RoutedEventHandlerInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/04/ff9eb000/Visibility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/25/71e5567b/FrameworkElement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="2136" column="18" selection-start-line="2136" selection-start-column="18" selection-end-line="2136" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7d/18238a29/Thickness.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/obj/Debug/App.g.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/26/b3aea964/CacheMode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/a1/914ce017/UIElement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="5802" column="15" selection-start-line="5802" selection-start-column="15" selection-end-line="5802" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Ship.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/22/1deda302/Freezable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="292" column="6" selection-start-line="292" selection-start-column="6" selection-end-line="292" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/9f/b029e601/MediaPlayerState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="451" column="6" selection-start-line="451" selection-start-column="6" selection-end-line="451" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/a7/e8707bbe/MediaPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="344" column="6" selection-start-line="344" selection-start-column="6" selection-end-line="344" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7f/3090935a/MediaElement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/6d/238341ce/ThreadStart.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/29/e70fab11/Thread.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="143" column="6" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/.gitignore" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/rider.jar!/standardSchemas/XMLSchema.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/rider.jar!/schemas/config/Config.Files.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/0e/ff35238a/Thread.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-500">
+          <caret line="340" column="26" selection-start-line="340" selection-start-column="26" selection-end-line="340" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/73/aabd3513/ThreadPool.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2771">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/sys/system/Media/SoundPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4182">
+          <caret line="246" column="21" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/App.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/8f/cc31b7e1/TextWriter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11186">
+          <caret line="658" column="24" selection-start-line="658" selection-start-column="24" selection-end-line="658" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/AppLifeCycleManager.cs" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/e3/a981f491/File.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="255" column="55" lean-forward="true" selection-start-line="255" selection-start-column="55" selection-end-line="255" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Annotations.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/6a/e350cae4/Type.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding>
+            <marker date="1532910534295" expanded="false" signature="6:221" ph="..." />
+            <marker date="1532910534295" expanded="true" signature="291:7495" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="2070:2081" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="2176:2620" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="2706:3078" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="3166:4117" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="3248:3968" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="4205:4535" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="4583:5088" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="4630:5078" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="5180:5597" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="5689:5788" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="5895:6404" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="6562:6702" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="6879:7242" ph="{...}" />
+            <marker date="1532910534295" expanded="true" signature="7339:7489" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <marker date="1531402118532" expanded="false" signature="6:174" ph="..." />
+            <marker date="1531402118532" expanded="true" signature="258:3018" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="295:350" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="440:510" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="597:1500" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="967:1302" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="1535:1820" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="1857:2136" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="2172:2450" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="2530:3012" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="2556:2709" ph="{...}" />
+            <marker date="1531402118532" expanded="true" signature="2741:3002" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3219">
+          <caret line="141" column="14" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="79" column="77" selection-start-line="79" selection-start-column="77" selection-end-line="79" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5340B466-F428-4C35-8CDF-18E53C72A152/5e/ca84ce46/DataContractJsonSerializer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="292" column="27" selection-start-line="292" selection-start-column="27" selection-end-line="292" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/e2/5015bab0/Application.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1011">
+          <caret line="175" column="33" lean-forward="true" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/App.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <marker date="1532303640372" expanded="true" signature="45:184" ph="{...}" />
+            <marker date="1532303640372" expanded="true" signature="52:127" ph="///     Interaction logic for App.xaml ... " />
+            <marker date="1532303640372" expanded="true" signature="170:182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding>
+            <marker date="1532910175724" expanded="false" signature="6:49" ph="..." />
+            <marker date="1532910175724" expanded="true" signature="79:2056" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="86:383" ph="///     Represents an object that records history game data. ... " />
+            <marker date="1532910175724" expanded="true" signature="476:2054" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="511:689" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1066:1364" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1124:1353" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1418:1504" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1547:1594" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1640:1690" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1730:1774" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1835:2048" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1882:1952" ph="{...}" />
+            <marker date="1532910175724" expanded="true" signature="1969:2038" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/services/monitoring/system/diagnosticts/Stopwatch.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="48" column="15" lean-forward="true" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
+          <folding>
+            <marker date="1532303322433" expanded="true" signature="45:2209" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="75:2207" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="129:368" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="418:657" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="709:952" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="1003:1424" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="1474:1899" ph="{...}" />
+            <marker date="1532303322433" expanded="true" signature="1952:2201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1809">
+          <caret line="269" column="42" lean-forward="true" selection-start-line="269" selection-start-column="42" selection-end-line="269" selection-end-column="42" />
+          <folding>
+            <marker date="1532910405567" expanded="true" signature="6:236" ph="..." />
+            <marker date="1532910405567" expanded="true" signature="266:16912" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="299:16910" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="1317:1399" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="1746:2095" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="2128:3120" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="2224:2341" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="2399:2512" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="2569:2682" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="2733:2841" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="3152:3507" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="3219:3497" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="3560:3726" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="3600:3716" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="3758:3977" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="4010:4291" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="4327:4538" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="4579:5230" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="4614:5196" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="4732:4968" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="5055:5182" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="5276:5633" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="5666:7145" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="5857:7135" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="6077:7033" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="7194:8385" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="7658:8152" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="7729:7830" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="7851:8138" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="8246:8375" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="8435:9545" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="8589:9088" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="8916:9074" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="9143:9367" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="9415:9535" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="9582:11461" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="9747:11451" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="10268:11125" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="10338:10672" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="10419:10588" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="10730:11063" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="10811:10980" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="11146:11437" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="11263:11419" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="11495:12539" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="11552:11651" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="11700:11799" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="12238:12351" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="12417:12529" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="12574:13548" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="13596:14650" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="13763:13865" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="13937:14640" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="13971:14391" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="14427:14609" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="14699:15681" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="14833:15514" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="14980:15188" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="15293:15500" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="15546:15658" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="15818:15966" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="16096:16238" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="16367:16506" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="16595:16714" ph="{...}" />
+            <marker date="1532910405567" expanded="true" signature="16794:16904" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
