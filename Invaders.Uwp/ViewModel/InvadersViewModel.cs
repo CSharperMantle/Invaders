@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Invaders.Uwp.Annotations;
+using Invaders.Uwp.Model;
+using Invaders.Uwp.View;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using Invaders.Uwp.Annotations;
-using Invaders.Uwp.Model;
-using Invaders.Uwp.View;
 using Windows.Foundation;
+using Windows.System;
 using Windows.UI.Xaml;
 
 namespace Invaders.Uwp.ViewModel
@@ -91,7 +92,7 @@ namespace Invaders.Uwp.ViewModel
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void TimerTickEventHandler(object sender, EventArgs e)
+        private void TimerTickEventHandler(object sender, object e)
         {
             if (_lastPaused != Paused)
             {
@@ -310,20 +311,20 @@ namespace Invaders.Uwp.ViewModel
             _timer.Start();
         }
 
-        internal void KeyDown(Key key)
+        internal void KeyDown(VirtualKey key)
         {
-            if (key == Key.Space) _model.FireShot();
+            if (key == VirtualKey.Space) _model.FireShot();
 
-            if (key == Key.Left) _leftAction = DateTime.Now;
+            if (key == VirtualKey.Left) _leftAction = DateTime.Now;
 
-            if (key == Key.Right) _rightAction = DateTime.Now;
+            if (key == VirtualKey.Right) _rightAction = DateTime.Now;
         }
 
-        internal void KeyUp(Key key)
+        internal void KeyUp(VirtualKey key)
         {
-            if (key == Key.Left) _leftAction = null;
+            if (key == VirtualKey.Left) _leftAction = null;
 
-            if (key == Key.Right) _rightAction = null;
+            if (key == VirtualKey.Right) _rightAction = null;
         }
 
         [NotifyPropertyChangedInvocator]

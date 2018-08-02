@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Globalization;
-using System.Windows;
-using System.Windows.Data;
-using Invaders.Wpf.Commons;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Data;
 
-namespace Invaders.Wpf.ViewModel
+namespace Invaders.Uwp.ViewModel
 {
     public class BooleanVisibilityConverter : IValueConverter
     {
-        object IValueConverter.Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        object IValueConverter.Convert(object value, Type targetType, object parameter, string language)
         {
             if (value is bool && (bool) value)
                 return Visibility.Visible;
-            return Visibility.Hidden;
+            return Visibility.Collapsed;
         }
 
-        object IValueConverter.ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        object IValueConverter.ConvertBack(object value, Type targetType, object parameter, string language)
         {
-            Log.Error("Two-way binding is not supported on " + nameof(BooleanVisibilityConverter));
             throw new NotSupportedException("Two-way binding is not supported on " +
                                             nameof(BooleanVisibilityConverter));
         }

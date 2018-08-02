@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
-using Invaders.Wpf.Model;
+using Invaders.Uwp.Model;
+using Windows.Foundation;
+using Windows.UI;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
+using Windows.UI.Xaml.Shapes;
 
-namespace Invaders.Wpf.View
+namespace Invaders.Uwp.View
 {
     public static class InvadersHelper
     {
@@ -63,7 +65,7 @@ namespace Invaders.Wpf.View
                     throw new ArgumentException(nameof(mediaType));
             }
 
-            return "./Assets/" + filename;
+            return "ms-appx:///Assets/" + filename;
         }
 
         internal static FrameworkElement InvaderControlFactory(Invader invader, double scale)
@@ -110,7 +112,7 @@ namespace Invaders.Wpf.View
             }
 
             SetCanvasLocation(star, point.X * scale, point.Y * scale);
-            Panel.SetZIndex(star, -1000);
+            Canvas.SetZIndex(star, -1000);
             return star;
         }
 
@@ -147,9 +149,11 @@ namespace Invaders.Wpf.View
         internal static FrameworkElement PlayerControlFactory(Player player, double scale)
         {
             var playerControl =
-                new AnimatedImage(new List<string> {"player.png", "player.png"}, TimeSpan.FromSeconds(1));
-            playerControl.Width = player.Size.Width * scale;
-            playerControl.Height = player.Size.Height * scale;
+                new AnimatedImage(new List<string> { "player.png", "player.png" }, TimeSpan.FromSeconds(1))
+                {
+                    Width = player.Size.Width * scale,
+                    Height = player.Size.Height * scale
+                };
             SetCanvasLocation(playerControl, player.Location.X * scale, player.Location.Y * scale);
             return playerControl;
         }
@@ -183,7 +187,7 @@ namespace Invaders.Wpf.View
         {
             var animation = new DoubleAnimation();
             Storyboard.SetTarget(animation, frameworkElement);
-            Storyboard.SetTargetProperty(animation, new PropertyPath(propertyToAnimate));
+            Storyboard.SetTargetProperty(animation, new PropertyPath(propertyToAnimate).Path);
             animation.From = from;
             animation.To = to;
             animation.Duration = timeSpan;

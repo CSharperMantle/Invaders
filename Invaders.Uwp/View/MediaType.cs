@@ -1,4 +1,4 @@
-namespace Invaders.Wpf.View
+namespace Invaders.Uwp.View
 {
     public enum MediaType
     {

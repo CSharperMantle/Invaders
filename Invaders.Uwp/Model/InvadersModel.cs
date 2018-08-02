@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using Windows.Foundation;
+using Windows.Storage;
 
 namespace Invaders.Uwp.Model
 {
     public class InvadersModel
     {
         public const string HistoryDataFilePath = "./config/historydata.json";
+        public const string HistoryDataFilename = "historydata.json";
         public const string HistoryDataDirectory = "./config";
+        public const string HistoryDataDirectoryName = "config";
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 50;
         public static readonly Size PlayAreaSize = new Size(400, 300);
@@ -30,6 +32,8 @@ namespace Invaders.Uwp.Model
 
         private Player _player;
         private DateTime? _playerDied;
+
+        private readonly StorageFolder _currentFolder = ApplicationData.Current.LocalFolder;
 
         public InvadersModel()
         {
@@ -401,57 +405,33 @@ namespace Invaders.Uwp.Model
             OnShotMoved(newShot, false);
         }
 
-        private void ReadHistoryDataFromFile()
+        private async void ReadHistoryDataFromFile()
         {
-            if (!Directory.Exists(HistoryDataDirectory)) Directory.CreateDirectory(HistoryDataDirectory);
-            if (!File.Exists(HistoryDataFilePath))
-            {
-                _historyData = new HistoryData();
-                return;
-            }
+            var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+            var localFolder = ApplicationData.Current.LocalFolder;
+            var historyFile = await localFolder.GetFileAsync(HistoryDataFilename);
 
-            using (Stream reader = File.OpenRead(HistoryDataFilePath))
+            using (var stream = await historyFile.OpenAsync(FileAccessMode.ReadWrite))
+            using (var reader = stream.AsStreamForRead())
             {
-                try
+                var obj = serializer.ReadObject(reader);
+                if (obj is HistoryData)
                 {
-                    var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                    var obj = serializer.ReadObject(reader);
-                    if (obj is HistoryData)
-                        _historyData = obj as HistoryData;
-                    else
-                       throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                    _historyData = obj as HistoryData;
                 }
-                catch (Exception e)
-                {
-                    _historyData = new HistoryData();
-                    //TODO: Add a exception handler
-                }
-                
             }
         }
 
-        private void WriteHistoryDataFromFile()
+        private async void WriteHistoryDataFromFile()
         {
-            if (_historyData == null) throw new SerializationException(nameof(_historyData) + " is null.");
-            try
+            var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+            var localFolder = ApplicationData.Current.LocalFolder;
+            var historyFile = await localFolder.CreateFileAsync(HistoryDataFilename, CreationCollisionOption.ReplaceExisting);
+
+            using (var stream = await historyFile.OpenAsync(FileAccessMode.ReadWrite))
+            using (var outputStream = stream.AsStreamForWrite())
             {
-                if (!File.Exists(HistoryDataFilePath))
-                    using (Stream creater = File.Create(HistoryDataFilePath))
-                    {
-                       var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                        serializer.WriteObject(creater, _historyData);
-                    }
-                    else
-                    using (Stream writer = File.OpenWrite(HistoryDataFilePath))
-                    {
-                        var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                       serializer.WriteObject(writer, _historyData);
-                    }
-            }
-            catch (Exception e)
-            {
-                //TODO: Add a exception handler.
-                throw;
+                serializer.WriteObject(outputStream, _historyData);
             }
             
         }
