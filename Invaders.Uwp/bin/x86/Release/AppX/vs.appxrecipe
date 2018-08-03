@@ -31,13 +31,13 @@
     <AppXManifest Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-03T00:25:26.495</Modified>
+      <Modified>2018-08-03T10:06:27.657</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-08-03T00:24:47.044</Modified>
+      <Modified>2018-08-03T10:05:18.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\block.png">
       <PackagePath>Assets\block.png</PackagePath>
@@ -288,36 +288,36 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Common\StandardStyles.xbf">
       <PackagePath>Common\StandardStyles.xbf</PackagePath>
-      <Modified>2018-08-03T00:24:47.045</Modified>
+      <Modified>2018-08-03T10:05:18.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Invaders.Uwp.dll">
       <PackagePath>Invaders.Uwp.dll</PackagePath>
-      <Modified>2018-08-03T00:25:26.211</Modified>
+      <Modified>2018-08-03T10:06:27.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Invaders.Uwp.exe">
       <PackagePath>Invaders.Uwp.exe</PackagePath>
-      <Modified>2018-08-03T00:25:26.471</Modified>
+      <Modified>2018-08-03T10:06:27.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Invaders.Uwp.pdb">
       <PackagePath>Invaders.Uwp.pdb</PackagePath>
-      <Modified>2018-08-03T00:25:26.462</Modified>
+      <Modified>2018-08-03T10:06:27.571</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-03T00:24:50.070</Modified>
+      <Modified>2018-08-03T10:05:21.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\View\AnimatedImage.xbf">
       <PackagePath>View\AnimatedImage.xbf</PackagePath>
-      <Modified>2018-08-03T00:24:47.045</Modified>
+      <Modified>2018-08-03T10:05:18.700</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\View\GamePage.xbf">
       <PackagePath>View\GamePage.xbf</PackagePath>
-      <Modified>2018-08-03T00:24:47.046</Modified>
+      <Modified>2018-08-03T10:05:18.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\View\StarControl.xbf">
       <PackagePath>View\StarControl.xbf</PackagePath>
-      <Modified>2018-08-03T00:24:47.046</Modified>
+      <Modified>2018-08-03T10:05:18.701</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

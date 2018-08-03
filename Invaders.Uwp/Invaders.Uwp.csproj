@@ -98,6 +98,7 @@
     <Compile Include="Common\Log.cs" />
     <Compile Include="Model\Direction.cs" />
     <Compile Include="Model\HistoryData.cs" />
+    <Compile Include="Model\HistoryDataManager.cs" />
     <Compile Include="Model\ICloneable.cs" />
     <Compile Include="Model\Invader.cs" />
     <Compile Include="Model\InvadersModel.cs" />

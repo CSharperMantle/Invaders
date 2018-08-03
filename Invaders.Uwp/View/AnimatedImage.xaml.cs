@@ -76,7 +76,7 @@ namespace Invaders.Uwp.View
         {
             try
             {
-                var uri = new Uri("Assets/" + imageFileName, UriKind.Relative);
+                var uri = new Uri("ms-appx:///Assets/" + imageFileName, UriKind.RelativeOrAbsolute);
                 return new BitmapImage(uri);
             }
             catch (Exception e)

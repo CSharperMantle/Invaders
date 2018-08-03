@@ -197,7 +197,6 @@ W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\System.Xml.Read
 W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\System.Xml.XDocument.dll
 W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\System.Xml.XmlDocument.dll
 W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\System.Xml.XmlSerializer.dll
-W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\Invaders.Uwp.csprojAssemblyReference.cache
 W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\App.g.i.cs
 W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\App.g.cs
 W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\Common\StandardStyles.g.i.cs

@@ -65,12 +65,16 @@
                        FontFamily="Arial Narrow" FontSize="150"
                        Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
                        Margin="0,0,0,60" />
-            <TextBlock Text="NEW SCORE" VerticalAlignment="Center"
+            <TextBlock Text="NEW HIGH SCORE" VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
                        FontFamily="Consolas" FontSize="70" 
                        Foreground="Red" FontWeight="Bold"
                        Visibility="{Binding IsHighestScore, Converter={StaticResource VisibilityConverter}}"/> 
-            <Button x:ConnectionId='3' Content="RESTART" Background="Black"
-                    HorizontalAlignment="Center" FontSize="30"                            />
+            <Button x:ConnectionId='3' Content="RESTART" Background="Gray"
+                    Foreground="White"
+                    FontWeight="Bold" FontSize="30"
+                    HorizontalAlignment="Center" 
+                                               />
         </StackPanel>
 
     </Grid>

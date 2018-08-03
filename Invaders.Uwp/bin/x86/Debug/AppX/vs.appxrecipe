@@ -31,13 +31,13 @@
     <AppXManifest Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-03T04:06:55.967</Modified>
+      <Modified>2018-08-03T10:19:49.969</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Invaders.Uwp.exe">
       <PackagePath>entrypoint\Invaders.Uwp.exe</PackagePath>
-      <Modified>2018-08-03T04:06:53.569</Modified>
+      <Modified>2018-08-03T10:19:49.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -744,27 +744,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Invaders.Uwp.xr.xml">
       <PackagePath>Invaders.Uwp.xr.xml</PackagePath>
-      <Modified>2018-08-02T08:57:30.924</Modified>
+      <Modified>2018-08-03T10:11:25.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-08-03T00:30:25.225</Modified>
+      <Modified>2018-08-03T10:11:25.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Common\StandardStyles.xbf">
       <PackagePath>Common\StandardStyles.xbf</PackagePath>
-      <Modified>2018-08-03T00:30:25.226</Modified>
+      <Modified>2018-08-03T10:11:25.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\View\AnimatedImage.xbf">
       <PackagePath>View\AnimatedImage.xbf</PackagePath>
-      <Modified>2018-08-03T00:30:25.226</Modified>
+      <Modified>2018-08-03T10:11:25.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\View\GamePage.xbf">
       <PackagePath>View\GamePage.xbf</PackagePath>
-      <Modified>2018-08-03T00:30:25.227</Modified>
+      <Modified>2018-08-03T10:11:25.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\View\StarControl.xbf">
       <PackagePath>View\StarControl.xbf</PackagePath>
-      <Modified>2018-08-03T00:30:25.227</Modified>
+      <Modified>2018-08-03T10:11:25.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -773,11 +773,11 @@
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-03T04:06:54.661</Modified>
+      <Modified>2018-08-03T10:11:29.368</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Core\Invaders.Uwp.exe">
       <PackagePath>Invaders.Uwp.exe</PackagePath>
-      <Modified>2018-08-03T04:06:55.964</Modified>
+      <Modified>2018-08-03T10:19:49.966</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

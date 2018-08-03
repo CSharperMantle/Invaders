@@ -1,22 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Json;
 using Windows.Foundation;
 using Windows.Storage;
-using Invaders.Uwp.Commons;
 
 namespace Invaders.Uwp.Model
 {
     public class InvadersModel
     {
-        public const string HistoryDataFilePath = "./config/historydata.json";
-        public const string HistoryDataFilename = "historydata.json";
-        public const string HistoryDataDirectory = "./config";
-        public const string HistoryDataDirectoryName = "config";
+        
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 50;
         public static readonly Size PlayAreaSize = new Size(400, 300);
@@ -27,7 +20,6 @@ namespace Invaders.Uwp.Model
         private readonly List<Point> _stars = new List<Point>();
         private readonly Stopwatch _stopwatch = new Stopwatch();
 
-        private HistoryData _historyData;
         private Direction _invaderDirection = Direction.Left;
         private bool _justMovedDown;
         private DateTime _lastUpdated = DateTime.MinValue;
@@ -35,15 +27,16 @@ namespace Invaders.Uwp.Model
         private Player _player;
         private DateTime? _playerDied;
 
-        private readonly StorageFolder _currentFolder = ApplicationData.Current.LocalFolder;
+        private readonly HistoryDataManager _historyDataManager = 
+            new HistoryDataManager(ApplicationData.Current.LocalFolder);
 
         public InvadersModel()
         {
-            ReadHistoryDataFromFile();
+            _historyDataManager.ReadHistoryData();
             EndGame();
         }
 
-        public HistoryData HistoryData => _historyData.Clone();
+        public HistoryData HistoryData => _historyDataManager.HistoryData.Clone();
 
         public int Score { get; private set; }
         public int Waves { get; private set; }
@@ -57,10 +50,10 @@ namespace Invaders.Uwp.Model
             GameOver = true;
             OnGameLost();
             _stopwatch.Stop();
-            _historyData.UpdateHighestScore(Score);
-            _historyData.IncreasePlayedTime(_stopwatch.Elapsed);
+            _historyDataManager.HistoryData.UpdateHighestScore(Score);
+            _historyDataManager.HistoryData.IncreasePlayedTime(_stopwatch.Elapsed);
             _stopwatch.Reset();
-            WriteHistoryDataFromFile();
+            _historyDataManager.WriteHistoryData();
         }
 
         public void StartGame()
@@ -93,7 +86,7 @@ namespace Invaders.Uwp.Model
             _player = new Player();
             OnShipChanged(_player, false);
 
-            _historyData.IncreasePlayedGames();
+            _historyDataManager.HistoryData.IncreasePlayedGames();
 
             Score = 0;
             Lives = 2;
@@ -246,7 +239,7 @@ namespace Invaders.Uwp.Model
                 else
                 {
                     // Player died but game is not over!
-                    _historyData.IncreaseDiedTime();
+                    _historyDataManager.HistoryData.IncreaseDiedTime();
                     _playerDied = DateTime.Now;
                     OnShipChanged(_player, true);
                     removeAllShots = true;
@@ -283,7 +276,7 @@ namespace Invaders.Uwp.Model
             {
                 Score += deadInvader.Score;
                 _invaders.Remove(deadInvader);
-                _historyData.IncreaseKilledInvaders();
+                _historyDataManager.HistoryData.IncreaseKilledInvaders();
                 OnShipChanged(deadInvader, true);
             }
 
@@ -405,50 +398,6 @@ namespace Invaders.Uwp.Model
             var newShot = new Shot(shotLocation, Direction.Down);
             _invaderShots.Add(newShot);
             OnShotMoved(newShot, false);
-        }
-
-        private async void ReadHistoryDataFromFile()
-        {
-            var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-            var localFolder = ApplicationData.Current.LocalFolder;
-            IStorageFile historyFile = null;
-            try
-            {
-                historyFile = await localFolder.GetFileAsync(HistoryDataFilename);
-            }
-            catch (FileNotFoundException ex)
-            {
-                Log.C(ex.Message);
-                Log.D(ex.StackTrace);
-                _historyData = new HistoryData();
-                return;
-            }
-            using (var stream = await historyFile.OpenAsync(FileAccessMode.ReadWrite))
-            using (var reader = stream.AsStreamForRead())
-            {
-                var obj = serializer.ReadObject(reader);
-                if (obj is HistoryData)
-                {
-                    _historyData = obj as HistoryData;
-                } else
-                {
-                    throw new SerializationException(nameof(obj) + " is null");
-                }
-            }
-        }
-
-        private async void WriteHistoryDataFromFile()
-        {
-            var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-            var localFolder = ApplicationData.Current.LocalFolder;
-            var historyFile = await localFolder.CreateFileAsync(HistoryDataFilename, CreationCollisionOption.ReplaceExisting);
-
-            using (var stream = await historyFile.OpenAsync(FileAccessMode.ReadWrite))
-            using (var outputStream = stream.AsStreamForWrite())
-            {
-                serializer.WriteObject(outputStream, _historyData);
-            }
-            
         }
 
         public event EventHandler<StarChangedEventArgs> StarChanged;

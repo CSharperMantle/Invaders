@@ -4,5 +4,7 @@
 
 /.vscode
 /.vs
-/bin
-/obj
+/Invaders.Uwp/bin
+/Invaders.Uwp/obj
+/Invaders.Wpf/bin
+/Invaders.Wpf/obj
