@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\Log.cs" />
     <Compile Include="Model\Direction.cs" />
     <Compile Include="Model\HistoryData.cs" />
     <Compile Include="Model\ICloneable.cs" />

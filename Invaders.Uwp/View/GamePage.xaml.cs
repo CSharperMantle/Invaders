@@ -49,7 +49,7 @@ namespace Invaders.Uwp.View
 
         private async void ViewModelPlayerShotEventHandler(object sender, EventArgs e)
         {
-            await PlayFromDisk(Dispatcher, InvadersHelper.GetMediaFileName(MediaType.PlayerShot));
+            //await PlayFromDisk(Dispatcher, InvadersHelper.GetMediaFileName(MediaType.PlayerShot));
         }
 
         private async void ViewModelGameLostEventHandler(object sender, EventArgs e)
@@ -63,12 +63,12 @@ namespace Invaders.Uwp.View
                 }
             });
             t.Start();*/
-            await PlayFromDisk(Dispatcher, InvadersHelper.GetMediaFileName(MediaType.EndGame));
+            //await PlayFromDisk(Dispatcher, InvadersHelper.GetMediaFileName(MediaType.EndGame));
         }
 
         private async void ViewModelNextWaveGeneratedEventHandler(object sender, EventArgs e)
         {
-            await PlayFromDisk(Dispatcher, InvadersHelper.GetMediaFileName(MediaType.NextWave));
+            //await PlayFromDisk(Dispatcher, InvadersHelper.GetMediaFileName(MediaType.NextWave));
         }
 
         private void UpdatePlayAreaSize(Size newSize)

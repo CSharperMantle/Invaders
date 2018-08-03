@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using Windows.Foundation;
 using Windows.Storage;
+using Invaders.Uwp.Commons;
 
 namespace Invaders.Uwp.Model
 {
@@ -409,8 +411,18 @@ namespace Invaders.Uwp.Model
         {
             var serializer = new DataContractJsonSerializer(typeof(HistoryData));
             var localFolder = ApplicationData.Current.LocalFolder;
-            var historyFile = await localFolder.GetFileAsync(HistoryDataFilename);
-
+            IStorageFile historyFile = null;
+            try
+            {
+                historyFile = await localFolder.GetFileAsync(HistoryDataFilename);
+            }
+            catch (FileNotFoundException ex)
+            {
+                Log.C(ex.Message);
+                Log.D(ex.StackTrace);
+                _historyData = new HistoryData();
+                return;
+            }
             using (var stream = await historyFile.OpenAsync(FileAccessMode.ReadWrite))
             using (var reader = stream.AsStreamForRead())
             {
@@ -418,6 +430,9 @@ namespace Invaders.Uwp.Model
                 if (obj is HistoryData)
                 {
                     _historyData = obj as HistoryData;
+                } else
+                {
+                    throw new SerializationException(nameof(obj) + " is null");
                 }
             }
         }

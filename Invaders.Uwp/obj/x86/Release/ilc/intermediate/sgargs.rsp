@@ -1,0 +1,12 @@
+/out:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\intermediate\\"
+/ref:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\intermediate\TransformedSRWR"
+/ref:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\in"
+/ref:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\in\\"
+/ref:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\lib\Private\\"
+/ref:"W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\tools\x86\ilc\csc"
+"@W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"

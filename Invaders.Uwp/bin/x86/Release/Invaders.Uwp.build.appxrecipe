@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BAORONG</Machine>
+    <WindowsUser>rong</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>0d8c366a-2ead-4b20-ba17-9301bae35f19</PackageIdentityName>
+    <PackageIdentityPublisher>CN=rong</PackageIdentityPublisher>
+    <IntermediateOutputPath>W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\block.png">
+      <PackagePath>Assets\block.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\bug1.png">
+      <PackagePath>Assets\bug1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\bug2.png">
+      <PackagePath>Assets\bug2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\bug3.png">
+      <PackagePath>Assets\bug3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\bug4.png">
+      <PackagePath>Assets\bug4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\charge.wav">
+      <PackagePath>Assets\charge.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\endmatch.wav">
+      <PackagePath>Assets\endmatch.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\factwhistle.wav">
+      <PackagePath>Assets\factwhistle.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\firebell.wav">
+      <PackagePath>Assets\firebell.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\flyingsaucer1.png">
+      <PackagePath>Assets\flyingsaucer1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\flyingsaucer2.png">
+      <PackagePath>Assets\flyingsaucer2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\flyingsaucer3.png">
+      <PackagePath>Assets\flyingsaucer3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\flyingsaucer4.png">
+      <PackagePath>Assets\flyingsaucer4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\fogblast.wav">
+      <PackagePath>Assets\fogblast.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\player.png">
+      <PackagePath>Assets\player.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\satellite1.png">
+      <PackagePath>Assets\satellite1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\satellite2.png">
+      <PackagePath>Assets\satellite2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\satellite3.png">
+      <PackagePath>Assets\satellite3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\satellite4.png">
+      <PackagePath>Assets\satellite4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\spaceship1.png">
+      <PackagePath>Assets\spaceship1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\spaceship2.png">
+      <PackagePath>Assets\spaceship2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\spaceship3.png">
+      <PackagePath>Assets\spaceship3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\spaceship4.png">
+      <PackagePath>Assets\spaceship4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\star1.png">
+      <PackagePath>Assets\star1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\star2.png">
+      <PackagePath>Assets\star2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\star3.png">
+      <PackagePath>Assets\star3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\star4.png">
+      <PackagePath>Assets\star4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\watchit1.png">
+      <PackagePath>Assets\watchit1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\watchit2.png">
+      <PackagePath>Assets\watchit2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\watchit3.png">
+      <PackagePath>Assets\watchit3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\watchit4.png">
+      <PackagePath>Assets\watchit4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Common\StandardStyles.xbf">
+      <PackagePath>Common\StandardStyles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Invaders.Uwp.dll">
+      <PackagePath>Invaders.Uwp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Invaders.Uwp.exe">
+      <PackagePath>Invaders.Uwp.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\Invaders.Uwp.pdb">
+      <PackagePath>Invaders.Uwp.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\View\AnimatedImage.xbf">
+      <PackagePath>View\AnimatedImage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\View\GamePage.xbf">
+      <PackagePath>View\GamePage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Release\ilc\View\StarControl.xbf">
+      <PackagePath>View\StarControl.xbf</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+      <Name>Microsoft.NET.Native.Framework.1.7</Name>
+      <Version>1.7.25531.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.sharedlibrary-x86\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+      <Name>Microsoft.NET.Native.Framework.1.7</Name>
+      <Version>1.7.25531.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.sharedlibrary-x64\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx">
+      <Name>Microsoft.NET.Native.Framework.1.7</Name>
+      <Version>1.7.25531.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.sharedlibrary-arm\1.7.0\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.7.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.7</Name>
+      <Version>1.7.25531.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.7.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.7</Name>
+      <Version>1.7.25531.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.7</Name>
+      <Version>1.7.25531.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.7, MinVersion = 1.7.25531.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\1.7.3\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.7.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.25426.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.25426.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.25426.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.25426.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

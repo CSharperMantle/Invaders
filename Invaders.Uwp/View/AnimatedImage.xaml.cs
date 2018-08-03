@@ -4,6 +4,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
+using Invaders.Uwp.Commons;
 
 namespace Invaders.Uwp.View
 {
@@ -80,7 +81,8 @@ namespace Invaders.Uwp.View
             }
             catch (Exception e)
             {
-                //TODO: Add handler
+                Log.E(e.Message);
+                Log.D(e.StackTrace);
                 return new BitmapImage();
             }
         }
