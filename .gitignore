@@ -2,5 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Invaders/v15
-/.vs/Invaders/DesignTimeBuild
+/.vscode
+/.vs
+/bin
+/obj
