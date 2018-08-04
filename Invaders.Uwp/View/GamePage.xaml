@@ -39,7 +39,7 @@
         <TextBlock Grid.Row="0" HorizontalAlignment="Left"
                    Text="Invaders" FontFamily="Microsoft YaHei UI"
                    FontSize="70"
-                   FontWeight="Normal"/>
+                   FontWeight="Normal" Foreground="White"/>
         <StackPanel Grid.Row="0"  HorizontalAlignment="Right" Margin="0,60,120,0">
             <TextBlock Style="{StaticResource GroupHeaderTextStyle}" Text="{Binding Score}" HorizontalAlignment="Right" Margin="0,0,15,0"/>
             <GridView ItemsSource="{Binding Lives}" HorizontalAlignment="Right" Width="Auto" Height="50" SelectionMode="None">
