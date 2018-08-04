@@ -58,9 +58,9 @@
       <RootProperty Name="Opacity" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="FontStyle" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ButtonBase" />
@@ -232,7 +232,6 @@
       <RootProperty Name="X" />
       <RootProperty Name="Y" />
     </RootType>
-    <RootType FullName="Invaders.Uwp.StandardStyles" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
