@@ -1,6 +1,5 @@
 ﻿using Invaders.Uwp.ViewModel;
 using System;
-using System.IO;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.Foundation;
@@ -39,7 +38,7 @@ namespace Invaders.Uwp.View
             await dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
             {
                 MediaElement playbackMediaElement = new MediaElement();
-                StorageFolder storageFolder = Package.Current.InstalledLocation;
+                StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
                 StorageFile storageFile = await storageFolder.GetFileAsync(filename);
                 IRandomAccessStream stream = await storageFile.OpenAsync(FileAccessMode.Read);
                 playbackMediaElement.SetSource(stream, storageFile.FileType);

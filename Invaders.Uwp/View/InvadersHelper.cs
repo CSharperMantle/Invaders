@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Invaders.Uwp.Model;
+using System;
 using System.Collections.Generic;
-using Invaders.Uwp.Model;
 using Windows.Foundation;
 using Windows.UI;
 using Windows.UI.Xaml;

@@ -10,14 +10,12 @@ namespace Invaders.Uwp.Model
 {
     class HistoryDataManager
     {
-        public static string HistoryDataFilePath = "./config/historydata.json";
         public static string HistoryDataFilename = "historydata.json";
-        public static string HistoryDataDirectory = "./config";
-        public static string HistoryDataDirectoryName = "config";
+
         private IStorageFolder _currentFolder;
         private IStorageFile _historyFile;
         private DataContractJsonSerializer _serializer = new DataContractJsonSerializer(typeof(HistoryData));
-        private object _thisLock = new object();
+        private static object _thisLock = new object();
 
         public HistoryData HistoryData { get; private set; }
 

@@ -31,13 +31,13 @@
     <AppXManifest Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-08-04T04:30:48.137</Modified>
+      <Modified>2018-08-05T13:31:40.135</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Invaders.Uwp.exe">
       <PackagePath>entrypoint\Invaders.Uwp.exe</PackagePath>
-      <Modified>2018-08-04T04:30:47.604</Modified>
+      <Modified>2018-08-05T13:31:39.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -752,7 +752,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Common\StandardStyles.xbf">
       <PackagePath>Common\StandardStyles.xbf</PackagePath>
-      <Modified>2018-08-04T04:30:47.355</Modified>
+      <Modified>2018-08-05T13:31:39.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\View\AnimatedImage.xbf">
       <PackagePath>View\AnimatedImage.xbf</PackagePath>
@@ -760,7 +760,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\View\GamePage.xbf">
       <PackagePath>View\GamePage.xbf</PackagePath>
-      <Modified>2018-08-04T04:30:47.356</Modified>
+      <Modified>2018-08-05T13:28:10.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\View\StarControl.xbf">
       <PackagePath>View\StarControl.xbf</PackagePath>
@@ -777,7 +777,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\bin\x86\Debug\Core\Invaders.Uwp.exe">
       <PackagePath>Invaders.Uwp.exe</PackagePath>
-      <Modified>2018-08-04T04:30:48.134</Modified>
+      <Modified>2018-08-05T13:31:40.131</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

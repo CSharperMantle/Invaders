@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Invaders.Uwp.Commons;
+using System;
 using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Media.Imaging;
-using Invaders.Uwp.Commons;
 
 namespace Invaders.Uwp.View
 {

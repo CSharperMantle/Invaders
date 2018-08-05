@@ -34,7 +34,7 @@ namespace Invaders.Uwp.Model
         {
             _historyDataManager.ReadHistoryData();
 
-            GameOver = true;
+            EndGame(isFirstInit: true);
         }
 
         public HistoryData HistoryData => _historyDataManager.HistoryData.Clone();
@@ -46,15 +46,23 @@ namespace Invaders.Uwp.Model
 
         public bool PlayerDying => _playerDied.HasValue;
 
-        public async void EndGame()
+        public async void EndGame(bool isFirstInit = false)
         {
-            GameOver = true;
-            OnGameLost();
-            _stopwatch.Stop();
-            _historyDataManager.HistoryData.UpdateHighestScore(Score);
-            _historyDataManager.HistoryData.IncreasePlayedTime(_stopwatch.Elapsed);
-            _stopwatch.Reset();
-            await _historyDataManager.WriteHistoryDataAsync();
+            if (isFirstInit)
+            {
+                GameOver = true;
+                return;
+            }
+            else
+            {
+                GameOver = true;
+                OnGameLost();
+                _stopwatch.Stop();
+                _historyDataManager.HistoryData.UpdateHighestScore(Score);
+                _historyDataManager.HistoryData.IncreasePlayedTime(_stopwatch.Elapsed);
+                _stopwatch.Reset();
+                await _historyDataManager.WriteHistoryDataAsync();
+            } 
         }
 
         public void StartGame()

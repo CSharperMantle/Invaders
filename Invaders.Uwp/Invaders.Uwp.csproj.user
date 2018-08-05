@@ -4,4 +4,7 @@
     <AppIconSource>W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\Assets\player.png</AppIconSource>
     <SplashScreenSource>W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\Assets\player.png</SplashScreenSource>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <UseSimulator>true</UseSimulator>
+  </PropertyGroup>
 </Project>
