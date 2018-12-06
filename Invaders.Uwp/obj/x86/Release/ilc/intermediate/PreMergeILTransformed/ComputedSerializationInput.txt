@@ -1,1 +1,0 @@
-"/t:Invaders.Uwp.Model.HistoryData,Invaders.Uwp,json"

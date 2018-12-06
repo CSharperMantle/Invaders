@@ -1,1 +1,0 @@
-W:\Workspace\RiderProjects\Invaders\Invaders.Uwp\Invaders.Uwp.csproj;x86
