@@ -84,7 +84,7 @@ namespace Invaders.Wpf.View
                 rectangle.Fill = new SolidColorBrush(Colors.White);
             } else if (shot is LazerShot)
             {
-                rectangle.Fill = new SolidColorBrush(Colors.Green);
+                rectangle.Fill = new SolidColorBrush(Color.FromRgb(0x33, 0xFF, 0x00));
             } else if (shot is HomingShot)
             {
                 rectangle.Fill = new SolidColorBrush(Colors.Yellow);

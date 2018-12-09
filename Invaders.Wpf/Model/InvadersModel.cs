@@ -77,7 +77,7 @@ namespace Invaders.Wpf.Model
             foreach (var shot in _playerShots.ToList())
             {
                 OnShotMoved(shot, true);
-                _invaderShots.Remove(shot);
+                _playerShots.Remove(shot);
             }
 
             foreach (var star in _stars.ToList())
