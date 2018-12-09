@@ -47,7 +47,7 @@ namespace Invaders.Wpf.View
         {
             var t = new Thread(() =>
             {
-                using (Stream music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.EndGame)))
+                using (var music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.EndGame)))
                 using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();
@@ -62,7 +62,7 @@ namespace Invaders.Wpf.View
         {
             var t = new Thread(() =>
             {
-                using (Stream music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.NextWave)))
+                using (var music = File.OpenRead(InvadersHelper.GetMediaFileName(MediaType.NextWave)))
                 using (var player = new SoundPlayer(music))
                 {
                     player.PlaySync();

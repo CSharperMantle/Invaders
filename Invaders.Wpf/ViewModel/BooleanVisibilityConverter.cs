@@ -6,7 +6,7 @@ using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.ViewModel
 {
-    public class BooleanVisibilityConverter : IValueConverter
+    public sealed class BooleanVisibilityConverter : IValueConverter
     {
         object IValueConverter.Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
