@@ -3,31 +3,30 @@ using System.Windows;
 
 namespace Invaders.Wpf.Model
 {
-    public class Shot
+    public abstract class Shot
     {
-        public const double ShotPixelsPerSecond = 80;
-        public static Size ShotSize = new Size(2, 10);
+        public double ShotPixelsPerSecond { get; protected set; }
+        public Size ShotSize { get; protected set; }
 
-        private DateTime _lastMoved;
+        protected DateTime lastMoved;
 
         public Shot(Point location, Direction direction)
         {
             Location = location;
             Direction = direction;
-            _lastMoved = DateTime.Now;
+            lastMoved = DateTime.Now;
         }
 
-        public Point Location { get; private set; }
+        public bool IsUsedUp() => Life <= 0;
+
+        public void DecreaseLife(int value) => Life -= value;
+
+        public Point Location { get; set; }
+
+        public int Life { get; protected set; }
 
         public Direction Direction { get; }
 
-        public void Move()
-        {
-            var timeSinceLastMoved = DateTime.Now - _lastMoved;
-            var distance = timeSinceLastMoved.Milliseconds * ShotPixelsPerSecond / 1000;
-            if (Direction == Direction.Up) distance *= -1;
-            Location = new Point(Location.X, Location.Y + distance);
-            _lastMoved = DateTime.Now;
-        }
+        public abstract void Move();
     }
 }

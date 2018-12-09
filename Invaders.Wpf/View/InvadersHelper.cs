@@ -79,9 +79,18 @@ namespace Invaders.Wpf.View
         internal static FrameworkElement ShotControlFactory(Shot shot, double scale)
         {
             var rectangle = new Rectangle();
-            rectangle.Fill = new SolidColorBrush(Colors.Yellow);
-            rectangle.Width = Shot.ShotSize.Width * scale;
-            rectangle.Height = Shot.ShotSize.Height * scale;
+            if (shot is BasicShot)
+            {
+                rectangle.Fill = new SolidColorBrush(Colors.White);
+            } else if (shot is LazerShot)
+            {
+                rectangle.Fill = new SolidColorBrush(Colors.Green);
+            } else if (shot is HomingShot)
+            {
+                rectangle.Fill = new SolidColorBrush(Colors.Yellow);
+            }
+            rectangle.Width = shot.ShotSize.Width * scale;
+            rectangle.Height = shot.ShotSize.Height * scale;
             SetCanvasLocation(rectangle, shot.Location.X * scale, shot.Location.Y * scale);
             return rectangle;
         }

@@ -94,11 +94,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\BasicShot.cs" />
     <!--Namespace Invaders.Wpf.Model-->
     <Compile Include="Model\Direction.cs" />
+    <Compile Include="Model\HomingShot.cs" />
     <Compile Include="Model\Invader.cs" />
     <Compile Include="Model\InvadersModel.cs" />
     <Compile Include="Model\InvaderType.cs" />
+    <Compile Include="Model\LazerShot.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="Model\Ship.cs" />
     <Compile Include="Model\ShipChangedEventArgs.cs" />

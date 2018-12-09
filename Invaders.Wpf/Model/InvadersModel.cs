@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Invaders.Wpf.Commons;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -6,7 +7,6 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Windows;
-using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.Model
 {
@@ -105,7 +105,8 @@ namespace Invaders.Wpf.Model
             if (_playerShots.Count < MaximumPlayerShots)
             {
                 var location = new Point(_player.Location.X + _player.Area.Width / 2, _player.Location.Y);
-                var shot = new Shot(location, Direction.Up);
+                //TODO: Add more kinds of shots
+                var shot = new BasicShot(location, Direction.Up);
                 _playerShots.Add(shot);
                 OnShotMoved(shot, false);
             }
@@ -158,6 +159,7 @@ namespace Invaders.Wpf.Model
                     ReturnFire();
                     CheckForInvaderCollisions();
                     CheckForPlayerCollisions();
+                    CheckForShotCollisions();
                 }
                 else if (DateTime.Now - _playerDied.Value > TimeSpan.FromSeconds(2.5))
                 {
@@ -259,8 +261,7 @@ namespace Invaders.Wpf.Model
 
         private void CheckForInvaderCollisions()
         {
-            var hitShots = new List<Shot>();
-            var shotInvaders = new List<Invader>();
+            var killedInvaders = new Dictionary<Invader, Shot>();
             foreach (var shot in _playerShots)
             {
                 var result =
@@ -268,27 +269,55 @@ namespace Invaders.Wpf.Model
                     where invader.Area.Contains(shot.Location)
                     select new {KilledInvader = invader, HitShot = shot};
                 if (result.ToList().Any())
+                {
                     foreach (var each in result.ToList())
                     {
-                        hitShots.Add(each.HitShot);
-                        shotInvaders.Add(each.KilledInvader);
+                        if (!killedInvaders.ContainsKey(each.KilledInvader))
+                        {
+                            killedInvaders.Add(each.KilledInvader, each.HitShot);
+                        }
+                        else
+                        {
+                            Log.Debug("Duplicated key found.");
+                            Log.Debug(" at " + new StackTrace().GetFrame(0).GetMethod().Name);
+                        }
                     }
+                }
             }
-
-            foreach (var deadInvader in shotInvaders)
+            foreach (var killedInvader in killedInvaders.Keys)
             {
-                Score += deadInvader.Score;
-                _invaders.Remove(deadInvader);
+                Score += killedInvader.Score;
+                _invaders.Remove(killedInvader);
                 _historyData.IncreaseKilledInvaders();
-                OnShipChanged(deadInvader, true);
-            }
+                OnShipChanged(killedInvader, true);
 
-            foreach (var usedShot in hitShots)
-            {
-                _playerShots.Remove(usedShot);
-                OnShotMoved(usedShot, true);
+                var shot = killedInvaders[killedInvader];
+                shot.DecreaseLife(killedInvader.Score);
+                if (shot.IsUsedUp())
+                {
+                    _playerShots.Remove(shot);
+                    OnShotMoved(shot, true);
+                }
             }
         }
+
+        private void CheckForShotCollisions()
+        {
+            foreach (var playerShot in _playerShots.ToList())
+            {
+                foreach (var invaderShot in _invaderShots.ToList())
+                {
+                    if (new Rect(playerShot.Location, playerShot.ShotSize).Contains(invaderShot.Location))
+                    {
+                        OnShotMoved(playerShot, true);
+                        OnShotMoved(invaderShot, true);
+                        _invaderShots.Remove(invaderShot);
+                        _playerShots.Remove(playerShot);
+                    }
+                }
+            }
+        }
+
 
         private void MoveInvaders()
         {
@@ -398,7 +427,28 @@ namespace Invaders.Wpf.Model
 
             var shotLocation = new Point(bottomInvader.Area.X + bottomInvader.Area.Width / 2,
                 bottomInvader.Area.Bottom + 2);
-            var newShot = new Shot(shotLocation, Direction.Down);
+            Shot newShot;
+            switch (bottomInvader.InvaderType)
+            {
+                case InvaderType.Spaceship:
+                    newShot = new HomingShot(shotLocation, Direction.Down, _player);
+                    break;
+                case InvaderType.Bug:
+                    newShot = new LazerShot(shotLocation, Direction.Down);
+                    break;
+                case InvaderType.Saucer:
+                    newShot = new LazerShot(shotLocation, Direction.Down);
+                    break;
+                case InvaderType.Satellite:
+                    newShot = new BasicShot(shotLocation, Direction.Down);
+                    break;
+                case InvaderType.Star:
+                    newShot = new BasicShot(shotLocation, Direction.Down);
+                    break;
+                default:
+                    throw new ArgumentException(nameof(bottomInvader));
+            }
+            
             _invaderShots.Add(newShot);
             OnShotMoved(newShot, false);
         }
