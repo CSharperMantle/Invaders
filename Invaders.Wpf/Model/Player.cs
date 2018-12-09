@@ -7,6 +7,7 @@ namespace Invaders.Wpf.Model
     {
         public const double PlayerPixelsPerSecond = 8;
         public static readonly Size PlayerSize = new Size(25, 15);
+        public Ship targetShip { get; private set; }
 
         public Player()
             : base(new Point(PlayerSize.Width,

@@ -73,6 +73,7 @@ namespace Invaders.Wpf.View
             invaderControl.Width = invader.Size.Width * scale;
             invaderControl.Height = invader.Size.Height * scale;
             SetCanvasLocation(invaderControl, invader.Location.X * scale, invader.Location.Y * scale);
+            Panel.SetZIndex(invaderControl, 1);
             return invaderControl;
         }
 
@@ -92,6 +93,7 @@ namespace Invaders.Wpf.View
             rectangle.Width = shot.ShotSize.Width * scale;
             rectangle.Height = shot.ShotSize.Height * scale;
             SetCanvasLocation(rectangle, shot.Location.X * scale, shot.Location.Y * scale);
+            Panel.SetZIndex(rectangle, 0);
             return rectangle;
         }
 
@@ -160,6 +162,7 @@ namespace Invaders.Wpf.View
             playerControl.Width = player.Size.Width * scale;
             playerControl.Height = player.Size.Height * scale;
             SetCanvasLocation(playerControl, player.Location.X * scale, player.Location.Y * scale);
+            Panel.SetZIndex(playerControl, 1);
             return playerControl;
         }
 

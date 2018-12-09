@@ -9,7 +9,7 @@
         SizeChanged="MainWindow_OnSizeChanged"
         KeyDown="MainWindow_OnKeyDown"
         KeyUp="MainWindow_OnKeyUp"
-        Title="Invaders" Height="300" Width="540" Background="DarkSlateGray">
+        Title="Invaders" Height="600" Width="1080" Background="DarkSlateGray">
     <Window.Resources>
         <viewModel:InvadersViewModel x:Key="ViewModel" />
         <viewModel:BooleanVisibilityConverter x:Key="VisibilityConverter" />

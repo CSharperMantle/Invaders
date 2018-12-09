@@ -106,7 +106,7 @@ namespace Invaders.Wpf.Model
             {
                 var location = new Point(_player.Location.X + _player.Area.Width / 2, _player.Location.Y);
                 //TODO: Add more kinds of shots
-                var shot = new BasicShot(location, Direction.Up);
+                var shot = new LazerShot(location, Direction.Up);
                 _playerShots.Add(shot);
                 OnShotMoved(shot, false);
             }
