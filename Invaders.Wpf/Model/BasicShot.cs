@@ -3,13 +3,14 @@ using System.Windows;
 
 namespace Invaders.Wpf.Model
 {
-    class BasicShot : Shot
+    public class BasicShot : Shot
     {
         public BasicShot(Point location, Direction direction) : base(location, direction)
         {
             ShotSize = new Size(2, 10);
             ShotPixelsPerSecond = 80;
             Life = 10;
+            Score = 5;
         }
 
         public override void Move()

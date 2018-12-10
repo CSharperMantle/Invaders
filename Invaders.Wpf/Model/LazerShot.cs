@@ -3,13 +3,14 @@ using System.Windows;
 
 namespace Invaders.Wpf.Model
 {
-    class LazerShot : Shot
+    public class LazerShot : Shot
     {
         public LazerShot(Point location, Direction direction) : base(location, direction)
         {
             ShotSize = new Size(2, 10);
             ShotPixelsPerSecond = 200;
             Life = 50;
+            Score = 10;
         }
 
         public override void Move()

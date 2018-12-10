@@ -92,7 +92,7 @@ namespace Invaders.Wpf.Model
             _historyData.IncreasePlayedGames();
 
             Score = 0;
-            Lives = 2;
+            Lives = 3;
             Waves = 0;
             
             _stopwatch.Start();
@@ -313,6 +313,7 @@ namespace Invaders.Wpf.Model
                         OnShotMoved(invaderShot, true);
                         _invaderShots.Remove(invaderShot);
                         _playerShots.Remove(playerShot);
+                        Score += invaderShot.Score;
                     }
                 }
             }

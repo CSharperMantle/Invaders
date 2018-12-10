@@ -5,6 +5,7 @@
         Left,
         Right,
         Up,
-        Down
+        Down,
+        Unknown
     }
 }

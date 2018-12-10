@@ -15,17 +15,17 @@ namespace Invaders.Wpf.Model
             InvaderType = invaderType;
             switch (InvaderType)
             {
+                case InvaderType.Spaceship:
+                    Score = 50;
+                    break;
                 case InvaderType.Bug:
                     Score = 40;
-                    break;
-                case InvaderType.Satellite:
-                    Score = 20;
                     break;
                 case InvaderType.Saucer:
                     Score = 30;
                     break;
-                case InvaderType.Spaceship:
-                    Score = 50;
+                case InvaderType.Satellite:
+                    Score = 20;
                     break;
                 case InvaderType.Star:
                     Score = 10;

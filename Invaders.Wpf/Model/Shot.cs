@@ -25,6 +25,8 @@ namespace Invaders.Wpf.Model
 
         public int Life { get; protected set; }
 
+        public int Score { get; protected set; }
+
         public Direction Direction { get; }
 
         public abstract void Move();
