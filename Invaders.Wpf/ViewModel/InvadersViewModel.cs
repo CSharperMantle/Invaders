@@ -313,18 +313,24 @@ namespace Invaders.Wpf.ViewModel
 
         internal void KeyDown(Key key)
         {
+            if (key == Key.D1) _model.CurrentShotType = ShotType.BasicShot;
+
+            if (key == Key.D2) _model.CurrentShotType = ShotType.LazerShot;
+
             if (key == Key.Space) _model.FireShot();
 
-            if (key == Key.Left) _leftAction = DateTime.Now;
+            if (key == Key.A) _leftAction = DateTime.Now;
 
-            if (key == Key.Right) _rightAction = DateTime.Now;
+            if (key == Key.D) _rightAction = DateTime.Now;
+
+            if (key == Key.Escape) Paused = !Paused;
         }
 
         internal void KeyUp(Key key)
         {
-            if (key == Key.Left) _leftAction = null;
+            if (key == Key.A) _leftAction = null;
 
-            if (key == Key.Right) _rightAction = null;
+            if (key == Key.D) _rightAction = null;
         }
 
         [NotifyPropertyChangedInvocator]

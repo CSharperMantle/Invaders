@@ -10,7 +10,7 @@ namespace Invaders.Wpf.Model
 
         protected DateTime lastMoved;
 
-        public Shot(Point location, Direction direction)
+        protected Shot(Point location, Direction direction)
         {
             Location = location;
             Direction = direction;

@@ -4,7 +4,7 @@ namespace Invaders.Wpf.Model
 {
     public abstract class Ship
     {
-        public Ship(Point location, Size size)
+        protected Ship(Point location, Size size)
         {
             Location = location;
             Size = size;

@@ -42,6 +42,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,6 +52,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -145,6 +147,7 @@
     <Compile Include="Model\ShipChangedEventArgs.cs" />
     <Compile Include="Model\Shot.cs" />
     <Compile Include="Model\ShotMovedEventArgs.cs" />
+    <Compile Include="Model\ShotType.cs" />
     <Compile Include="Model\StarChangedEventArgs.cs" />
     <Compile Include="Model\HistoryData.cs" />
     <Compile Include="Model\ICloneable.cs" />

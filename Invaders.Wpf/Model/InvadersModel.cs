@@ -15,7 +15,7 @@ namespace Invaders.Wpf.Model
         public const string HistoryDataFilePath = "./config/historydata.json";
         public const string HistoryDataDirectory = "./config";
         public const int MaximumPlayerShots = 3;
-        public const int InitialStarCount = 50;
+        public const int InitialStarCount = 25;
         public static readonly Size PlayAreaSize = new Size(400, 300);
         private readonly List<Invader> _invaders = new List<Invader>();
         private readonly List<Shot> _invaderShots = new List<Shot>();
@@ -44,6 +44,7 @@ namespace Invaders.Wpf.Model
         public int Waves { get; private set; }
         public int Lives { get; private set; }
         public bool GameOver { get; private set; }
+        public ShotType CurrentShotType { get; set; } 
 
         public bool PlayerDying => _playerDied.HasValue;
 
@@ -94,6 +95,7 @@ namespace Invaders.Wpf.Model
             Score = 0;
             Lives = 3;
             Waves = 0;
+            CurrentShotType = ShotType.BasicShot;
             
             _stopwatch.Start();
 
@@ -105,8 +107,22 @@ namespace Invaders.Wpf.Model
             if (_playerShots.Count < MaximumPlayerShots)
             {
                 var location = new Point(_player.Location.X + _player.Area.Width / 2, _player.Location.Y);
+                Shot shot;
                 //TODO: Add more kinds of shots
-                var shot = new BasicShot(location, Direction.Up);
+                switch (CurrentShotType)
+                {
+                    case ShotType.BasicShot:
+                        shot = new BasicShot(location, Direction.Up);
+                        break;
+                    case ShotType.LazerShot:
+                        shot = new LazerShot(location, Direction.Up);
+                        break;
+                    case ShotType.HomingShot:
+                        shot = new HomingShot(location, Direction.Up);
+                        break;
+                    default:
+                        throw new ArgumentException(nameof(CurrentShotType));
+                }
                 _playerShots.Add(shot);
                 OnShotMoved(shot, false);
             }
@@ -470,7 +486,7 @@ namespace Invaders.Wpf.Model
                     var serializer = new DataContractJsonSerializer(typeof(HistoryData));
                     var obj = serializer.ReadObject(reader);
                     if (obj is HistoryData)
-                        _historyData = obj as HistoryData;
+                        _historyData = (HistoryData)obj;
                     else
                        throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
                 }

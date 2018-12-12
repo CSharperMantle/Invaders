@@ -11,7 +11,8 @@ namespace Invaders.Wpf.Model
     {
         public int ShotManeuveringPixelsPerSecond { get; protected set; }
 
-        public readonly Ship TargetShip;
+        public Ship TargetShip { get; protected set; }
+
         private short _lastMovedUpDownTime = 0;
 
         public HomingShot(Point location, Direction direction, Ship target = null) : base(location, direction)

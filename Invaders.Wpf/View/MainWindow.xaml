@@ -70,28 +70,31 @@
             </ItemsControl>
         </Border>
 
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                    Opacity="0.9" Background="DarkGray"
                     Visibility="{Binding Path=GameOver, Converter={StaticResource VisibilityConverter}}">
-            <TextBlock Text="Game Over" VerticalAlignment="Center"
-                       FontFamily="Arial Narrow" FontSize="150"
-                       Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
+            <TextBlock Text="Game Over"
+                       VerticalAlignment="Center"
+                       Opacity="1" Foreground="Yellow" 
+                       FontWeight="Bold" FontStyle="Italic" FontSize="150" FontFamily="Microsoft YaHei"
                        Margin="0, 0, 0, 60" />
             <TextBlock Text="New Record!" 
                        VerticalAlignment="Center" HorizontalAlignment="Center"
-                       FontFamily="Consolas" FontSize="60"
-                       Foreground="Red" FontWeight="Bold"
+                       FontFamily="Consolas" FontSize="60" FontWeight="Bold"
+                       Opacity="1" Foreground="Red"
                        Visibility="{Binding Path=IsHighestScore, Converter={StaticResource VisibilityConverter}}" />
-            <Button x:Name="BeginButton" Content="START" Background="DarkSlateGray"
-                    Foreground="Snow"
-                    FontWeight="Bold"
+            <Button x:Name="BeginButton" Content="START"
                     HorizontalAlignment="Center"
-                    FontSize="30" Click="BeginButton_OnClick" />
+                    Background="DarkSlateGray" Foreground="Snow"
+                    FontWeight="Bold" FontSize="30" 
+                    Click="BeginButton_OnClick" />
         </StackPanel>
 
-        <TextBlock Grid.Row="1" Text="Paused" VerticalAlignment="Center"
-                   FontFamily="Arial Narrow" FontSize="60"
-                   Foreground="Yellow" FontWeight="ExtraBold" FontStyle="Italic"
-                   Margin="120, 0, 0, 60"
+        <TextBlock Grid.Row="1" Text="Paused"
+                   VerticalAlignment="Center" HorizontalAlignment="Center"
+                   FontFamily="Microsoft YaHei" FontSize="60"
+                   FontWeight="Bold" FontStyle="Normal"
+                   Foreground="Yellow" Background="DarkGray" Opacity="0.6"
                    Visibility="{Binding Paused, Converter={StaticResource VisibilityConverter}}" />
 
     </Grid>

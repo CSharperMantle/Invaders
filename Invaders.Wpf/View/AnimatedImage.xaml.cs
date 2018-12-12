@@ -49,7 +49,7 @@ namespace Invaders.Wpf.View
             if (storyboard != null)
                 storyboard.Begin();
             else
-                throw new NullReferenceException(nameof(storyboard));
+                throw new ArgumentException(nameof(storyboard));
         }
 
         public void StartFlashing()
@@ -59,7 +59,7 @@ namespace Invaders.Wpf.View
             if (storyboard != null)
                 storyboard.Begin();
             else
-                throw new NullReferenceException(nameof(storyboard));
+                throw new ArgumentException(nameof(storyboard));
         }
 
         public void StopFlashing()
@@ -69,7 +69,7 @@ namespace Invaders.Wpf.View
             if (storyboard != null)
                 storyboard.Stop();
             else
-                throw new NullReferenceException(nameof(storyboard));
+                throw new ArgumentException(nameof(storyboard));
         }
 
         private static BitmapImage CreateImageFromAssets(string imageFileName)
