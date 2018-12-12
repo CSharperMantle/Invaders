@@ -151,6 +151,7 @@
     <Compile Include="Model\StarChangedEventArgs.cs" />
     <Compile Include="Model\HistoryData.cs" />
     <Compile Include="Model\ICloneable.cs" />
+    <Compile Include="Model\UserSettings.cs" />
     <!--Namespace Invaders.Wpf.Properties-->
     <Compile Include="Properties\Annotations.cs" />
     <!--Namespace Invaders.Wpf.ViewModel-->

@@ -14,6 +14,8 @@ namespace Invaders.Wpf.Model
     {
         public const string HistoryDataFilePath = "./config/historydata.json";
         public const string HistoryDataDirectory = "./config";
+        public const string UserSettingsFilePath = "./config/usersettings.json";
+        public const string UserSettingsDirectory = "./config";
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 25;
         public static readonly Size PlayAreaSize = new Size(400, 300);
@@ -25,6 +27,7 @@ namespace Invaders.Wpf.Model
         private readonly Stopwatch _stopwatch = new Stopwatch();
 
         private HistoryData _historyData;
+        private UserSettings _userSettings;
         private Direction _invaderDirection = Direction.Left;
         private bool _justMovedDown;
         private DateTime _lastUpdated = DateTime.MinValue;
@@ -330,6 +333,7 @@ namespace Invaders.Wpf.Model
                         _invaderShots.Remove(invaderShot);
                         _playerShots.Remove(playerShot);
                         Score += invaderShot.Score;
+                        _historyData.IncreaseKilledShots();
                     }
                 }
             }
@@ -500,6 +504,36 @@ namespace Invaders.Wpf.Model
             }
         }
 
+        private void ReadUserSettingsFromFile()
+        {
+            if (!Directory.Exists(UserSettingsDirectory)) Directory.CreateDirectory(UserSettingsDirectory);
+            if (!File.Exists(UserSettingsFilePath))
+            {
+                _userSettings = new UserSettings();
+                return;
+            }
+
+            using (Stream reader = File.OpenRead(UserSettingsFilePath))
+            {
+                try
+                {
+                    var serializer = new DataContractJsonSerializer(typeof(UserSettings));
+                    var obj = serializer.ReadObject(reader);
+                    if (obj is UserSettings)
+                        _userSettings = (UserSettings)obj;
+                    else
+                        throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                }
+                catch (Exception e)
+                {
+                    Log.Critical(e.ToString());
+                    Log.Info(e.StackTrace);
+                    _userSettings = new UserSettings();
+                }
+
+            }
+        }
+
         private void WriteHistoryDataFromFile()
         {
             if (_historyData == null) throw new SerializationException(nameof(_historyData) + " is null.");
@@ -523,7 +557,31 @@ namespace Invaders.Wpf.Model
                 Log.Critical(e.ToString());
                 Log.Info(e.StackTrace);
             }
-            
+        }
+
+        private void WriteUserSettingsFromFile()
+        {
+            if (_userSettings == null) throw new SerializationException(nameof(_userSettings) + " is null.");
+            try
+            {
+                if (!File.Exists(UserSettingsFilePath))
+                    using (Stream creater = File.Create(UserSettingsFilePath))
+                    {
+                        var serializer = new DataContractJsonSerializer(typeof(UserSettings));
+                        serializer.WriteObject(creater, _userSettings);
+                    }
+                else
+                    using (Stream writer = File.OpenWrite(HistoryDataFilePath))
+                    {
+                        var serializer = new DataContractJsonSerializer(typeof(UserSettings));
+                        serializer.WriteObject(writer, _userSettings);
+                    }
+            }
+            catch (Exception e)
+            {
+                Log.Critical(e.ToString());
+                Log.Info(e.StackTrace);
+            }
         }
 
         public event EventHandler<StarChangedEventArgs> StarChanged;

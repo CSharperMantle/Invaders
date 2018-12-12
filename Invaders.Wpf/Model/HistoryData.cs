@@ -29,6 +29,8 @@ namespace Invaders.Wpf.Model
 
         [DataMember] public int KilledInvaders { get; private set; }
 
+        [DataMember] public int KilledShots { get; private set; }
+
         [DataMember] public int DiedTime { get; private set; }
 
         public HistoryData Clone()
@@ -39,7 +41,8 @@ namespace Invaders.Wpf.Model
                 PlayedGames = PlayedGames,
                 PlayedTime = PlayedTime,
                 KilledInvaders = KilledInvaders,
-                DiedTime = DiedTime
+                DiedTime = DiedTime,
+                KilledShots = KilledShots
             };
         }
 
@@ -56,6 +59,10 @@ namespace Invaders.Wpf.Model
         public void IncreaseKilledInvaders()
         {
             KilledInvaders++;
+        }
+        public void IncreaseKilledShots()
+        {
+            KilledShots++;
         }
 
         public void IncreaseDiedTime()

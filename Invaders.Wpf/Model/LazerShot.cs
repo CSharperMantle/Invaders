@@ -8,7 +8,7 @@ namespace Invaders.Wpf.Model
         public LazerShot(Point location, Direction direction) : base(location, direction)
         {
             ShotSize = new Size(2, 10);
-            ShotPixelsPerSecond = 200;
+            ShotPixelsPerSecond = 150;
             Life = 50;
             Score = 10;
         }
