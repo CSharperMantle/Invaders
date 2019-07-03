@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d668a11-3e10-4e55-888f-48bda8298bfc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Invaders/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Invaders/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/App.xaml.cs" afterDir="false" />
+    <list default="true" id="2d668a11-3e10-4e55-888f-48bda8298bfc" name="Default" comment="Optimized code">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Invaders/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Invaders/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/BasicShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/BasicShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/HomingShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/HomingShot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/LazerShot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/LazerShot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/ShotType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/ShotType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Model/UserSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Model/UserSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/Properties/Annotations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/Properties/Annotations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/View/MediaType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/View/MediaType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,6 +18,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Invaders" />
@@ -36,181 +41,226 @@
       <file leaf-file-name="Log.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state>
               <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvadersModel.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InvadersModel.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="290" column="29" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+            <state relative-caret-position="2850">
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
               <folding>
-                <marker date="1562123863726" expanded="false" signature="6:208" ph="..." />
-                <marker date="1562123863726" expanded="true" signature="266:21864" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="299:21862" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="1506:1588" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="1989:2338" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="2371:3400" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="2467:2584" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="2642:2755" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="2812:2924" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="2975:3083" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="3432:4426" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="3499:4416" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="3736:4319" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="4479:4645" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="4519:4635" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="4677:4896" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="4929:5210" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="5246:5457" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="5498:6195" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="5533:6161" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="5651:5933" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="6020:6147" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="6241:6598" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="6631:8110" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="6822:8100" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="7042:7998" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="8159:9350" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="8623:9117" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="8694:8795" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="8816:9103" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="9211:9340" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="9400:10899" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="9523:10315" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="9792:10301" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="9850:10284" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="9927:10061" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="10090:10284" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="10379:10889" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="10747:10875" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="10946:11546" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="11018:11536" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="11082:11527" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="11185:11527" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="11584:13463" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="11749:13453" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="12270:13127" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="12340:12674" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="12421:12590" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="12732:13065" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="12813:12982" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="13148:13439" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="13265:13421" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="13497:14541" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="13554:13653" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="13702:13801" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="14240:14353" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="14419:14531" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="14576:16409" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="15466:16317" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="16457:17494" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="16624:16726" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="16798:17484" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="16832:17252" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="17288:17470" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="17543:18592" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="17713:17817" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="17890:18582" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="17924:18348" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="18384:18568" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="18641:19608" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="18775:19454" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="18922:19131" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="19232:19440" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="19486:19598" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="19658:20633" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="19794:20479" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="19943:20154" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="20255:20465" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="20511:20623" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="20770:20918" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="21048:21190" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="21319:21458" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="21547:21666" ph="{...}" />
-                <marker date="1562123863726" expanded="true" signature="21746:21856" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="6:236" ph="..." />
+                <marker date="1562126351283" expanded="true" signature="266:21946" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="299:21944" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="1506:1588" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="1989:2338" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="2371:3400" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="2467:2584" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="2642:2755" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="2812:2924" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="2975:3083" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="3432:4426" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="3499:4416" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="3736:4319" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="4479:4645" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="4519:4635" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="4677:4896" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="4929:5210" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="5246:5457" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="5498:6195" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="5533:6161" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="5651:5933" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="6020:6147" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="6241:6598" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="6631:8110" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="6822:8100" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="7042:7998" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="8159:9350" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="8623:9117" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="8694:8795" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="8816:9103" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="9211:9340" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="9400:10929" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="9523:10345" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="9989:10111" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="10136:10331" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="10409:10919" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="10777:10905" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="10976:11576" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="11215:11566" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="11614:13493" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="11779:13483" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="12300:13157" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="12370:12704" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="12451:12620" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="12762:13095" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="12843:13012" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="13178:13469" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="13295:13451" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="13527:14571" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="13584:13683" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="13732:13831" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="14270:14383" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="14449:14561" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="14606:16491" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="15548:16399" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="16539:17576" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="16706:16808" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="16880:17566" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="16914:17334" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="17370:17552" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="17625:18674" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="17795:17899" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="17972:18664" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="18006:18430" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="18466:18650" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="18723:19690" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="18857:19536" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="19004:19213" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="19314:19522" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="19568:19680" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="19740:20715" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="19876:20561" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="20025:20236" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="20337:20547" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="20593:20705" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="20852:21000" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="21130:21272" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="21401:21540" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="21629:21748" ph="{...}" />
+                <marker date="1562126351283" expanded="true" signature="21828:21938" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HistoryData.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs">
+      <file leaf-file-name="MainWindow.xaml.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+            <state relative-caret-position="17">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
-                <marker date="1562123863695" expanded="false" signature="6:49" ph="..." />
-                <marker date="1562123863695" expanded="true" signature="79:2200" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="86:383" ph="///     Represents an object that records history game data. ... " />
-                <marker date="1562123863695" expanded="true" signature="476:2198" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="511:689" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1133:1474" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1191:1463" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1528:1614" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1657:1704" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1750:1800" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1843:1890" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="1930:1974" ph="{...}" />
-                <marker date="1562123863695" expanded="true" signature="2035:2192" ph="{...}" />
+                <marker date="1562123885304" expanded="false" signature="6:182" ph="..." />
+                <marker date="1562123885304" expanded="true" signature="211:4075" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="218:300" ph="///     Interaction logic for MainWindow.xaml ... " />
+                <marker date="1562123885304" expanded="true" signature="336:4073" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="426:835" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="917:1346" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="964:1232" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="1143:1218" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="1426:1852" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="1473:1738" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="1649:1724" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="1941:2368" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="1988:2254" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="2165:2240" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="2454:2562" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="2636:2709" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="2764:3673" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="2887:3178" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="3195:3501" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="3747:3806" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="3878:3935" ph="{...}" />
+                <marker date="1562123885304" expanded="true" signature="4011:4067" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvadersHelper.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs">
+      <file leaf-file-name="Invader.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Invader.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="300">
+              <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
               <folding>
-                <marker date="1562123863655" expanded="false" signature="6:221" ph="..." />
-                <marker date="1562123863655" expanded="true" signature="250:7895" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="291:7893" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="444:1420" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="516:1192" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="1488:2082" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="1560:2028" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="2177:2669" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="2755:3429" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="3517:4468" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="3599:4319" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="4556:4886" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="4934:5439" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="4981:5429" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="5531:5995" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="6087:6186" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="6293:6802" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="6960:7100" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="7277:7640" ph="{...}" />
-                <marker date="1562123863655" expanded="true" signature="7737:7887" ph="{...}" />
+                <marker date="1562118522662" expanded="false" signature="6:35" ph="..." />
+                <marker date="1562118522662" expanded="true" signature="65:1849" ph="{...}" />
+                <marker date="1562118522662" expanded="true" signature="99:1847" ph="{...}" />
+                <marker date="1562118522662" expanded="true" signature="357:1077" ph="{...}" />
+                <marker date="1562118522662" expanded="true" signature="439:1067" ph="{...}" />
+                <marker date="1562118522662" expanded="true" signature="1217:1841" ph="{...}" />
+                <marker date="1562118522662" expanded="true" signature="1258:1831" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnimatedImage.xaml.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs">
+      <file leaf-file-name="Shot.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state>
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
-                <marker date="1562123802029" expanded="false" signature="6:174" ph="..." />
-                <marker date="1562123802029" expanded="true" signature="203:2891" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="258:2889" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="295:350" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="440:510" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="597:1500" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="967:1302" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="1535:1777" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="1814:2050" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="2086:2321" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="2401:2883" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="2427:2580" ph="{...}" />
-                <marker date="1562123802029" expanded="true" signature="2612:2873" ph="{...}" />
+                <marker date="1562124372427" expanded="false" signature="6:35" ph="..." />
+                <marker date="1562124372427" expanded="true" signature="65:867" ph="{...}" />
+                <marker date="1562124372427" expanded="true" signature="203:329" ph="{...}" />
+                <marker date="1562124372427" expanded="true" signature="679:729" ph="{...}" />
+                <marker date="1562124372427" expanded="true" signature="774:821" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvadersViewModel.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
+              <folding>
+                <marker date="1562126593033" expanded="false" signature="6:375" ph="..." />
+                <marker date="1562126593033" expanded="true" signature="409:12946" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="471:12944" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="1737:2234" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="2714:2907" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="2740:2897" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="3046:4730" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="3095:3212" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="3238:3692" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="3768:3884" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="3919:4192" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="4258:4545" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="4398:4531" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="4579:4720" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="4820:5608" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="4892:5010" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="5027:5598" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="5091:5317" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="5338:5584" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="5694:6556" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="5736:6321" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="5801:6025" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6046:6307" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6338:6546" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6400:6532" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6646:9819" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6683:8884" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6736:8870" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="6915:7160" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="7189:7669" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="7781:8026" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="8141:8348" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="8377:8820" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="8901:9809" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="8954:9795" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="9221:9460" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="9904:9959" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="10030:10076" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="10118:10548" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="10350:10538" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="10580:10630" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="10663:10971" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="11011:11729" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="11046:11719" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="11767:12031" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="11802:12021" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="12169:12276" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="12374:12493" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="12573:12738" ph="{...}" />
+                <marker date="1562126593033" expanded="true" signature="12822:12938" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -239,97 +289,109 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/73/aabd3513/ThreadPool.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/d1/dd734977/Random.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/7a/b5a8ceb9/NotSupportedException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/dd/3d7b1020/RoutedEventHandlerInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/a1/914ce017/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/47/aefda5bc/Colors.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/a5/65b422a9/Rectangle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/77/d1d7eca9/PropertyPath.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/70/1a5f1066/Exception.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/sys/system/Media/SoundPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/ca/b6d623b7/Shape.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/e2/5015bab0/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/f8/a68a227e/SafeReflectionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/c5/01f2fae8/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/1b/168c4e3e/XamlTypeInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/1d/e93e74e6/Brush.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E173764-4FD0-45C6-8CD2-3D1F4426D867/57/e36baac0/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/ea/4742cde5/XamlWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/4c/e300decf/WpfXamlLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/fd1f8fb7/DispatcherTimer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/8b/8df45ec3/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/6d/79ca59ea/Grid.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/a56e94d8/Point.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/6f/0bcace42/SystemResources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/11/8ce0c269/StyleHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/25/71e5567b/FrameworkElement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/8f/cc31b7e1/TextWriter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/26/b3aea964/CacheMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/84/7564ab64/ClrObjectRuntime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/ac/9f64c2d6/PartialTrustTolerantRuntime.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7d/18238a29/Thickness.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E173764-4FD0-45C6-8CD2-3D1F4426D867/e1/602f9e29/TimeSpan.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7E173764-4FD0-45C6-8CD2-3D1F4426D867/e5/e9ced0fc/RuntimeType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/App.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/da/eccb87ea/EventHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3AE2C8AB-4F24-4889-8622-5F1086FAB350/b6/734f0750/XamlObjectWriter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/App.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/04/ff9eb000/Visibility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/StarControl.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/e3/a981f491/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/MediaType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5340B466-F428-4C35-8CDF-18E53C72A152/5e/ca84ce46/DataContractJsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/View/StarControl.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/54da5727/HwndSubclass.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/29/e70fab11/Thread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/services/monitoring/system/diagnosticts/Stopwatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/6e5cc21f/HwndWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ShotType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HomingShot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/6d/238341ce/ThreadStart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/UserSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/6a/e350cae4/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvaderType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/4d/b849ee3b/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Direction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/LazerShot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/StarChangedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ShotMovedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/fc/fcf4906a/CulturePreservingExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/BasicShot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Invader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Ship.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/0e/ff35238a/Thread.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Model/ShipChangedEventArgs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/00/a2708310/DispatcherOperation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/60/902cb53b/GridView.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/ac/ed51c44d/Dispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/22/1deda302/Freezable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/a2/80928400/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/9f/b029e601/MediaPlayerState.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/60/6ab3be49/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/0d/d9b524e3/UserControl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/f4/244db39f/ExceptionWrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/a7/e8707bbe/MediaPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/71/bb680af0/NotImplementedException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/1f/4c648f1c/DependencyObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7f/3090935a/MediaElement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/f1/989346d6/SystemException.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/2f/89c6cefa/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/2d/f5f128e8/__DynamicallyInvokableAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Resources.resx" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Resources.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/a6/fecc6efa/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3A41FAFF-28B3-4489-BBB5-A38CA1D8B2A1/ed/ebe526c9/IOrderedEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Invaders.Wpf/Properties/Annotations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/7a/b5a8ceb9/NotSupportedException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/dd/3d7b1020/RoutedEventHandlerInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/47/aefda5bc/Colors.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/a5/65b422a9/Rectangle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/ca/b6d623b7/Shape.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/c5/01f2fae8/SolidColorBrush.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/1d/e93e74e6/Brush.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/6d/79ca59ea/Grid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/a56e94d8/Point.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/8f/cc31b7e1/TextWriter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/26/b3aea964/CacheMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/7d/18238a29/Thickness.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/46/684b4680/Nullable`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/da/eccb87ea/EventHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8289345A-4EF9-4F50-9624-C19838DFE136/04/ff9eb000/Visibility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/e3/a981f491/File.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/54da5727/HwndSubclass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42855A04-43D0-44FB-948C-72C7F6940828/9a/92f355fe/Storyboard.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/Source/03056.00/Source/NDP/fx/src/services/monitoring/system/diagnosticts/Stopwatch.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/6e5cc21f/HwndWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54CA571B-667E-41B5-A152-089B433F4C55/67/6af2ec58/ParallelTimeline.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/4d/b849ee3b/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54CA571B-667E-41B5-A152-089B433F4C55/53/54c7d582/TimeEnumHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/fc/fcf4906a/CulturePreservingExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/85/50cf9a43/_AppDomain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/00/a2708310/DispatcherOperation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/f3/1f5a3b06/AppDomain.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/ac/ed51c44d/Dispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/60/6ab3be49/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/f4/244db39f/ExceptionWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/71/bb680af0/NotImplementedException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/1f/4c648f1c/DependencyObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/f1/989346d6/SystemException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/2f/89c6cefa/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/2d/f5f128e8/__DynamicallyInvokableAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/a6/fecc6efa/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E4546037-3D02-406C-AA6C-360C17465823/3f/42654b27/Predicate`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -350,20 +412,20 @@
         <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Invader.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/.gitignore" />
-        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" />
-        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/App.config" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/Commons/AppLifeCycleManager.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/Model/ICloneable.cs" />
-        <option value="$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/175C9EE3-569E-4228-97B2-1C8E7F84C102/e2/5015bab0/Application.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs" />
-        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" />
-        <option value="$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" />
         <option value="$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs" />
+        <option value="$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs" />
       </list>
     </option>
   </component>
@@ -413,6 +475,12 @@
               <item name="Invaders.Wpf" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Model" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Invaders (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Invaders.Wpf" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ViewModel" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -434,7 +502,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CoffeeScript" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Invaders.Wpf/Assets/fogblast.wav" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -496,7 +564,7 @@
       <workItem from="1532684404893" duration="1212000" />
       <workItem from="1532741453258" duration="255000" />
       <workItem from="1532907038067" duration="3877000" />
-      <workItem from="1562123611178" duration="302000" />
+      <workItem from="1562123611178" duration="2283000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1531298281863</created>
@@ -715,11 +783,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532910509906</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Optimized code">
+      <created>1562124159121</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1562124159121</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70796000" />
+    <option name="totallyTimeSpent" value="72777000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -735,7 +810,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.33333334" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.3284553" />
       <window_info anchor="bottom" id="Unit Tests" order="7" weight="0.32954547" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
@@ -745,8 +820,9 @@
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32954547" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49593496" visible="true" weight="0.27382752" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="9" sideWeight="0.49924356" visible="true" weight="0.3284553" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3284553" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" sideWeight="0.49924356" weight="0.3284553" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284553" />
       <window_info id="Structure" order="1" sideWeight="0.50406504" side_tool="true" weight="0.22239032" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398374" />
@@ -759,7 +835,6 @@
       <window_info anchor="bottom" x="29" y="171" width="869" height="388" id="XAML Preview" order="7" sideWeight="0.49924356" type="WINDOWED" weight="0.3284553" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3284553" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="NuGet" order="0" />
@@ -821,7 +896,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Optimized code" />
     <MESSAGE value="Optimized code." />
     <MESSAGE value="Optimized NotImplementedException." />
     <MESSAGE value="Added README.md" />
@@ -846,7 +920,8 @@
     <MESSAGE value="UPDATED Serialization logics" />
     <MESSAGE value="Code clean-up using JetBrains Rider" />
     <MESSAGE value="Updated stopwatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated stopwatch" />
+    <MESSAGE value="Optimized code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -889,55 +964,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/069D344C-A74E-48C6-A99C-7AE60A38E1BE/4d/b849ee3b/ExecutionContext.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="273" column="6" selection-start-line="273" selection-start-column="6" selection-end-line="273" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/6e/6e5cc21f/HwndWrapper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="210" column="6" selection-start-line="210" selection-start-column="6" selection-end-line="210" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/54da5727/HwndSubclass.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="176" column="6" selection-start-line="176" selection-start-column="6" selection-end-line="176" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/ac/ed51c44d/Dispatcher.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="1184" column="31" lean-forward="true" selection-start-line="1184" selection-start-column="31" selection-end-line="1184" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/f4/244db39f/ExceptionWrapper.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/8a/fd1f8fb7/DispatcherTimer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="236" column="6" selection-start-line="236" selection-start-column="6" selection-end-line="236" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/00/a2708310/DispatcherOperation.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="270" column="6" selection-start-line="270" selection-start-column="6" selection-end-line="270" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D7A24174-A7F6-4B85-9167-BB502CC73418/fc/fcf4906a/CulturePreservingExecutionContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1065,13 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/56FC59FE-816E-4F15-9C28-97BFABC2EEFF/73/aabd3513/ThreadPool.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2771">
@@ -1097,13 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11186">
           <caret line="658" column="24" selection-start-line="658" selection-start-column="24" selection-end-line="658" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1133,20 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3219">
-          <caret line="141" column="14" selection-start-line="141" selection-start-column="14" selection-end-line="141" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1187,108 +1185,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Commons/Log.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state>
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs">
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="290" column="29" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+        <state relative-caret-position="1275">
+          <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
           <folding>
-            <marker date="1562123863726" expanded="false" signature="6:208" ph="..." />
-            <marker date="1562123863726" expanded="true" signature="266:21864" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="299:21862" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="1506:1588" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="1989:2338" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="2371:3400" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="2467:2584" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="2642:2755" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="2812:2924" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="2975:3083" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="3432:4426" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="3499:4416" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="3736:4319" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="4479:4645" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="4519:4635" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="4677:4896" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="4929:5210" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="5246:5457" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="5498:6195" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="5533:6161" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="5651:5933" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="6020:6147" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="6241:6598" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="6631:8110" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="6822:8100" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="7042:7998" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="8159:9350" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="8623:9117" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="8694:8795" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="8816:9103" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="9211:9340" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="9400:10899" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="9523:10315" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="9792:10301" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="9850:10284" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="9927:10061" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="10090:10284" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="10379:10889" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="10747:10875" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="10946:11546" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="11018:11536" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="11082:11527" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="11185:11527" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="11584:13463" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="11749:13453" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="12270:13127" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="12340:12674" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="12421:12590" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="12732:13065" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="12813:12982" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="13148:13439" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="13265:13421" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="13497:14541" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="13554:13653" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="13702:13801" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="14240:14353" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="14419:14531" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="14576:16409" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="15466:16317" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="16457:17494" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="16624:16726" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="16798:17484" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="16832:17252" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="17288:17470" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="17543:18592" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="17713:17817" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="17890:18582" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="17924:18348" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="18384:18568" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="18641:19608" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="18775:19454" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="18922:19131" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="19232:19440" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="19486:19598" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="19658:20633" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="19794:20479" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="19943:20154" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="20255:20465" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="20511:20623" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="20770:20918" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="21048:21190" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="21319:21458" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="21547:21666" ph="{...}" />
-            <marker date="1562123863726" expanded="true" signature="21746:21856" ph="{...}" />
+            <marker date="1562123863695" expanded="false" signature="6:49" ph="..." />
+            <marker date="1562123863695" expanded="true" signature="79:2200" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="86:383" ph="///     Represents an object that records history game data. ... " />
+            <marker date="1562123863695" expanded="true" signature="476:2198" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="511:689" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1133:1474" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1191:1463" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1528:1614" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1657:1704" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1750:1800" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1843:1890" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="1930:1974" ph="{...}" />
+            <marker date="1562123863695" expanded="true" signature="2035:2192" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Shot.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <marker date="1562124372427" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562124372427" expanded="true" signature="65:867" ph="{...}" />
+            <marker date="1562124372427" expanded="true" signature="203:329" ph="{...}" />
+            <marker date="1562124372427" expanded="true" signature="679:729" ph="{...}" />
+            <marker date="1562124372427" expanded="true" signature="774:821" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/46/684b4680/Nullable`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Invader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <marker date="1562118522662" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562118522662" expanded="true" signature="65:1849" ph="{...}" />
+            <marker date="1562118522662" expanded="true" signature="99:1847" ph="{...}" />
+            <marker date="1562118522662" expanded="true" signature="357:1077" ph="{...}" />
+            <marker date="1562118522662" expanded="true" signature="439:1067" ph="{...}" />
+            <marker date="1562118522662" expanded="true" signature="1217:1841" ph="{...}" />
+            <marker date="1562118522662" expanded="true" signature="1258:1831" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/AnimatedImage.xaml.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="165">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <marker date="1562123802029" expanded="false" signature="6:174" ph="..." />
             <marker date="1562123802029" expanded="true" signature="203:2891" ph="{...}" />
@@ -1307,53 +1271,261 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54CA571B-667E-41B5-A152-089B433F4C55/67/6af2ec58/ParallelTimeline.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="218">
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42855A04-43D0-44FB-948C-72C7F6940828/9a/92f355fe/Storyboard.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54CA571B-667E-41B5-A152-089B433F4C55/53/54c7d582/TimeEnumHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
-            <marker date="1562123863655" expanded="false" signature="6:221" ph="..." />
-            <marker date="1562123863655" expanded="true" signature="250:7895" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="291:7893" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="444:1420" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="516:1192" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="1488:2082" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="1560:2028" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="2177:2669" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="2755:3429" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="3517:4468" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="3599:4319" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="4556:4886" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="4934:5439" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="4981:5429" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="5531:5995" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="6087:6186" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="6293:6802" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="6960:7100" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="7277:7640" ph="{...}" />
-            <marker date="1562123863655" expanded="true" signature="7737:7887" ph="{...}" />
+            <marker date="1562124372367" expanded="false" signature="6:35" ph="..." />
+            <marker date="1562124372367" expanded="true" signature="65:1303" ph="{...}" />
+            <marker date="1562124372367" expanded="true" signature="98:1301" ph="{...}" />
+            <marker date="1562124372367" expanded="true" signature="422:547" ph="{...}" />
+            <marker date="1562124372367" expanded="true" signature="657:1295" ph="{...}" />
+            <marker date="1562124372367" expanded="true" signature="698:1285" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/HistoryData.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/f3/1f5a3b06/AppDomain.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+        <state relative-caret-position="-64807">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/85/50cf9a43/_AppDomain.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/InvadersHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
           <folding>
-            <marker date="1562123863695" expanded="false" signature="6:49" ph="..." />
-            <marker date="1562123863695" expanded="true" signature="79:2200" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="86:383" ph="///     Represents an object that records history game data. ... " />
-            <marker date="1562123863695" expanded="true" signature="476:2198" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="511:689" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1133:1474" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1191:1463" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1528:1614" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1657:1704" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1750:1800" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1843:1890" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="1930:1974" ph="{...}" />
-            <marker date="1562123863695" expanded="true" signature="2035:2192" ph="{...}" />
+            <marker date="1562126473460" expanded="false" signature="6:221" ph="..." />
+            <marker date="1562126473460" expanded="true" signature="250:8094" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="291:8092" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="443:1419" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="515:1191" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="1487:2081" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="1559:2027" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="2176:2668" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="2754:3578" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="2835:3283" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="3666:4616" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="3747:4467" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="4704:5034" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="5082:5586" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="5128:5576" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="5678:6142" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="6234:6333" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="6440:6949" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="7107:7247" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="7424:7787" ph="{...}" />
+            <marker date="1562126473460" expanded="true" signature="7884:8086" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/View/MainWindow.xaml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <marker date="1562123885304" expanded="false" signature="6:182" ph="..." />
+            <marker date="1562123885304" expanded="true" signature="211:4075" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="218:300" ph="///     Interaction logic for MainWindow.xaml ... " />
+            <marker date="1562123885304" expanded="true" signature="336:4073" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="426:835" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="917:1346" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="964:1232" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="1143:1218" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="1426:1852" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="1473:1738" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="1649:1724" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="1941:2368" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="1988:2254" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="2165:2240" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="2454:2562" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="2636:2709" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="2764:3673" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="2887:3178" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="3195:3501" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="3747:3806" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="3878:3935" ph="{...}" />
+            <marker date="1562123885304" expanded="true" signature="4011:4067" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/ViewModel/InvadersViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="259" column="68" selection-start-line="259" selection-start-column="68" selection-end-line="259" selection-end-column="68" />
+          <folding>
+            <marker date="1562126593033" expanded="false" signature="6:375" ph="..." />
+            <marker date="1562126593033" expanded="true" signature="409:12946" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="471:12944" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="1737:2234" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="2714:2907" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="2740:2897" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="3046:4730" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="3095:3212" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="3238:3692" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="3768:3884" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="3919:4192" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="4258:4545" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="4398:4531" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="4579:4720" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="4820:5608" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="4892:5010" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="5027:5598" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="5091:5317" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="5338:5584" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="5694:6556" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="5736:6321" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="5801:6025" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6046:6307" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6338:6546" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6400:6532" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6646:9819" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6683:8884" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6736:8870" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="6915:7160" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="7189:7669" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="7781:8026" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="8141:8348" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="8377:8820" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="8901:9809" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="8954:9795" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="9221:9460" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="9904:9959" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="10030:10076" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="10118:10548" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="10350:10538" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="10580:10630" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="10663:10971" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="11011:11729" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="11046:11719" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="11767:12031" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="11802:12021" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="12169:12276" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="12374:12493" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="12573:12738" ph="{...}" />
+            <marker date="1562126593033" expanded="true" signature="12822:12938" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Invaders.Wpf/Model/InvadersModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <marker date="1562126351283" expanded="true" signature="6:236" ph="..." />
+            <marker date="1562126351283" expanded="true" signature="266:21946" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="299:21944" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="1506:1588" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="1989:2338" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="2371:3400" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="2467:2584" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="2642:2755" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="2812:2924" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="2975:3083" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="3432:4426" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="3499:4416" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="3736:4319" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="4479:4645" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="4519:4635" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="4677:4896" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="4929:5210" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="5246:5457" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="5498:6195" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="5533:6161" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="5651:5933" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="6020:6147" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="6241:6598" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="6631:8110" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="6822:8100" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="7042:7998" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="8159:9350" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="8623:9117" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="8694:8795" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="8816:9103" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="9211:9340" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="9400:10929" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="9523:10345" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="9989:10111" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="10136:10331" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="10409:10919" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="10777:10905" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="10976:11576" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="11215:11566" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="11614:13493" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="11779:13483" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="12300:13157" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="12370:12704" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="12451:12620" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="12762:13095" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="12843:13012" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="13178:13469" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="13295:13451" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="13527:14571" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="13584:13683" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="13732:13831" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="14270:14383" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="14449:14561" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="14606:16491" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="15548:16399" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="16539:17576" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="16706:16808" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="16880:17566" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="16914:17334" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="17370:17552" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="17625:18674" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="17795:17899" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="17972:18664" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="18006:18430" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="18466:18650" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="18723:19690" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="18857:19536" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="19004:19213" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="19314:19522" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="19568:19680" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="19740:20715" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="19876:20561" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="20025:20236" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="20337:20547" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="20593:20705" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="20852:21000" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="21130:21272" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="21401:21540" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="21629:21748" ph="{...}" />
+            <marker date="1562126351283" expanded="true" signature="21828:21938" ph="{...}" />
           </folding>
         </state>
       </provider>

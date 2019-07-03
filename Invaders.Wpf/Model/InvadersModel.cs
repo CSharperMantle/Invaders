@@ -288,17 +288,18 @@ namespace Invaders.Wpf.Model
                     from invader in _invaders
                     where invader.Area.Contains(shot.Location)
                     select new {KilledInvader = invader, HitShot = shot};
-                if (result.ToList().Any())
-                    foreach (var each in result.ToList())
-                        if (!killedInvaders.ContainsKey(each.KilledInvader))
-                        {
-                            killedInvaders.Add(each.KilledInvader, each.HitShot);
-                        }
-                        else
-                        {
-                            Log.Debug("Duplicated key found.");
-                            Log.Debug(" at " + new StackTrace().GetFrame(0).GetMethod().Name);
-                        }
+                var resultList = result.ToList();
+                if (resultList.Count <= 0) continue; // Inverted IF
+                foreach (var each in resultList)
+                    if (!killedInvaders.ContainsKey(each.KilledInvader))
+                    {
+                        killedInvaders.Add(each.KilledInvader, each.HitShot);
+                    }
+                    else
+                    {
+                        Log.Debug("Duplicated key found.");
+                        Log.Debug(" at " + new StackTrace().GetFrame(0).GetMethod().Name);
+                    }
             }
 
             foreach (var killedInvader in killedInvaders.Keys)
@@ -437,7 +438,8 @@ namespace Invaders.Wpf.Model
                 orderby invaderGroup.Key descending
                 select invaderGroup;
 
-            var randomGroup = avaliableInvaderGroups.ElementAt(_random.Next(avaliableInvaderGroups.ToList().Count));
+            var avaiInvaderGroupsList = avaliableInvaderGroups.ToList();
+            var randomGroup = avaiInvaderGroupsList[_random.Next(avaiInvaderGroupsList.Count)];
             var bottomInvader = randomGroup.Last();
 
             var shotLocation = new Point(bottomInvader.Area.X + bottomInvader.Area.Width / 2,

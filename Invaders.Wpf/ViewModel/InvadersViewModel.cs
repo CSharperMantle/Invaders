@@ -202,72 +202,76 @@ namespace Invaders.Wpf.ViewModel
         {
             if (!e.Killed)
             {
-                if (e.ShipUpdated is Invader)
+                switch (e.ShipUpdated)
                 {
-                    var invader = e.ShipUpdated as Invader;
-                    if (!_invaders.ContainsKey(invader))
-                    {
-                        var fe = InvadersHelper.InvaderControlFactory(invader, Scale);
-                        _invaders.Add(invader, fe);
-                        _sprites.Add(fe);
-                    }
-                    else
-                    {
-                        var fe = _invaders[invader];
-                        InvadersHelper.MoveElementOnCanvas(fe,
-                            invader.Location.X * Scale,
-                            invader.Location.Y * Scale);
-                        InvadersHelper.ResizeElement(fe,
-                            invader.Size.Width * Scale,
-                            invader.Size.Height * Scale);
-                    }
-                }
-                else if (e.ShipUpdated is Player)
-                {
-                    if (_playerFlashing)
-                    {
-                        var playerControl = _playerControl as AnimatedImage;
-                        playerControl?.StopFlashing();
-                        _playerFlashing = false;
-                    }
+                    case Invader _:
+                        var invader = e.ShipUpdated as Invader;
+                        if (!_invaders.ContainsKey(invader))
+                        {
+                            var fe = InvadersHelper.InvaderControlFactory(invader, Scale);
+                            _invaders.Add(invader, fe);
+                            _sprites.Add(fe);
+                        }
+                        else
+                        {
+                            var fe = _invaders[invader];
+                            InvadersHelper.MoveElementOnCanvas(fe,
+                                invader.Location.X * Scale,
+                                invader.Location.Y * Scale);
+                            InvadersHelper.ResizeElement(fe,
+                                invader.Size.Width * Scale,
+                                invader.Size.Height * Scale);
+                        }
 
-                    var player = e.ShipUpdated as Player;
-                    if (_playerControl == null)
-                    {
-                        _playerControl = InvadersHelper.PlayerControlFactory(player, Scale);
-                        _sprites.Add(_playerControl);
-                    }
-                    else
-                    {
-                        InvadersHelper.MoveElementOnCanvas(_playerControl,
-                            player.Location.X * Scale,
-                            player.Location.Y * Scale);
-                        InvadersHelper.ResizeElement(_playerControl,
-                            player.Size.Width * Scale,
-                            player.Size.Height * Scale);
-                    }
+                        break;
+                    case Player _:
+                        if (_playerFlashing)
+                        {
+                            var playerControl = _playerControl as AnimatedImage;
+                            playerControl?.StopFlashing();
+                            _playerFlashing = false;
+                        }
+
+                        var player = e.ShipUpdated as Player;
+                        if (_playerControl == null)
+                        {
+                            _playerControl = InvadersHelper.PlayerControlFactory(player, Scale);
+                            _sprites.Add(_playerControl);
+                        }
+                        else
+                        {
+                            InvadersHelper.MoveElementOnCanvas(_playerControl,
+                                player.Location.X * Scale,
+                                player.Location.Y * Scale);
+                            InvadersHelper.ResizeElement(_playerControl,
+                                player.Size.Width * Scale,
+                                player.Size.Height * Scale);
+                        }
+
+                        break;
                 }
             }
             else
             {
-                if (e.ShipUpdated is Invader)
+                switch (e.ShipUpdated)
                 {
-                    var invader = e.ShipUpdated as Invader;
-                    if (!_invaders.ContainsKey(invader)) return;
-                    var invaderControl = _invaders[invader] as AnimatedImage;
-                    if (invaderControl != null)
-                    {
-                        invaderControl.InvaderShot();
-                        _shotInvaders[invaderControl] = DateTime.Now;
-                        _invaders.Remove(invader);
-                    }
-                }
-                else if (e.ShipUpdated is Player)
-                {
-                    var playerControl = (AnimatedImage) _playerControl;
-                    playerControl.StartFlashing();
-                    _playerFlashing = true;
-                    OnPlayerShot();
+                    case Invader _:
+                        var invader = e.ShipUpdated as Invader;
+                        if (!_invaders.ContainsKey(invader)) return;
+                        if (_invaders[invader] is AnimatedImage invaderControl)
+                        {
+                            invaderControl.InvaderShot();
+                            _shotInvaders[invaderControl] = DateTime.Now;
+                            _invaders.Remove(invader);
+                        }
+
+                        break;
+                    case Player _:
+                        var playerControl = (AnimatedImage) _playerControl;
+                        playerControl.StartFlashing();
+                        _playerFlashing = true;
+                        OnPlayerShot();
+                        break;
                 }
             }
         }
@@ -313,24 +317,40 @@ namespace Invaders.Wpf.ViewModel
 
         internal void KeyDown(Key key)
         {
-            if (key == Key.D1) _model.CurrentShotType = ShotType.BasicShot;
-
-            if (key == Key.D2) _model.CurrentShotType = ShotType.LazerShot;
-
-            if (key == Key.Space) _model.FireShot();
-
-            if (key == Key.A) _leftAction = DateTime.Now;
-
-            if (key == Key.D) _rightAction = DateTime.Now;
-
-            if (key == Key.Escape) Paused = !Paused;
+            switch (key)
+            {
+                case Key.D1:
+                    _model.CurrentShotType = ShotType.BasicShot;
+                    break;
+                case Key.D2:
+                    _model.CurrentShotType = ShotType.LazerShot;
+                    break;
+                case Key.Space:
+                    _model.FireShot();
+                    break;
+                case Key.A:
+                    _leftAction = DateTime.Now;
+                    break;
+                case Key.D:
+                    _rightAction = DateTime.Now;
+                    break;
+                case Key.Escape:
+                    Paused = !Paused;
+                    break;
+            }
         }
 
         internal void KeyUp(Key key)
         {
-            if (key == Key.A) _leftAction = null;
-
-            if (key == Key.D) _rightAction = null;
+            switch (key)
+            {
+                case Key.A:
+                    _leftAction = null;
+                    break;
+                case Key.D:
+                    _rightAction = null;
+                    break;
+            }
         }
 
         [NotifyPropertyChangedInvocator]

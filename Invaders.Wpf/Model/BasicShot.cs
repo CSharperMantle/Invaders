@@ -15,11 +15,11 @@ namespace Invaders.Wpf.Model
 
         public override void Move()
         {
-            var timeSinceLastMoved = DateTime.Now - lastMoved;
+            var timeSinceLastMoved = DateTime.Now - LastMoved;
             var distance = timeSinceLastMoved.Milliseconds * ShotPixelsPerSecond / 1000;
             if (Direction == Direction.Up) distance *= -1;
             Location = new Point(Location.X, Location.Y + distance);
-            lastMoved = DateTime.Now;
+            LastMoved = DateTime.Now;
         }
     }
 }

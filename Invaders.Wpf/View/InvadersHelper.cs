@@ -11,7 +11,7 @@ namespace Invaders.Wpf.View
 {
     public static class InvadersHelper
     {
-        private static readonly Random _random = new Random();
+        private static readonly Random Random = new Random();
 
         public static IEnumerable<string> CreateImageList(InvaderType invaderType)
         {
@@ -79,11 +79,18 @@ namespace Invaders.Wpf.View
         internal static FrameworkElement ShotControlFactory(Shot shot, double scale)
         {
             var rectangle = new Rectangle();
-            if (shot is BasicShot)
-                rectangle.Fill = new SolidColorBrush(Colors.White);
-            else if (shot is LazerShot)
-                rectangle.Fill = new SolidColorBrush(Color.FromRgb(0x33, 0xFF, 0x00));
-            else if (shot is HomingShot) rectangle.Fill = new SolidColorBrush(Colors.Yellow);
+            switch (shot)
+            {
+                case BasicShot _:
+                    rectangle.Fill = new SolidColorBrush(Colors.White);
+                    break;
+                case LazerShot _:
+                    rectangle.Fill = new SolidColorBrush(Color.FromRgb(0x33, 0xFF, 0x00));
+                    break;
+                case HomingShot _:
+                    rectangle.Fill = new SolidColorBrush(Colors.Yellow);
+                    break;
+            }
             rectangle.Width = shot.ShotSize.Width * scale;
             rectangle.Height = shot.ShotSize.Height * scale;
             SetCanvasLocation(rectangle, shot.Location.X * scale, shot.Location.Y * scale);
@@ -94,7 +101,7 @@ namespace Invaders.Wpf.View
         internal static FrameworkElement StarControlFactory(Point point, double scale)
         {
             FrameworkElement star;
-            switch (_random.Next(3))
+            switch (Random.Next(3))
             {
                 case 0:
                     star = new Rectangle();
@@ -132,7 +139,7 @@ namespace Invaders.Wpf.View
 
         private static Color RandomStarColor()
         {
-            switch (_random.Next(6))
+            switch (Random.Next(6))
             {
                 case 0:
                     return Colors.White;
@@ -198,8 +205,8 @@ namespace Invaders.Wpf.View
 
         public static void ResizeElement(FrameworkElement control, double width, double height)
         {
-            if (control.Width != width) control.Width = width;
-            if (control.Height != height) control.Height = height;
+            if (Math.Abs(control.Width - width) > double.Epsilon) control.Width = width;
+            if (Math.Abs(control.Height - height) > double.Epsilon) control.Height = height;
         }
     }
 }

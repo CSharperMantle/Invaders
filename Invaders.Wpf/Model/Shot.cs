@@ -5,16 +5,17 @@ namespace Invaders.Wpf.Model
 {
     public abstract class Shot
     {
-        protected DateTime lastMoved;
+        protected DateTime LastMoved;
 
         protected Shot(Point location, Direction direction)
         {
             Location = location;
             Direction = direction;
-            lastMoved = DateTime.Now;
+            LastMoved = DateTime.Now;
         }
 
         public double ShotPixelsPerSecond { get; protected set; }
+        
         public Size ShotSize { get; protected set; }
 
         public Point Location { get; set; }

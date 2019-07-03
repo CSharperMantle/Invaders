@@ -25,30 +25,30 @@ namespace Invaders.Wpf.Model
         {
             if (TargetShip == null)
             {
-                var timeSinceLastMoved = DateTime.Now - lastMoved;
+                var timeSinceLastMoved = DateTime.Now - LastMoved;
                 var distance = timeSinceLastMoved.Milliseconds * ShotPixelsPerSecond / 1000;
                 if (Direction == Direction.Up) distance *= -1;
                 Location = new Point(Location.X, Location.Y + distance);
-                lastMoved = DateTime.Now;
+                LastMoved = DateTime.Now;
                 return;
             }
 
             if (_lastMovedUpDownTime > 2)
             {
-                var timeSinceLastMoved = DateTime.Now - lastMoved;
+                var timeSinceLastMoved = DateTime.Now - LastMoved;
                 var distance = timeSinceLastMoved.Milliseconds * ShotManeuveringPixelsPerSecond / 1000;
                 if (TargetShip.Location.X < Location.X) distance *= -1;
                 Location = new Point(Location.X + distance, Location.Y);
-                lastMoved = DateTime.Now;
+                LastMoved = DateTime.Now;
                 _lastMovedUpDownTime = 0;
             }
             else
             {
-                var timeSinceLastMoved = DateTime.Now - lastMoved;
+                var timeSinceLastMoved = DateTime.Now - LastMoved;
                 var distance = timeSinceLastMoved.Milliseconds * ShotPixelsPerSecond / 1000;
                 if (Direction == Direction.Up) distance *= -1;
                 Location = new Point(Location.X, Location.Y + distance);
-                lastMoved = DateTime.Now;
+                LastMoved = DateTime.Now;
                 _lastMovedUpDownTime++;
             }
         }
