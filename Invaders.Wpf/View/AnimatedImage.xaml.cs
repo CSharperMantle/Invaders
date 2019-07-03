@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
+using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.View
 {
@@ -29,8 +32,17 @@ namespace Invaders.Wpf.View
             var currentInterval = TimeSpan.FromMilliseconds(0);
             foreach (var imageName in imageNames)
             {
+                
                 ObjectKeyFrame keyFrame = new DiscreteObjectKeyFrame();
-                keyFrame.Value = CreateImageFromAssets(imageName);
+                if (File.Exists(imageName))
+                {
+                    keyFrame.Value = CreateImageFromAssets(imageName);
+                }
+                else
+                {
+                    Log.C($"{imageName} does not exist");
+                    throw new FileNotFoundException($"{imageName} does not exist");
+                }
                 keyFrame.KeyTime = currentInterval;
                 animation.KeyFrames.Add(keyFrame);
                 currentInterval = currentInterval.Add(interval);
@@ -73,14 +85,13 @@ namespace Invaders.Wpf.View
         {
             try
             {
-                var uri = new Uri("Assets/" + imageFileName, UriKind.Relative);
+                var uri = new Uri($"Assets/{imageFileName}", UriKind.Relative);
                 return new BitmapImage(uri);
             }
             catch (Exception e)
             {
-                Console.Error.WriteLine("Exception: " + e.GetType());
-                Console.Error.WriteLine(e.StackTrace);
-                Console.Error.WriteLine("Message: " + e.Message);
+                Log.E("Exception: " + e.GetType());
+                Log.I(e.StackTrace);
                 return new BitmapImage();
             }
         }

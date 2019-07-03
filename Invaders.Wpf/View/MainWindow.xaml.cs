@@ -38,9 +38,9 @@ namespace Invaders.Wpf.View
                     player.PlaySync();
                 }
             });
-            Log.Debug(t.ToString());
+            Log.D(t.ToString());
             t.Start();
-            Log.Debug("Thread started!");
+            Log.D("Thread started!");
         }
 
         private void ViewModelGameLostEventHandler(object sender, EventArgs e)
@@ -53,9 +53,9 @@ namespace Invaders.Wpf.View
                     player.PlaySync();
                 }
             });
-            Log.Debug(t.ToString());
+            Log.D(t.ToString());
             t.Start();
-            Log.Debug("Thread started!");
+            Log.D("Thread started!");
         }
 
         private void ViewModelNextWaveGeneratedEventHandler(object sender, EventArgs e)
@@ -68,9 +68,9 @@ namespace Invaders.Wpf.View
                     player.PlaySync();
                 }
             });
-            Log.Debug(t.ToString());
+            Log.D(t.ToString());
             t.Start();
-            Log.Debug("Thread started!");
+            Log.D("Thread started!");
         }
 
         private void MainWindow_OnSizeChanged(object sender, SizeChangedEventArgs e)

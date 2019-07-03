@@ -1,35 +1,32 @@
-﻿namespace Invaders.Wpf.Commons
+﻿using System.Diagnostics;
+
+namespace Invaders.Wpf.Commons
 {
     public static class Log
     {
-        public static void Info(string message)
+        public static void I(string message)
         {
-            System.Diagnostics.Debug.WriteLine("[Info]>>" + message);
+            Debug.WriteLine($"[INFO]>> {message}");
         }
 
-        public static void Debug(string message)
+        public static void D(string message)
         {
-            System.Diagnostics.Debug.WriteLine("[DEBUG]>>" + message);
+            Debug.WriteLine($"[DBG]>> {message}");
         }
 
-        public static void Warning(string message)
+        public static void W(string message)
         {
-            System.Diagnostics.Debug.WriteLine("[WARNING]>>" + message);
+            Debug.WriteLine($"[WARNING]>> {message}");
         }
 
-        public static void Strict(string message)
+        public static void E(string message)
         {
-            System.Diagnostics.Debug.WriteLine("[STRICT]>>" + message);
+            Debug.WriteLine($"[ERROR]>> {message}");
         }
 
-        public static void Error(string message)
+        public static void C(string message)
         {
-            System.Diagnostics.Debug.WriteLine("[ERROR]>>" + message);
-        }
-
-        public static void Critical(string message)
-        {
-            System.Diagnostics.Debug.WriteLine("[CRITICAL]>>" + message);
+            Debug.WriteLine($"[CRITICAL]>> {message}");
         }
     }
 }

@@ -53,14 +53,14 @@ namespace Invaders.Wpf.Model
 
         public void EndGame()
         {
-            Log.Debug(nameof(EndGame) + "() called");
+            Log.D(nameof(EndGame) + "() called");
             GameOver = true;
             OnGameLost();
             _stopwatch.Stop();
             _historyData.UpdateHighestScore(Score);
             _historyData.IncreasePlayedTime(_stopwatch.Elapsed);
             _stopwatch.Reset();
-            WriteHistoryDataFromFile();
+            WriteHistoryDataToFile();
         }
 
         public void StartGame()
@@ -297,8 +297,8 @@ namespace Invaders.Wpf.Model
                     }
                     else
                     {
-                        Log.Debug("Duplicated key found.");
-                        Log.Debug(" at " + new StackTrace().GetFrame(0).GetMethod().Name);
+                        Log.W("Duplicated key found.");
+                        Log.W($" at function {new StackTrace().GetFrame(0).GetMethod().Name}");
                     }
             }
 
@@ -488,12 +488,12 @@ namespace Invaders.Wpf.Model
                     if (obj is HistoryData)
                         _historyData = (HistoryData) obj;
                     else
-                        throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                        throw new SerializationException($"{nameof(obj)} is not {nameof(HistoryData)}");
                 }
                 catch (Exception e)
                 {
-                    Log.Critical(e.ToString());
-                    Log.Info(e.StackTrace);
+                    Log.E(e.ToString());
+                    Log.I(e.StackTrace);
                     _historyData = new HistoryData();
                 }
             }
@@ -517,20 +517,20 @@ namespace Invaders.Wpf.Model
                     if (obj is UserSettings)
                         _userSettings = (UserSettings) obj;
                     else
-                        throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                        throw new SerializationException($"{nameof(obj)} is not {nameof(UserSettings)}");
                 }
                 catch (Exception e)
                 {
-                    Log.Critical(e.ToString());
-                    Log.Info(e.StackTrace);
+                    Log.C(e.ToString());
+                    Log.I(e.StackTrace);
                     _userSettings = new UserSettings();
                 }
             }
         }
 
-        private void WriteHistoryDataFromFile()
+        private void WriteHistoryDataToFile()
         {
-            if (_historyData == null) throw new SerializationException(nameof(_historyData) + " is null.");
+            if (_historyData == null) throw new SerializationException($"{nameof(_historyData)} is null.");
             try
             {
                 if (!File.Exists(HistoryDataFilePath))
@@ -548,14 +548,14 @@ namespace Invaders.Wpf.Model
             }
             catch (Exception e)
             {
-                Log.Critical(e.ToString());
-                Log.Info(e.StackTrace);
+                Log.E(e.ToString());
+                Log.I(e.StackTrace);
             }
         }
 
-        private void WriteUserSettingsFromFile()
+        private void WriteUserSettingsToFile()
         {
-            if (_userSettings == null) throw new SerializationException(nameof(_userSettings) + " is null.");
+            if (_userSettings == null) throw new SerializationException($"{nameof(_userSettings)} is null.");
             try
             {
                 if (!File.Exists(UserSettingsFilePath))
@@ -573,8 +573,8 @@ namespace Invaders.Wpf.Model
             }
             catch (Exception e)
             {
-                Log.Critical(e.ToString());
-                Log.Info(e.StackTrace);
+                Log.E(e.ToString());
+                Log.I(e.StackTrace);
             }
         }
 
