@@ -13,7 +13,7 @@ namespace Invaders.Wpf.Model
             ShotPixelsPerSecond = 60;
             ShotManeuveringPixelsPerSecond = 80;
             TargetShip = target;
-            Life = 5;
+            Hitpoint = 5;
             Score = 15;
         }
 

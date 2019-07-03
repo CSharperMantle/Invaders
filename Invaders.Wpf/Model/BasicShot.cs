@@ -9,7 +9,7 @@ namespace Invaders.Wpf.Model
         {
             ShotSize = new Size(2, 10);
             ShotPixelsPerSecond = 80;
-            Life = 10;
+            Hitpoint = 40;
             Score = 5;
         }
 

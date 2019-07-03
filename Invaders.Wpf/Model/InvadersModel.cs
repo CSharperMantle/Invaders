@@ -310,7 +310,7 @@ namespace Invaders.Wpf.Model
                 OnShipChanged(killedInvader, true);
 
                 var shot = killedInvaders[killedInvader];
-                shot.DecreaseLife(killedInvader.Score);
+                shot.DecreaseHitpoint(killedInvader.Score);
                 if (shot.IsUsedUp())
                 {
                     _playerShots.Remove(shot);
