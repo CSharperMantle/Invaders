@@ -76,6 +76,7 @@
           <e p="UserSettings.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
           <e p="Annotations.cs" t="Include" />
           <e p="app.manifest" t="Include" />
