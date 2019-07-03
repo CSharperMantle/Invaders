@@ -11,12 +11,11 @@ namespace Invaders.Wpf.View
 {
     public static class InvadersHelper
     {
-
         private static readonly Random _random = new Random();
 
         public static IEnumerable<string> CreateImageList(InvaderType invaderType)
         {
-            var filename = "";
+            string filename;
             switch (invaderType)
             {
                 case InvaderType.Bug:
@@ -57,7 +56,7 @@ namespace Invaders.Wpf.View
                     filename = "fogblast.wav";
                     break;
                 case MediaType.PlayerShot:
-                filename = "factwhistle.wav";
+                    filename = "factwhistle.wav";
                     break;
                 default:
                     throw new ArgumentException(nameof(mediaType));
@@ -81,15 +80,10 @@ namespace Invaders.Wpf.View
         {
             var rectangle = new Rectangle();
             if (shot is BasicShot)
-            {
                 rectangle.Fill = new SolidColorBrush(Colors.White);
-            } else if (shot is LazerShot)
-            {
+            else if (shot is LazerShot)
                 rectangle.Fill = new SolidColorBrush(Color.FromRgb(0x33, 0xFF, 0x00));
-            } else if (shot is HomingShot)
-            {
-                rectangle.Fill = new SolidColorBrush(Colors.Yellow);
-            }
+            else if (shot is HomingShot) rectangle.Fill = new SolidColorBrush(Colors.Yellow);
             rectangle.Width = shot.ShotSize.Width * scale;
             rectangle.Height = shot.ShotSize.Height * scale;
             SetCanvasLocation(rectangle, shot.Location.X * scale, shot.Location.Y * scale);

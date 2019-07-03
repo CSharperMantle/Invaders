@@ -22,7 +22,7 @@ namespace Invaders.Wpf.Model
 
         public UserSettings Clone()
         {
-            return new UserSettings()
+            return new UserSettings
             {
                 IsScanLineActive = IsScanLineActive,
                 IsMusicActive = IsMusicActive,

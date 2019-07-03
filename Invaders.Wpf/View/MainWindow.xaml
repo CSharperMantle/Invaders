@@ -70,15 +70,15 @@
             </ItemsControl>
         </Border>
 
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"
                     Opacity="0.9" Background="DarkGray"
                     Visibility="{Binding Path=GameOver, Converter={StaticResource VisibilityConverter}}">
             <TextBlock Text="Game Over"
                        VerticalAlignment="Center"
-                       Opacity="1" Foreground="Yellow" 
+                       Opacity="1" Foreground="Yellow"
                        FontWeight="Bold" FontStyle="Italic" FontSize="150" FontFamily="Microsoft YaHei"
                        Margin="0, 0, 0, 60" />
-            <TextBlock Text="New Record!" 
+            <TextBlock Text="New Record!"
                        VerticalAlignment="Center" HorizontalAlignment="Center"
                        FontFamily="Consolas" FontSize="60" FontWeight="Bold"
                        Opacity="1" Foreground="Red"
@@ -86,7 +86,7 @@
             <Button x:Name="BeginButton" Content="START"
                     HorizontalAlignment="Center"
                     Background="DarkSlateGray" Foreground="Snow"
-                    FontWeight="Bold" FontSize="30" 
+                    FontWeight="Bold" FontSize="30"
                     Click="BeginButton_OnClick" />
         </StackPanel>
 

@@ -60,6 +60,7 @@ namespace Invaders.Wpf.Model
         {
             KilledInvaders++;
         }
+
         public void IncreaseKilledShots()
         {
             KilledShots++;
@@ -73,13 +74,9 @@ namespace Invaders.Wpf.Model
         public void IncreasePlayedTime(TimeSpan timePlayed)
         {
             if (PlayedTime.HasValue)
-            {
                 PlayedTime += timePlayed;
-            }
             else
-            {
                 PlayedTime = timePlayed;
-            }
         }
     }
 }

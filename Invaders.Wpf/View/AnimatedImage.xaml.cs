@@ -45,8 +45,7 @@ namespace Invaders.Wpf.View
         public void InvaderShot()
         {
             var obj = Resources["InvaderShotStoryboard"];
-            var storyboard = obj as Storyboard;
-            if (storyboard != null)
+            if (obj is Storyboard storyboard)
                 storyboard.Begin();
             else
                 throw new ArgumentException(nameof(storyboard));
@@ -55,8 +54,7 @@ namespace Invaders.Wpf.View
         public void StartFlashing()
         {
             var obj = Resources["FlashStoryboard"];
-            var storyboard = obj as Storyboard;
-            if (storyboard != null)
+            if (obj is Storyboard storyboard)
                 storyboard.Begin();
             else
                 throw new ArgumentException(nameof(storyboard));
@@ -65,8 +63,7 @@ namespace Invaders.Wpf.View
         public void StopFlashing()
         {
             var obj = Resources["FlashStoryboard"];
-            var storyboard = obj as Storyboard;
-            if (storyboard != null)
+            if (obj is Storyboard storyboard)
                 storyboard.Stop();
             else
                 throw new ArgumentException(nameof(storyboard));

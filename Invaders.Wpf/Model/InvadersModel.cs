@@ -1,5 +1,4 @@
-﻿using Invaders.Wpf.Commons;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -7,6 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Windows;
+using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.Model
 {
@@ -27,13 +27,13 @@ namespace Invaders.Wpf.Model
         private readonly Stopwatch _stopwatch = new Stopwatch();
 
         private HistoryData _historyData;
-        private UserSettings _userSettings;
         private Direction _invaderDirection = Direction.Left;
         private bool _justMovedDown;
         private DateTime _lastUpdated = DateTime.MinValue;
 
         private Player _player;
         private DateTime? _playerDied;
+        private UserSettings _userSettings;
 
         public InvadersModel()
         {
@@ -47,7 +47,7 @@ namespace Invaders.Wpf.Model
         public int Waves { get; private set; }
         public int Lives { get; private set; }
         public bool GameOver { get; private set; }
-        public ShotType CurrentShotType { get; set; } 
+        public ShotType CurrentShotType { get; set; }
 
         public bool PlayerDying => _playerDied.HasValue;
 
@@ -99,7 +99,7 @@ namespace Invaders.Wpf.Model
             Lives = 3;
             Waves = 0;
             CurrentShotType = ShotType.BasicShot;
-            
+
             _stopwatch.Start();
 
             NextWave();
@@ -126,6 +126,7 @@ namespace Invaders.Wpf.Model
                     default:
                         throw new ArgumentException(nameof(CurrentShotType));
                 }
+
                 _playerShots.Add(shot);
                 OnShotMoved(shot, false);
             }
@@ -288,9 +289,7 @@ namespace Invaders.Wpf.Model
                     where invader.Area.Contains(shot.Location)
                     select new {KilledInvader = invader, HitShot = shot};
                 if (result.ToList().Any())
-                {
                     foreach (var each in result.ToList())
-                    {
                         if (!killedInvaders.ContainsKey(each.KilledInvader))
                         {
                             killedInvaders.Add(each.KilledInvader, each.HitShot);
@@ -300,9 +299,8 @@ namespace Invaders.Wpf.Model
                             Log.Debug("Duplicated key found.");
                             Log.Debug(" at " + new StackTrace().GetFrame(0).GetMethod().Name);
                         }
-                    }
-                }
             }
+
             foreach (var killedInvader in killedInvaders.Keys)
             {
                 Score += killedInvader.Score;
@@ -323,20 +321,16 @@ namespace Invaders.Wpf.Model
         private void CheckForShotCollisions()
         {
             foreach (var playerShot in _playerShots.ToList())
-            {
-                foreach (var invaderShot in _invaderShots.ToList())
+            foreach (var invaderShot in _invaderShots.ToList())
+                if (new Rect(playerShot.Location, playerShot.ShotSize).Contains(invaderShot.Location))
                 {
-                    if (new Rect(playerShot.Location, playerShot.ShotSize).Contains(invaderShot.Location))
-                    {
-                        OnShotMoved(playerShot, true);
-                        OnShotMoved(invaderShot, true);
-                        _invaderShots.Remove(invaderShot);
-                        _playerShots.Remove(playerShot);
-                        Score += invaderShot.Score;
-                        _historyData.IncreaseKilledShots();
-                    }
+                    OnShotMoved(playerShot, true);
+                    OnShotMoved(invaderShot, true);
+                    _invaderShots.Remove(invaderShot);
+                    _playerShots.Remove(playerShot);
+                    Score += invaderShot.Score;
+                    _historyData.IncreaseKilledShots();
                 }
-            }
         }
 
 
@@ -469,7 +463,7 @@ namespace Invaders.Wpf.Model
                 default:
                     throw new ArgumentException(nameof(bottomInvader));
             }
-            
+
             _invaderShots.Add(newShot);
             OnShotMoved(newShot, false);
         }
@@ -490,9 +484,9 @@ namespace Invaders.Wpf.Model
                     var serializer = new DataContractJsonSerializer(typeof(HistoryData));
                     var obj = serializer.ReadObject(reader);
                     if (obj is HistoryData)
-                        _historyData = (HistoryData)obj;
+                        _historyData = (HistoryData) obj;
                     else
-                       throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
+                        throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
                 }
                 catch (Exception e)
                 {
@@ -500,7 +494,6 @@ namespace Invaders.Wpf.Model
                     Log.Info(e.StackTrace);
                     _historyData = new HistoryData();
                 }
-                
             }
         }
 
@@ -520,7 +513,7 @@ namespace Invaders.Wpf.Model
                     var serializer = new DataContractJsonSerializer(typeof(UserSettings));
                     var obj = serializer.ReadObject(reader);
                     if (obj is UserSettings)
-                        _userSettings = (UserSettings)obj;
+                        _userSettings = (UserSettings) obj;
                     else
                         throw new SerializationException(nameof(obj) + " is not " + nameof(HistoryData));
                 }
@@ -530,7 +523,6 @@ namespace Invaders.Wpf.Model
                     Log.Info(e.StackTrace);
                     _userSettings = new UserSettings();
                 }
-
             }
         }
 
@@ -542,14 +534,14 @@ namespace Invaders.Wpf.Model
                 if (!File.Exists(HistoryDataFilePath))
                     using (Stream creater = File.Create(HistoryDataFilePath))
                     {
-                       var serializer = new DataContractJsonSerializer(typeof(HistoryData));
+                        var serializer = new DataContractJsonSerializer(typeof(HistoryData));
                         serializer.WriteObject(creater, _historyData);
                     }
-                    else
+                else
                     using (Stream writer = File.OpenWrite(HistoryDataFilePath))
                     {
                         var serializer = new DataContractJsonSerializer(typeof(HistoryData));
-                       serializer.WriteObject(writer, _historyData);
+                        serializer.WriteObject(writer, _historyData);
                     }
             }
             catch (Exception e)

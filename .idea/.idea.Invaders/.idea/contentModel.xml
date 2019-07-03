@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\rong\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Invaders.-1151021874.00" t="ExcludeRecursive" />
-    <e p="W:\Workspace\RiderProjects\Invaders" t="IncludeFlat">
+    <e p="C:\Users\rong\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Invaders.783012196.00" t="ExcludeRecursive" />
+    <e p="W:\Workspace\VisualStudioProjects\Invaders" t="IncludeFlat">
       <e p="Invaders.sln" t="IncludeFlat" />
+      <e p="Invaders.Uwp\Invaders.Uwp.csproj" t="IncludeRecursive" />
       <e p="Invaders.Wpf" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="App.xaml" t="Include" />
@@ -54,23 +55,30 @@
           <e p="Log.cs" t="Include" />
         </e>
         <e p="Invaders.Wpf.csproj" t="IncludeRecursive" />
+        <e p="Invaders.Wpf_TemporaryKey.pfx" t="Include" />
         <e p="Model" t="Include">
+          <e p="BasicShot.cs" t="Include" />
           <e p="Direction.cs" t="Include" />
           <e p="HistoryData.cs" t="Include" />
+          <e p="HomingShot.cs" t="Include" />
           <e p="ICloneable.cs" t="Include" />
           <e p="Invader.cs" t="Include" />
           <e p="InvadersModel.cs" t="Include" />
           <e p="InvaderType.cs" t="Include" />
+          <e p="LazerShot.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Ship.cs" t="Include" />
           <e p="ShipChangedEventArgs.cs" t="Include" />
           <e p="Shot.cs" t="Include" />
           <e p="ShotMovedEventArgs.cs" t="Include" />
+          <e p="ShotType.cs" t="Include" />
           <e p="StarChangedEventArgs.cs" t="Include" />
+          <e p="UserSettings.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="Annotations.cs" t="Include" />
+          <e p="app.manifest" t="Include" />
           <e p="AssemblyInfo.cs" t="Include" />
           <e p="Resources.Designer.cs" t="Include" />
           <e p="Resources.resx" t="Include" />

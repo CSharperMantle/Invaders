@@ -4,6 +4,6 @@ namespace Invaders.Wpf.View
     {
         NextWave,
         EndGame,
-        PlayerShot,
+        PlayerShot
     }
 }

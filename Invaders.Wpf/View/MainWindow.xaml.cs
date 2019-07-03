@@ -4,8 +4,8 @@ using System.Media;
 using System.Threading;
 using System.Windows;
 using System.Windows.Input;
-using Invaders.Wpf.ViewModel;
 using Invaders.Wpf.Commons;
+using Invaders.Wpf.ViewModel;
 
 namespace Invaders.Wpf.View
 {

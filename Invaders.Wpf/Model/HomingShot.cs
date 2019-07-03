@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace Invaders.Wpf.Model
 {
     public class HomingShot : Shot
     {
-        public int ShotManeuveringPixelsPerSecond { get; protected set; }
-
-        public Ship TargetShip { get; protected set; }
-
-        private short _lastMovedUpDownTime = 0;
+        private short _lastMovedUpDownTime;
 
         public HomingShot(Point location, Direction direction, Ship target = null) : base(location, direction)
         {
@@ -24,6 +16,10 @@ namespace Invaders.Wpf.Model
             Life = 5;
             Score = 15;
         }
+
+        public int ShotManeuveringPixelsPerSecond { get; protected set; }
+
+        public Ship TargetShip { get; protected set; }
 
         public override void Move()
         {
@@ -36,6 +32,7 @@ namespace Invaders.Wpf.Model
                 lastMoved = DateTime.Now;
                 return;
             }
+
             if (_lastMovedUpDownTime > 2)
             {
                 var timeSinceLastMoved = DateTime.Now - lastMoved;
@@ -44,7 +41,8 @@ namespace Invaders.Wpf.Model
                 Location = new Point(Location.X + distance, Location.Y);
                 lastMoved = DateTime.Now;
                 _lastMovedUpDownTime = 0;
-            } else
+            }
+            else
             {
                 var timeSinceLastMoved = DateTime.Now - lastMoved;
                 var distance = timeSinceLastMoved.Milliseconds * ShotPixelsPerSecond / 1000;

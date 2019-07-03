@@ -5,6 +5,6 @@
         UnknownOrBase,
         BasicShot,
         LazerShot,
-        HomingShot,
+        HomingShot
     }
 }
