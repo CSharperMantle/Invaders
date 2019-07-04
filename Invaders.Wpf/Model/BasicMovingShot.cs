@@ -5,7 +5,8 @@ namespace Invaders.Wpf.Model
 {
     public class BasicMovingShot : Shot
     {
-        protected BasicMovingShot(Point location, Direction direction, Size shotSize, int shotSpeed, int hitpoint, int score)
+        protected BasicMovingShot(Point location, Direction direction, Size shotSize, int shotSpeed, int hitpoint,
+            int score)
             : base(location, direction, hitpoint, score)
         {
             ShotSize = shotSize;

@@ -15,10 +15,10 @@ namespace Invaders.Wpf.Model
             ShotManeuveringPixelsPerSecond = 60;
             TargetShip = target;
         }
-        
+
         /// <summary>
-        /// The horizontal speed of the <see cref="HomingShot"/>.
-        /// The vertical speed is defined in <see cref="Shot.ShotPixelsPerSecond"/>
+        ///     The horizontal speed of the <see cref="HomingShot" />.
+        ///     The vertical speed is defined in <see cref="Shot.ShotPixelsPerSecond" />
         /// </summary>
         public int ShotManeuveringPixelsPerSecond { get; protected set; }
 

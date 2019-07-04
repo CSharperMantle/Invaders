@@ -29,7 +29,6 @@ namespace Invaders.Wpf.View
             var currentInterval = TimeSpan.FromMilliseconds(0);
             foreach (var imageName in imageNames)
             {
-                
                 ObjectKeyFrame keyFrame = new DiscreteObjectKeyFrame();
                 keyFrame.Value = CreateImageFromAssets(imageName);
                 keyFrame.KeyTime = currentInterval;
@@ -73,7 +72,8 @@ namespace Invaders.Wpf.View
         private static BitmapImage CreateImageFromAssets(string imageFileName)
         {
             var uri = new Uri($"Assets/{imageFileName}", UriKind.Relative);
-            if (!File.Exists(uri.OriginalString)) throw new FileNotFoundException("asset file not found", uri.OriginalString);
+            if (!File.Exists(uri.OriginalString))
+                throw new FileNotFoundException("asset file not found", uri.OriginalString);
             return new BitmapImage(uri);
         }
     }

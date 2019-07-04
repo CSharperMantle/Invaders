@@ -201,7 +201,6 @@ namespace Invaders.Wpf.ViewModel
         private void ModelShipChangedEventHandler(object sender, ShipChangedEventArgs e)
         {
             if (!e.Killed)
-            {
                 switch (e.ShipUpdated)
                 {
                     case Invader _:
@@ -250,9 +249,7 @@ namespace Invaders.Wpf.ViewModel
 
                         break;
                 }
-            }
             else
-            {
                 switch (e.ShipUpdated)
                 {
                     case Invader _:
@@ -273,7 +270,6 @@ namespace Invaders.Wpf.ViewModel
                         OnPlayerShot();
                         break;
                 }
-            }
         }
 
         private void ModelNextWaveGeneratedEventHandler(object sender, EventArgs e)

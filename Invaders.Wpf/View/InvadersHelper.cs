@@ -6,9 +6,6 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Invaders.Wpf.Model;
-using Color = System.Windows.Media.Color;
-using Point = System.Windows.Point;
-using Rectangle = System.Windows.Shapes.Rectangle;
 
 namespace Invaders.Wpf.View
 {
@@ -94,6 +91,7 @@ namespace Invaders.Wpf.View
                     rectangle.Fill = new SolidColorBrush(Colors.Yellow);
                     break;
             }
+
             rectangle.Width = shot.ShotSize.Width * scale;
             rectangle.Height = shot.ShotSize.Height * scale;
             SetCanvasLocation(rectangle, shot.Location.X * scale, shot.Location.Y * scale);

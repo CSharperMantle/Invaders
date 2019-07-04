@@ -67,28 +67,16 @@ namespace Invaders.Wpf.Model
         public void StartGame()
         {
             GameOver = false;
-            foreach (var invader in _invaders)
-            {
-                OnShipChanged(invader, true);
-            }
+            foreach (var invader in _invaders) OnShipChanged(invader, true);
             _invaders.Clear();
 
-            foreach (var shot in _invaderShots)
-            {
-                OnShotMoved(shot, true);
-            }
+            foreach (var shot in _invaderShots) OnShotMoved(shot, true);
             _invaderShots.Clear();
 
-            foreach (var shot in _playerShots)
-            {
-                OnShotMoved(shot, true);
-            }
+            foreach (var shot in _playerShots) OnShotMoved(shot, true);
             _playerShots.Clear();
 
-            foreach (var star in _stars)
-            {
-                OnStarChanged(star, true);
-            }
+            foreach (var star in _stars) OnStarChanged(star, true);
             _stars.Clear();
 
             _player = new Player();
@@ -274,15 +262,9 @@ namespace Invaders.Wpf.Model
 
             if (removeAllShots)
             {
-                foreach (var shot in _invaderShots)
-                {
-                    OnShotMoved(shot, true);
-                }
+                foreach (var shot in _invaderShots) OnShotMoved(shot, true);
                 _invaderShots.Clear();
-                foreach (var shot in _playerShots)
-                {
-                    OnShotMoved(shot, true);
-                }
+                foreach (var shot in _playerShots) OnShotMoved(shot, true);
                 _playerShots.Clear();
             }
         }
