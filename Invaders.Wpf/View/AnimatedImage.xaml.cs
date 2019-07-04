@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.View
 {
-    public partial class AnimatedImage : UserControl
+    public partial class AnimatedImage
     {
         public AnimatedImage()
         {
@@ -34,15 +31,7 @@ namespace Invaders.Wpf.View
             {
                 
                 ObjectKeyFrame keyFrame = new DiscreteObjectKeyFrame();
-                if (File.Exists(imageName))
-                {
-                    keyFrame.Value = CreateImageFromAssets(imageName);
-                }
-                else
-                {
-                    Log.C($"{imageName} does not exist");
-                    throw new FileNotFoundException($"{imageName} does not exist");
-                }
+                keyFrame.Value = CreateImageFromAssets(imageName);
                 keyFrame.KeyTime = currentInterval;
                 animation.KeyFrames.Add(keyFrame);
                 currentInterval = currentInterval.Add(interval);
@@ -83,17 +72,9 @@ namespace Invaders.Wpf.View
 
         private static BitmapImage CreateImageFromAssets(string imageFileName)
         {
-            try
-            {
-                var uri = new Uri($"Assets/{imageFileName}", UriKind.Relative);
-                return new BitmapImage(uri);
-            }
-            catch (Exception e)
-            {
-                Log.E("Exception: " + e.GetType());
-                Log.I(e.StackTrace);
-                return new BitmapImage();
-            }
+            var uri = new Uri($"Assets/{imageFileName}", UriKind.Relative);
+            if (!File.Exists(uri.OriginalString)) throw new FileNotFoundException("asset file not found", uri.OriginalString);
+            return new BitmapImage(uri);
         }
     }
 }

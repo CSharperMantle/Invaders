@@ -57,6 +57,7 @@
         <e p="Invaders.Wpf.csproj" t="IncludeRecursive" />
         <e p="Invaders.Wpf_TemporaryKey.pfx" t="Include" />
         <e p="Model" t="Include">
+          <e p="BasicMovingShot.cs" t="Include" />
           <e p="BasicShot.cs" t="Include" />
           <e p="Direction.cs" t="Include" />
           <e p="HistoryData.cs" t="Include" />

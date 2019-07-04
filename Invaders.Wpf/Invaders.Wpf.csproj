@@ -139,6 +139,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\BasicMovingShot.cs" />
     <Compile Include="Model\BasicShot.cs" />
     <!--Namespace Invaders.Wpf.Model-->
     <Compile Include="Model\Direction.cs" />

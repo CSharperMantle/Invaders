@@ -7,16 +7,19 @@ namespace Invaders.Wpf.Model
     {
         private short _lastMovedUpDownTime;
 
-        public HomingShot(Point location, Direction direction, Ship target = null) : base(location, direction)
+        public HomingShot(Point location, Direction direction, Ship target = null)
+            : base(location, direction, 5, 15)
         {
             ShotSize = new Size(2, 10);
             ShotPixelsPerSecond = 60;
-            ShotManeuveringPixelsPerSecond = 80;
+            ShotManeuveringPixelsPerSecond = 60;
             TargetShip = target;
-            Hitpoint = 5;
-            Score = 15;
         }
-
+        
+        /// <summary>
+        /// The horizontal speed of the <see cref="HomingShot"/>.
+        /// The vertical speed is defined in <see cref="Shot.ShotPixelsPerSecond"/>
+        /// </summary>
         public int ShotManeuveringPixelsPerSecond { get; protected set; }
 
         public Ship TargetShip { get; protected set; }

@@ -10,10 +10,12 @@ namespace Invaders.Wpf.Model
     {
         protected DateTime LastMoved;
 
-        protected Shot(Point location, Direction direction)
+        protected Shot(Point location, Direction direction, int hitpoint, int score)
         {
             Location = location;
             Direction = direction;
+            Hitpoint = hitpoint;
+            Score = score;
             LastMoved = DateTime.Now;
         }
 

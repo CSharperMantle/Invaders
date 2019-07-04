@@ -18,6 +18,7 @@ namespace Invaders.Wpf.Model
         public const string UserSettingsDirectory = "./config";
         public const int MaximumPlayerShots = 3;
         public const int InitialStarCount = 25;
+        public const int InitialLives = 3;
         public static readonly Size PlayAreaSize = new Size(400, 300);
         private readonly List<Invader> _invaders = new List<Invader>();
         private readonly List<Shot> _invaderShots = new List<Shot>();
@@ -66,29 +67,29 @@ namespace Invaders.Wpf.Model
         public void StartGame()
         {
             GameOver = false;
-            foreach (var invader in _invaders.ToList())
+            foreach (var invader in _invaders)
             {
                 OnShipChanged(invader, true);
-                _invaders.Remove(invader);
             }
+            _invaders.Clear();
 
-            foreach (var shot in _invaderShots.ToList())
+            foreach (var shot in _invaderShots)
             {
                 OnShotMoved(shot, true);
-                _invaderShots.Remove(shot);
             }
+            _invaderShots.Clear();
 
-            foreach (var shot in _playerShots.ToList())
+            foreach (var shot in _playerShots)
             {
                 OnShotMoved(shot, true);
-                _playerShots.Remove(shot);
             }
+            _playerShots.Clear();
 
-            foreach (var star in _stars.ToList())
+            foreach (var star in _stars)
             {
                 OnStarChanged(star, true);
-                _stars.Remove(star);
             }
+            _stars.Clear();
 
             _player = new Player();
             OnShipChanged(_player, false);
@@ -96,7 +97,7 @@ namespace Invaders.Wpf.Model
             _historyData.IncreasePlayedGames();
 
             Score = 0;
-            Lives = 3;
+            Lives = InitialLives;
             Waves = 0;
             CurrentShotType = ShotType.BasicShot;
 
@@ -170,7 +171,7 @@ namespace Invaders.Wpf.Model
         {
             if (!paused)
             {
-                if (!_invaders.Any())
+                if (_invaders.Count <= 0)
                     NextWave();
                 if (!PlayerDying)
                 {
@@ -272,11 +273,18 @@ namespace Invaders.Wpf.Model
             }
 
             if (removeAllShots)
-                foreach (var shot in _invaderShots.ToList())
+            {
+                foreach (var shot in _invaderShots)
                 {
-                    _invaderShots.Remove(shot);
                     OnShotMoved(shot, true);
                 }
+                _invaderShots.Clear();
+                foreach (var shot in _playerShots)
+                {
+                    OnShotMoved(shot, true);
+                }
+                _playerShots.Clear();
+            }
         }
 
         private void CheckForInvaderCollisions()
@@ -426,7 +434,7 @@ namespace Invaders.Wpf.Model
 
         private void ReturnFire()
         {
-            if (!_invaders.Any()) return;
+            if (_invaders.Count <= 0) return;
             var invaderShots =
                 from shot in _invaderShots
                 select shot;
