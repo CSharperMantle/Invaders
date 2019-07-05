@@ -10,7 +10,7 @@ using Invaders.Wpf.Commons;
 
 namespace Invaders.Wpf.Model
 {
-    public class InvadersModel
+    public sealed class InvadersModel
     {
         public const string HistoryDataFilePath = "./config/historydata.json";
         public const string HistoryDataDirectory = "./config";

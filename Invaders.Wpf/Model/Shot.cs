@@ -48,14 +48,24 @@ namespace Invaders.Wpf.Model
 
         public Direction Direction { get; }
 
+        /// <summary>
+        /// Check if a <see cref="Shot"/> object is used up (its <see cref="Shot.Hitpoint"/> is below 0).
+        /// </summary>
+        /// <returns><code>true</code> if the <see cref="Shot"/> is used up, otherwise <code>false</code>.</returns>
         public bool IsUsedUp()
         {
             return Hitpoint <= 0;
         }
 
+        /// <summary>
+        /// Decrease the <see cref="Shot.Hitpoint"/> by a given value.
+        /// </summary>
+        /// <param name="value">Amount of hitpoints to decrease.</param>
+        /// <exception cref="ArgumentOutOfRangeException">A sub-zero value is given</exception>
         public void DecreaseHitpoint(int value)
         {
             //TODO: Add value range check
+            if (value < 0) throw new ArgumentOutOfRangeException(nameof(value), value, $"value {value} below zero");
             Hitpoint -= value;
         }
 

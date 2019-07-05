@@ -3,7 +3,7 @@ using System.Windows;
 
 namespace Invaders.Wpf.Model
 {
-    public class BasicMovingShot : Shot
+    public abstract class BasicMovingShot : Shot
     {
         protected BasicMovingShot(Point location, Direction direction, Size shotSize, int shotSpeed, int hitpoint,
             int score)
