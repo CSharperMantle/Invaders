@@ -7,12 +7,32 @@ trigger:
 - master
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'vs2017-win2016'
 
 variables:
   solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+
+strategy:
+  matrix:
+    AnyCPU_Debug:
+      buildPlatform: 'Any CPU'
+      buildConfiguration: 'Debug'
+    AnyCPU_Release:
+      buildPlatform: 'Any CPU'
+      buildConfiguration: 'Release'
+    x86_Debug:
+      buildPlatform: 'x86'
+      buildConfiguration: 'Debug'
+    x86_Release:
+      buildPlatform: 'x86'
+      buildConfiguration: 'Release'
+    x64_Debug:
+      buildPlatform: 'x64'
+      buildConfiguration: 'Debug'
+    x64_Release:
+      buildPlatform: 'x64'
+      buildConfiguration: 'Release'
+  maxParallel: 3
 
 steps:
 - task: NuGetToolInstaller@0
@@ -24,10 +44,5 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
-- task: VSTest@2
-  inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
